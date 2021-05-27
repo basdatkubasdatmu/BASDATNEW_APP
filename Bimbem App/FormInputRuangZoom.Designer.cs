@@ -80,7 +80,6 @@ namespace Bimbem_App
             // txtKodeZoom
             // 
             this.txtKodeZoom.BackColor = System.Drawing.Color.Salmon;
-            this.txtKodeZoom.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtKodeZoom.Location = new System.Drawing.Point(318, 133);
             this.txtKodeZoom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtKodeZoom.Name = "txtKodeZoom";
@@ -103,14 +102,13 @@ namespace Bimbem_App
             this.inputRuangZoom.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.inputRuangZoom.Location = new System.Drawing.Point(263, 55);
             this.inputRuangZoom.Name = "inputRuangZoom";
-            this.inputRuangZoom.Size = new System.Drawing.Size(239, 30);
+            this.inputRuangZoom.Size = new System.Drawing.Size(238, 30);
             this.inputRuangZoom.TabIndex = 0;
-            this.inputRuangZoom.Text = "INPUR RUANG ZOOM";
+            this.inputRuangZoom.Text = "INPUT RUANG ZOOM";
             // 
             // txtLinkRuangZoom
             // 
             this.txtLinkRuangZoom.BackColor = System.Drawing.Color.Salmon;
-            this.txtLinkRuangZoom.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtLinkRuangZoom.Location = new System.Drawing.Point(318, 181);
             this.txtLinkRuangZoom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtLinkRuangZoom.Name = "txtLinkRuangZoom";
@@ -130,7 +128,6 @@ namespace Bimbem_App
             // txtIdMeetingRuangZoom
             // 
             this.txtIdMeetingRuangZoom.BackColor = System.Drawing.Color.Salmon;
-            this.txtIdMeetingRuangZoom.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtIdMeetingRuangZoom.Location = new System.Drawing.Point(318, 229);
             this.txtIdMeetingRuangZoom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtIdMeetingRuangZoom.Name = "txtIdMeetingRuangZoom";
@@ -150,7 +147,6 @@ namespace Bimbem_App
             // txtPasscodeRuangZoom
             // 
             this.txtPasscodeRuangZoom.BackColor = System.Drawing.Color.Salmon;
-            this.txtPasscodeRuangZoom.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPasscodeRuangZoom.Location = new System.Drawing.Point(318, 275);
             this.txtPasscodeRuangZoom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPasscodeRuangZoom.Name = "txtPasscodeRuangZoom";

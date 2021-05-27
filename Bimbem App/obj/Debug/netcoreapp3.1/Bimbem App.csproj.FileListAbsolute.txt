@@ -17,3 +17,25 @@ C:\Users\sunul\source\repos\Bimbem App\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem
 C:\Users\sunul\source\repos\Bimbem App\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem_App.ParentForm.resources
 C:\Users\sunul\source\repos\Bimbem App\Bimbem App\bin\Debug\netcoreapp3.1\Npgsql.dll
 C:\Users\sunul\source\repos\Bimbem App\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem App.csproj.CopyComplete
+E:\New\Bimbel new 2\BASDATNEW_APP\Bimbem App\bin\Debug\netcoreapp3.1\Bimbem App.exe
+E:\New\Bimbel new 2\BASDATNEW_APP\Bimbem App\bin\Debug\netcoreapp3.1\Bimbem App.deps.json
+E:\New\Bimbel new 2\BASDATNEW_APP\Bimbem App\bin\Debug\netcoreapp3.1\Bimbem App.runtimeconfig.json
+E:\New\Bimbel new 2\BASDATNEW_APP\Bimbem App\bin\Debug\netcoreapp3.1\Bimbem App.runtimeconfig.dev.json
+E:\New\Bimbel new 2\BASDATNEW_APP\Bimbem App\bin\Debug\netcoreapp3.1\Bimbem App.dll
+E:\New\Bimbel new 2\BASDATNEW_APP\Bimbem App\bin\Debug\netcoreapp3.1\Bimbem App.pdb
+E:\New\Bimbel new 2\BASDATNEW_APP\Bimbem App\bin\Debug\netcoreapp3.1\Npgsql.dll
+E:\New\Bimbel new 2\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem App.csprojAssemblyReference.cache
+E:\New\Bimbel new 2\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem_App.FormInputNilai.resources
+E:\New\Bimbel new 2\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem_App.FormInputRuangZoom.resources
+E:\New\Bimbel new 2\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem_App.FormLogin.resources
+E:\New\Bimbel new 2\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem_App.FormTemplate.resources
+E:\New\Bimbel new 2\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem_App.ParentForm.resources
+E:\New\Bimbel new 2\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem_App.Properties.Resources.resources
+E:\New\Bimbel new 2\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem App.csproj.GenerateResource.cache
+E:\New\Bimbel new 2\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem App.AssemblyInfoInputs.cache
+E:\New\Bimbel new 2\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem App.AssemblyInfo.cs
+E:\New\Bimbel new 2\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem App.csproj.CoreCompileInputs.cache
+E:\New\Bimbel new 2\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem App.csproj.CopyComplete
+E:\New\Bimbel new 2\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem App.dll
+E:\New\Bimbel new 2\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem App.pdb
+E:\New\Bimbel new 2\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem App.genruntimeconfig.cache
