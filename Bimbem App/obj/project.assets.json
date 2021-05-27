@@ -78,19 +78,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sunul\\.nuget\\packages\\": {}
+    "C:\\Users\\ASUS\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sunul\\source\\repos\\Bimbem App\\Bimbem App\\Bimbem App.csproj",
+      "projectUniqueName": "E:\\New\\Bimbel new 2\\BASDATNEW_APP\\Bimbem App\\Bimbem App.csproj",
       "projectName": "Bimbem App",
-      "projectPath": "C:\\Users\\sunul\\source\\repos\\Bimbem App\\Bimbem App\\Bimbem App.csproj",
-      "packagesPath": "C:\\Users\\sunul\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sunul\\source\\repos\\Bimbem App\\Bimbem App\\obj\\",
+      "projectPath": "E:\\New\\Bimbel new 2\\BASDATNEW_APP\\Bimbem App\\Bimbem App.csproj",
+      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+      "outputPath": "E:\\New\\Bimbel new 2\\BASDATNEW_APP\\Bimbem App\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\sunul\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -139,7 +139,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
