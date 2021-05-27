@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace Bimbem_App
 {
-    public partial class FormInputMatpel : Form
+    public partial class FormInputJadwalPengajar : Form
     {
-        public FormInputMatpel()
+        public FormInputJadwalPengajar()
         {
             InitializeComponent();
         }

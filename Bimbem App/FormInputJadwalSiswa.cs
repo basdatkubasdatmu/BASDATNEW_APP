@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace Bimbem_App
 {
-    public partial class FormInputPembayaran : Form
+    public partial class FormInputJadwalSiswa : Form
     {
-        public FormInputPembayaran()
+        public FormInputJadwalSiswa()
         {
             InitializeComponent();
         }
