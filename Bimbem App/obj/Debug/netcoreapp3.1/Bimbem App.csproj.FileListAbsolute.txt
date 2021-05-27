@@ -17,3 +17,25 @@ C:\Users\sunul\source\repos\Bimbem App\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem
 C:\Users\sunul\source\repos\Bimbem App\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem_App.ParentForm.resources
 C:\Users\sunul\source\repos\Bimbem App\Bimbem App\bin\Debug\netcoreapp3.1\Npgsql.dll
 C:\Users\sunul\source\repos\Bimbem App\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem App.csproj.CopyComplete
+C:\Users\Asus\Documents\GitHub\BASDATNEW_APP\Bimbem App\bin\Debug\netcoreapp3.1\Bimbem App.exe
+C:\Users\Asus\Documents\GitHub\BASDATNEW_APP\Bimbem App\bin\Debug\netcoreapp3.1\Bimbem App.deps.json
+C:\Users\Asus\Documents\GitHub\BASDATNEW_APP\Bimbem App\bin\Debug\netcoreapp3.1\Bimbem App.runtimeconfig.json
+C:\Users\Asus\Documents\GitHub\BASDATNEW_APP\Bimbem App\bin\Debug\netcoreapp3.1\Bimbem App.runtimeconfig.dev.json
+C:\Users\Asus\Documents\GitHub\BASDATNEW_APP\Bimbem App\bin\Debug\netcoreapp3.1\Bimbem App.dll
+C:\Users\Asus\Documents\GitHub\BASDATNEW_APP\Bimbem App\bin\Debug\netcoreapp3.1\Bimbem App.pdb
+C:\Users\Asus\Documents\GitHub\BASDATNEW_APP\Bimbem App\bin\Debug\netcoreapp3.1\Npgsql.dll
+C:\Users\Asus\Documents\GitHub\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem App.csprojAssemblyReference.cache
+C:\Users\Asus\Documents\GitHub\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem_App.FormInputKelas.resources
+C:\Users\Asus\Documents\GitHub\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem_App.FormInputPegawai.resources
+C:\Users\Asus\Documents\GitHub\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem_App.FormLogin.resources
+C:\Users\Asus\Documents\GitHub\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem_App.FormTemplate.resources
+C:\Users\Asus\Documents\GitHub\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem_App.ParentForm.resources
+C:\Users\Asus\Documents\GitHub\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem_App.Properties.Resources.resources
+C:\Users\Asus\Documents\GitHub\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem App.csproj.GenerateResource.cache
+C:\Users\Asus\Documents\GitHub\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem App.AssemblyInfoInputs.cache
+C:\Users\Asus\Documents\GitHub\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem App.AssemblyInfo.cs
+C:\Users\Asus\Documents\GitHub\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem App.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Documents\GitHub\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem App.csproj.CopyComplete
+C:\Users\Asus\Documents\GitHub\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem App.dll
+C:\Users\Asus\Documents\GitHub\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem App.pdb
+C:\Users\Asus\Documents\GitHub\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem App.genruntimeconfig.cache
