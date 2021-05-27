@@ -31,24 +31,24 @@ namespace Bimbem_App
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelInputSiswa = new System.Windows.Forms.Panel();
-            this.lblInputSiswa = new System.Windows.Forms.Label();
-            this.lblNoSiswa = new System.Windows.Forms.Label();
-            this.lblNamaSiswa = new System.Windows.Forms.Label();
-            this.lblJnsKelamin = new System.Windows.Forms.Label();
-            this.lblKodeKelas = new System.Windows.Forms.Label();
-            this.lblNoHPSiswa = new System.Windows.Forms.Label();
-            this.lblEmail = new System.Windows.Forms.Label();
-            this.lblAsalDaerah = new System.Windows.Forms.Label();
-            this.txtNoSiswa = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.txtKodeKelas = new System.Windows.Forms.TextBox();
-            this.txtNoHPSiswa = new System.Windows.Forms.TextBox();
-            this.txtEmailSiswa = new System.Windows.Forms.TextBox();
-            this.txtAsalDaerah = new System.Windows.Forms.TextBox();
-            this.rdLakilaki = new System.Windows.Forms.RadioButton();
-            this.rdPerempuan = new System.Windows.Forms.RadioButton();
-            this.btnSimpan = new System.Windows.Forms.Button();
             this.btnBatal = new System.Windows.Forms.Button();
+            this.btnSimpan = new System.Windows.Forms.Button();
+            this.rdPerempuan = new System.Windows.Forms.RadioButton();
+            this.rdLakilaki = new System.Windows.Forms.RadioButton();
+            this.txtAsalDaerah = new System.Windows.Forms.TextBox();
+            this.txtEmailSiswa = new System.Windows.Forms.TextBox();
+            this.txtNoHPSiswa = new System.Windows.Forms.TextBox();
+            this.txtKodeKelas = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNoSiswa = new System.Windows.Forms.TextBox();
+            this.lblAsalDaerah = new System.Windows.Forms.Label();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.lblNoHPSiswa = new System.Windows.Forms.Label();
+            this.lblKodeKelas = new System.Windows.Forms.Label();
+            this.lblJnsKelamin = new System.Windows.Forms.Label();
+            this.lblNamaSiswa = new System.Windows.Forms.Label();
+            this.lblNoSiswa = new System.Windows.Forms.Label();
+            this.lblInputSiswa = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelInputSiswa.SuspendLayout();
             this.SuspendLayout();
@@ -59,7 +59,7 @@ namespace Bimbem_App
             this.pictureBox1.Location = new System.Drawing.Point(3, -6);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(727, 559);
+            this.pictureBox1.Size = new System.Drawing.Size(505, 491);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -84,80 +84,104 @@ namespace Bimbem_App
             this.panelInputSiswa.Controls.Add(this.lblNamaSiswa);
             this.panelInputSiswa.Controls.Add(this.lblNoSiswa);
             this.panelInputSiswa.Controls.Add(this.lblInputSiswa);
-            this.panelInputSiswa.Location = new System.Drawing.Point(92, 39);
+            this.panelInputSiswa.Location = new System.Drawing.Point(25, 22);
             this.panelInputSiswa.Name = "panelInputSiswa";
-            this.panelInputSiswa.Size = new System.Drawing.Size(534, 468);
+            this.panelInputSiswa.Size = new System.Drawing.Size(450, 434);
             this.panelInputSiswa.TabIndex = 2;
             // 
-            // lblInputSiswa
+            // btnBatal
             // 
-            this.lblInputSiswa.AutoSize = true;
-            this.lblInputSiswa.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblInputSiswa.Location = new System.Drawing.Point(202, 18);
-            this.lblInputSiswa.Name = "lblInputSiswa";
-            this.lblInputSiswa.Size = new System.Drawing.Size(133, 30);
-            this.lblInputSiswa.TabIndex = 1;
-            this.lblInputSiswa.Text = "Input Siswa";
+            this.btnBatal.BackColor = System.Drawing.Color.Wheat;
+            this.btnBatal.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnBatal.Location = new System.Drawing.Point(335, 371);
+            this.btnBatal.Name = "btnBatal";
+            this.btnBatal.Size = new System.Drawing.Size(75, 35);
+            this.btnBatal.TabIndex = 18;
+            this.btnBatal.Text = "Batal";
+            this.btnBatal.UseVisualStyleBackColor = false;
             // 
-            // lblNoSiswa
+            // btnSimpan
             // 
-            this.lblNoSiswa.AutoSize = true;
-            this.lblNoSiswa.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblNoSiswa.Location = new System.Drawing.Point(28, 86);
-            this.lblNoSiswa.Name = "lblNoSiswa";
-            this.lblNoSiswa.Size = new System.Drawing.Size(99, 20);
-            this.lblNoSiswa.TabIndex = 2;
-            this.lblNoSiswa.Text = "Nomor Siswa";
+            this.btnSimpan.BackColor = System.Drawing.Color.Wheat;
+            this.btnSimpan.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSimpan.Location = new System.Drawing.Point(241, 371);
+            this.btnSimpan.Name = "btnSimpan";
+            this.btnSimpan.Size = new System.Drawing.Size(75, 35);
+            this.btnSimpan.TabIndex = 17;
+            this.btnSimpan.Text = "Simpan";
+            this.btnSimpan.UseVisualStyleBackColor = false;
             // 
-            // lblNamaSiswa
+            // rdPerempuan
             // 
-            this.lblNamaSiswa.AutoSize = true;
-            this.lblNamaSiswa.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblNamaSiswa.Location = new System.Drawing.Point(28, 129);
-            this.lblNamaSiswa.Name = "lblNamaSiswa";
-            this.lblNamaSiswa.Size = new System.Drawing.Size(91, 20);
-            this.lblNamaSiswa.TabIndex = 3;
-            this.lblNamaSiswa.Text = "Nama Siswa";
+            this.rdPerempuan.AutoSize = true;
+            this.rdPerempuan.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rdPerempuan.Location = new System.Drawing.Point(269, 172);
+            this.rdPerempuan.Name = "rdPerempuan";
+            this.rdPerempuan.Size = new System.Drawing.Size(101, 24);
+            this.rdPerempuan.TabIndex = 16;
+            this.rdPerempuan.TabStop = true;
+            this.rdPerempuan.Text = "Perempuan";
+            this.rdPerempuan.UseVisualStyleBackColor = true;
             // 
-            // lblJnsKelamin
+            // rdLakilaki
             // 
-            this.lblJnsKelamin.AutoSize = true;
-            this.lblJnsKelamin.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblJnsKelamin.Location = new System.Drawing.Point(28, 170);
-            this.lblJnsKelamin.Name = "lblJnsKelamin";
-            this.lblJnsKelamin.Size = new System.Drawing.Size(101, 20);
-            this.lblJnsKelamin.TabIndex = 4;
-            this.lblJnsKelamin.Text = "Jenis Kelamin";
+            this.rdLakilaki.AutoSize = true;
+            this.rdLakilaki.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rdLakilaki.Location = new System.Drawing.Point(178, 172);
+            this.rdLakilaki.Name = "rdLakilaki";
+            this.rdLakilaki.Size = new System.Drawing.Size(85, 24);
+            this.rdLakilaki.TabIndex = 15;
+            this.rdLakilaki.TabStop = true;
+            this.rdLakilaki.Text = "Laki-Laki";
+            this.rdLakilaki.UseVisualStyleBackColor = true;
             // 
-            // lblKodeKelas
+            // txtAsalDaerah
             // 
-            this.lblKodeKelas.AutoSize = true;
-            this.lblKodeKelas.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblKodeKelas.Location = new System.Drawing.Point(28, 210);
-            this.lblKodeKelas.Name = "lblKodeKelas";
-            this.lblKodeKelas.Size = new System.Drawing.Size(83, 20);
-            this.lblKodeKelas.TabIndex = 5;
-            this.lblKodeKelas.Text = "Kode Kelas";
+            this.txtAsalDaerah.BackColor = System.Drawing.Color.Salmon;
+            this.txtAsalDaerah.Location = new System.Drawing.Point(178, 327);
+            this.txtAsalDaerah.Name = "txtAsalDaerah";
+            this.txtAsalDaerah.Size = new System.Drawing.Size(190, 23);
+            this.txtAsalDaerah.TabIndex = 14;
             // 
-            // lblNoHPSiswa
+            // txtEmailSiswa
             // 
-            this.lblNoHPSiswa.AutoSize = true;
-            this.lblNoHPSiswa.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblNoHPSiswa.Location = new System.Drawing.Point(28, 247);
-            this.lblNoHPSiswa.Name = "lblNoHPSiswa";
-            this.lblNoHPSiswa.Size = new System.Drawing.Size(82, 20);
-            this.lblNoHPSiswa.TabIndex = 6;
-            this.lblNoHPSiswa.Text = "Nomor HP";
+            this.txtEmailSiswa.BackColor = System.Drawing.Color.Salmon;
+            this.txtEmailSiswa.Location = new System.Drawing.Point(178, 284);
+            this.txtEmailSiswa.Name = "txtEmailSiswa";
+            this.txtEmailSiswa.Size = new System.Drawing.Size(190, 23);
+            this.txtEmailSiswa.TabIndex = 13;
             // 
-            // lblEmail
+            // txtNoHPSiswa
             // 
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblEmail.Location = new System.Drawing.Point(28, 283);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(46, 20);
-            this.lblEmail.TabIndex = 7;
-            this.lblEmail.Text = "Email";
+            this.txtNoHPSiswa.BackColor = System.Drawing.Color.Salmon;
+            this.txtNoHPSiswa.Location = new System.Drawing.Point(178, 248);
+            this.txtNoHPSiswa.Name = "txtNoHPSiswa";
+            this.txtNoHPSiswa.Size = new System.Drawing.Size(190, 23);
+            this.txtNoHPSiswa.TabIndex = 12;
+            // 
+            // txtKodeKelas
+            // 
+            this.txtKodeKelas.BackColor = System.Drawing.Color.Salmon;
+            this.txtKodeKelas.Location = new System.Drawing.Point(178, 211);
+            this.txtKodeKelas.Name = "txtKodeKelas";
+            this.txtKodeKelas.Size = new System.Drawing.Size(190, 23);
+            this.txtKodeKelas.TabIndex = 11;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.Salmon;
+            this.textBox1.Location = new System.Drawing.Point(178, 130);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(190, 23);
+            this.textBox1.TabIndex = 10;
+            // 
+            // txtNoSiswa
+            // 
+            this.txtNoSiswa.BackColor = System.Drawing.Color.Salmon;
+            this.txtNoSiswa.Location = new System.Drawing.Point(178, 87);
+            this.txtNoSiswa.Name = "txtNoSiswa";
+            this.txtNoSiswa.Size = new System.Drawing.Size(190, 23);
+            this.txtNoSiswa.TabIndex = 9;
             // 
             // lblAsalDaerah
             // 
@@ -169,97 +193,81 @@ namespace Bimbem_App
             this.lblAsalDaerah.TabIndex = 8;
             this.lblAsalDaerah.Text = "Asal Daerah";
             // 
-            // txtNoSiswa
+            // lblEmail
             // 
-            this.txtNoSiswa.Location = new System.Drawing.Point(178, 87);
-            this.txtNoSiswa.Name = "txtNoSiswa";
-            this.txtNoSiswa.Size = new System.Drawing.Size(272, 23);
-            this.txtNoSiswa.TabIndex = 9;
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblEmail.Location = new System.Drawing.Point(28, 283);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(46, 20);
+            this.lblEmail.TabIndex = 7;
+            this.lblEmail.Text = "Email";
             // 
-            // textBox1
+            // lblNoHPSiswa
             // 
-            this.textBox1.Location = new System.Drawing.Point(178, 130);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(272, 23);
-            this.textBox1.TabIndex = 10;
+            this.lblNoHPSiswa.AutoSize = true;
+            this.lblNoHPSiswa.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblNoHPSiswa.Location = new System.Drawing.Point(28, 247);
+            this.lblNoHPSiswa.Name = "lblNoHPSiswa";
+            this.lblNoHPSiswa.Size = new System.Drawing.Size(82, 20);
+            this.lblNoHPSiswa.TabIndex = 6;
+            this.lblNoHPSiswa.Text = "Nomor HP";
             // 
-            // txtKodeKelas
+            // lblKodeKelas
             // 
-            this.txtKodeKelas.Location = new System.Drawing.Point(178, 211);
-            this.txtKodeKelas.Name = "txtKodeKelas";
-            this.txtKodeKelas.Size = new System.Drawing.Size(272, 23);
-            this.txtKodeKelas.TabIndex = 11;
+            this.lblKodeKelas.AutoSize = true;
+            this.lblKodeKelas.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblKodeKelas.Location = new System.Drawing.Point(28, 210);
+            this.lblKodeKelas.Name = "lblKodeKelas";
+            this.lblKodeKelas.Size = new System.Drawing.Size(83, 20);
+            this.lblKodeKelas.TabIndex = 5;
+            this.lblKodeKelas.Text = "Kode Kelas";
             // 
-            // txtNoHPSiswa
+            // lblJnsKelamin
             // 
-            this.txtNoHPSiswa.Location = new System.Drawing.Point(178, 248);
-            this.txtNoHPSiswa.Name = "txtNoHPSiswa";
-            this.txtNoHPSiswa.Size = new System.Drawing.Size(272, 23);
-            this.txtNoHPSiswa.TabIndex = 12;
+            this.lblJnsKelamin.AutoSize = true;
+            this.lblJnsKelamin.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblJnsKelamin.Location = new System.Drawing.Point(28, 170);
+            this.lblJnsKelamin.Name = "lblJnsKelamin";
+            this.lblJnsKelamin.Size = new System.Drawing.Size(101, 20);
+            this.lblJnsKelamin.TabIndex = 4;
+            this.lblJnsKelamin.Text = "Jenis Kelamin";
             // 
-            // txtEmailSiswa
+            // lblNamaSiswa
             // 
-            this.txtEmailSiswa.Location = new System.Drawing.Point(178, 284);
-            this.txtEmailSiswa.Name = "txtEmailSiswa";
-            this.txtEmailSiswa.Size = new System.Drawing.Size(272, 23);
-            this.txtEmailSiswa.TabIndex = 13;
+            this.lblNamaSiswa.AutoSize = true;
+            this.lblNamaSiswa.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblNamaSiswa.Location = new System.Drawing.Point(28, 129);
+            this.lblNamaSiswa.Name = "lblNamaSiswa";
+            this.lblNamaSiswa.Size = new System.Drawing.Size(91, 20);
+            this.lblNamaSiswa.TabIndex = 3;
+            this.lblNamaSiswa.Text = "Nama Siswa";
             // 
-            // txtAsalDaerah
+            // lblNoSiswa
             // 
-            this.txtAsalDaerah.Location = new System.Drawing.Point(178, 327);
-            this.txtAsalDaerah.Name = "txtAsalDaerah";
-            this.txtAsalDaerah.Size = new System.Drawing.Size(272, 23);
-            this.txtAsalDaerah.TabIndex = 14;
+            this.lblNoSiswa.AutoSize = true;
+            this.lblNoSiswa.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblNoSiswa.Location = new System.Drawing.Point(28, 86);
+            this.lblNoSiswa.Name = "lblNoSiswa";
+            this.lblNoSiswa.Size = new System.Drawing.Size(99, 20);
+            this.lblNoSiswa.TabIndex = 2;
+            this.lblNoSiswa.Text = "Nomor Siswa";
             // 
-            // rdLakilaki
+            // lblInputSiswa
             // 
-            this.rdLakilaki.AutoSize = true;
-            this.rdLakilaki.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rdLakilaki.Location = new System.Drawing.Point(190, 172);
-            this.rdLakilaki.Name = "rdLakilaki";
-            this.rdLakilaki.Size = new System.Drawing.Size(85, 24);
-            this.rdLakilaki.TabIndex = 15;
-            this.rdLakilaki.TabStop = true;
-            this.rdLakilaki.Text = "Laki-Laki";
-            this.rdLakilaki.UseVisualStyleBackColor = true;
-            // 
-            // rdPerempuan
-            // 
-            this.rdPerempuan.AutoSize = true;
-            this.rdPerempuan.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rdPerempuan.Location = new System.Drawing.Point(333, 172);
-            this.rdPerempuan.Name = "rdPerempuan";
-            this.rdPerempuan.Size = new System.Drawing.Size(101, 24);
-            this.rdPerempuan.TabIndex = 16;
-            this.rdPerempuan.TabStop = true;
-            this.rdPerempuan.Text = "Perempuan";
-            this.rdPerempuan.UseVisualStyleBackColor = true;
-            // 
-            // btnSimpan
-            // 
-            this.btnSimpan.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnSimpan.Location = new System.Drawing.Point(333, 391);
-            this.btnSimpan.Name = "btnSimpan";
-            this.btnSimpan.Size = new System.Drawing.Size(75, 35);
-            this.btnSimpan.TabIndex = 17;
-            this.btnSimpan.Text = "Simpan";
-            this.btnSimpan.UseVisualStyleBackColor = true;
-            // 
-            // btnBatal
-            // 
-            this.btnBatal.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnBatal.Location = new System.Drawing.Point(414, 391);
-            this.btnBatal.Name = "btnBatal";
-            this.btnBatal.Size = new System.Drawing.Size(75, 35);
-            this.btnBatal.TabIndex = 18;
-            this.btnBatal.Text = "Batal";
-            this.btnBatal.UseVisualStyleBackColor = true;
+            this.lblInputSiswa.AutoSize = true;
+            this.lblInputSiswa.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblInputSiswa.Location = new System.Drawing.Point(152, 18);
+            this.lblInputSiswa.Name = "lblInputSiswa";
+            this.lblInputSiswa.Size = new System.Drawing.Size(133, 30);
+            this.lblInputSiswa.TabIndex = 1;
+            this.lblInputSiswa.Text = "Input Siswa";
             // 
             // formInputSiswa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(731, 591);
+            this.ClientSize = new System.Drawing.Size(509, 512);
             this.Controls.Add(this.panelInputSiswa);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
