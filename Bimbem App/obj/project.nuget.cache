@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "9je4Y2XICCxEPmpuKdQIlOyRaBwJja0JOpkewXXxp13VlvAX3aJ+E09PvnjMs++Q324fEKnrrkrVdKiozdJUkw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\sunul\\source\\repos\\Bimbem App\\Bimbem App\\Bimbem App.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sunul\\.nuget\\packages\\npgsql\\5.0.5\\npgsql.5.0.5.nupkg.sha512",
+    "C:\\Users\\sunul\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}

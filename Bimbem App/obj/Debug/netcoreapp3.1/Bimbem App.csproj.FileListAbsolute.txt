@@ -1,0 +1,19 @@
+C:\Users\sunul\source\repos\Bimbem App\Bimbem App\bin\Debug\netcoreapp3.1\Bimbem App.exe
+C:\Users\sunul\source\repos\Bimbem App\Bimbem App\bin\Debug\netcoreapp3.1\Bimbem App.deps.json
+C:\Users\sunul\source\repos\Bimbem App\Bimbem App\bin\Debug\netcoreapp3.1\Bimbem App.runtimeconfig.json
+C:\Users\sunul\source\repos\Bimbem App\Bimbem App\bin\Debug\netcoreapp3.1\Bimbem App.runtimeconfig.dev.json
+C:\Users\sunul\source\repos\Bimbem App\Bimbem App\bin\Debug\netcoreapp3.1\Bimbem App.dll
+C:\Users\sunul\source\repos\Bimbem App\Bimbem App\bin\Debug\netcoreapp3.1\Bimbem App.pdb
+C:\Users\sunul\source\repos\Bimbem App\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem App.csprojAssemblyReference.cache
+C:\Users\sunul\source\repos\Bimbem App\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem_App.Properties.Resources.resources
+C:\Users\sunul\source\repos\Bimbem App\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem App.csproj.GenerateResource.cache
+C:\Users\sunul\source\repos\Bimbem App\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem App.AssemblyInfoInputs.cache
+C:\Users\sunul\source\repos\Bimbem App\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem App.AssemblyInfo.cs
+C:\Users\sunul\source\repos\Bimbem App\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem App.csproj.CoreCompileInputs.cache
+C:\Users\sunul\source\repos\Bimbem App\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem App.dll
+C:\Users\sunul\source\repos\Bimbem App\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem App.pdb
+C:\Users\sunul\source\repos\Bimbem App\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem App.genruntimeconfig.cache
+C:\Users\sunul\source\repos\Bimbem App\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem_App.formLogin.resources
+C:\Users\sunul\source\repos\Bimbem App\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem_App.ParentForm.resources
+C:\Users\sunul\source\repos\Bimbem App\Bimbem App\bin\Debug\netcoreapp3.1\Npgsql.dll
+C:\Users\sunul\source\repos\Bimbem App\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem App.csproj.CopyComplete
