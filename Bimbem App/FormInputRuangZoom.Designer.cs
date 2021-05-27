@@ -101,11 +101,11 @@ namespace Bimbem_App
             // 
             this.inputRuangZoom.AutoSize = true;
             this.inputRuangZoom.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.inputRuangZoom.Location = new System.Drawing.Point(279, 55);
+            this.inputRuangZoom.Location = new System.Drawing.Point(263, 55);
             this.inputRuangZoom.Name = "inputRuangZoom";
-            this.inputRuangZoom.Size = new System.Drawing.Size(206, 30);
+            this.inputRuangZoom.Size = new System.Drawing.Size(239, 30);
             this.inputRuangZoom.TabIndex = 0;
-            this.inputRuangZoom.Text = "Input Ruang Zoom";
+            this.inputRuangZoom.Text = "INPUR RUANG ZOOM";
             // 
             // txtLinkRuangZoom
             // 
