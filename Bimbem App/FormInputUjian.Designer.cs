@@ -262,8 +262,13 @@ namespace Bimbem_App
             // 
             this.lblInputJadwalUjian.AutoSize = true;
             this.lblInputJadwalUjian.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+<<<<<<< Updated upstream
             this.lblInputJadwalUjian.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lblInputJadwalUjian.Location = new System.Drawing.Point(117, 30);
+=======
+            this.lblInputJadwalUjian.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.lblInputJadwalUjian.Location = new System.Drawing.Point(119, 30);
+>>>>>>> Stashed changes
             this.lblInputJadwalUjian.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblInputJadwalUjian.Name = "lblInputJadwalUjian";
             this.lblInputJadwalUjian.Size = new System.Drawing.Size(227, 32);

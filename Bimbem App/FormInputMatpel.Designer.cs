@@ -29,6 +29,7 @@ namespace Bimbem_App
         /// </summary>
         private void InitializeComponent()
         {
+<<<<<<< Updated upstream
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -60,5 +61,14 @@ namespace Bimbem_App
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
+=======
+            this.components = new System.ComponentModel.Container();
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "FormInputMatpel";
+        }
+
+        #endregion
+>>>>>>> Stashed changes
     }
 }
