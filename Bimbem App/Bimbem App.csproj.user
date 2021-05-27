@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="FormInputKelas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormInputNilai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormInputPegawai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="formInputPengajar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormInputPresensi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormInputRuangZoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="formInputSiswa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormInputUjian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="formPengajar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="formSiswa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ParentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
