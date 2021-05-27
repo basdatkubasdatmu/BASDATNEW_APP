@@ -57,7 +57,7 @@ namespace Bimbem_App
             this.pctrInputNilai.Location = new System.Drawing.Point(-2, -1);
             this.pctrInputNilai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pctrInputNilai.Name = "pctrInputNilai";
-            this.pctrInputNilai.Size = new System.Drawing.Size(389, 464);
+            this.pctrInputNilai.Size = new System.Drawing.Size(774, 464);
             this.pctrInputNilai.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctrInputNilai.TabIndex = 0;
             this.pctrInputNilai.TabStop = false;

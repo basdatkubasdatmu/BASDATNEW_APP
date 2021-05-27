@@ -49,10 +49,10 @@ namespace Bimbem_App
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Bimbem_App.Properties.Resources.bimbel_ayy;
-            this.pictureBox1.Location = new System.Drawing.Point(-280, -12);
+            this.pictureBox1.Location = new System.Drawing.Point(-158, -26);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(867, 498);
+            this.pictureBox1.Size = new System.Drawing.Size(636, 451);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -71,34 +71,34 @@ namespace Bimbem_App
             this.pnlRuangZoom.Controls.Add(this.txtKodeZoom);
             this.pnlRuangZoom.Controls.Add(this.label2);
             this.pnlRuangZoom.Controls.Add(this.inputRuangZoom);
-            this.pnlRuangZoom.Location = new System.Drawing.Point(45, 28);
+            this.pnlRuangZoom.Location = new System.Drawing.Point(48, 27);
             this.pnlRuangZoom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlRuangZoom.Name = "pnlRuangZoom";
-            this.pnlRuangZoom.Size = new System.Drawing.Size(386, 364);
+            this.pnlRuangZoom.Size = new System.Drawing.Size(300, 364);
             this.pnlRuangZoom.TabIndex = 2;
             // 
             // btnBatal
             // 
-            this.btnBatal.Location = new System.Drawing.Point(266, 292);
+            this.btnBatal.Location = new System.Drawing.Point(192, 300);
             this.btnBatal.Name = "btnBatal";
-            this.btnBatal.Size = new System.Drawing.Size(75, 30);
+            this.btnBatal.Size = new System.Drawing.Size(65, 33);
             this.btnBatal.TabIndex = 8;
-            this.btnBatal.Text = "BATAL";
+            this.btnBatal.Text = "Batal";
             this.btnBatal.UseVisualStyleBackColor = true;
             // 
             // btnSimpan
             // 
-            this.btnSimpan.Location = new System.Drawing.Point(185, 292);
+            this.btnSimpan.Location = new System.Drawing.Point(119, 300);
             this.btnSimpan.Name = "btnSimpan";
-            this.btnSimpan.Size = new System.Drawing.Size(75, 30);
+            this.btnSimpan.Size = new System.Drawing.Size(67, 33);
             this.btnSimpan.TabIndex = 7;
-            this.btnSimpan.Text = "SIMPAN";
+            this.btnSimpan.Text = "Simpan";
             this.btnSimpan.UseVisualStyleBackColor = true;
             // 
             // txtPasscodeRuangZoom
             // 
             this.txtPasscodeRuangZoom.BackColor = System.Drawing.Color.Salmon;
-            this.txtPasscodeRuangZoom.Location = new System.Drawing.Point(129, 246);
+            this.txtPasscodeRuangZoom.Location = new System.Drawing.Point(45, 260);
             this.txtPasscodeRuangZoom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPasscodeRuangZoom.Name = "txtPasscodeRuangZoom";
             this.txtPasscodeRuangZoom.Size = new System.Drawing.Size(212, 23);
@@ -107,7 +107,7 @@ namespace Bimbem_App
             // txtIdMeetingRuangZoom
             // 
             this.txtIdMeetingRuangZoom.BackColor = System.Drawing.Color.Salmon;
-            this.txtIdMeetingRuangZoom.Location = new System.Drawing.Point(129, 199);
+            this.txtIdMeetingRuangZoom.Location = new System.Drawing.Point(45, 207);
             this.txtIdMeetingRuangZoom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtIdMeetingRuangZoom.Name = "txtIdMeetingRuangZoom";
             this.txtIdMeetingRuangZoom.Size = new System.Drawing.Size(212, 23);
@@ -117,7 +117,7 @@ namespace Bimbem_App
             // 
             this.passcodeRuangZoom.AutoSize = true;
             this.passcodeRuangZoom.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.passcodeRuangZoom.Location = new System.Drawing.Point(45, 247);
+            this.passcodeRuangZoom.Location = new System.Drawing.Point(43, 243);
             this.passcodeRuangZoom.Name = "passcodeRuangZoom";
             this.passcodeRuangZoom.Size = new System.Drawing.Size(56, 15);
             this.passcodeRuangZoom.TabIndex = 3;
@@ -127,7 +127,7 @@ namespace Bimbem_App
             // 
             this.idMeetingRuangZoom.AutoSize = true;
             this.idMeetingRuangZoom.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.idMeetingRuangZoom.Location = new System.Drawing.Point(45, 202);
+            this.idMeetingRuangZoom.Location = new System.Drawing.Point(43, 190);
             this.idMeetingRuangZoom.Name = "idMeetingRuangZoom";
             this.idMeetingRuangZoom.Size = new System.Drawing.Size(67, 15);
             this.idMeetingRuangZoom.TabIndex = 5;
@@ -136,7 +136,7 @@ namespace Bimbem_App
             // txtLinkRuangZoom
             // 
             this.txtLinkRuangZoom.BackColor = System.Drawing.Color.Salmon;
-            this.txtLinkRuangZoom.Location = new System.Drawing.Point(129, 151);
+            this.txtLinkRuangZoom.Location = new System.Drawing.Point(43, 159);
             this.txtLinkRuangZoom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtLinkRuangZoom.Name = "txtLinkRuangZoom";
             this.txtLinkRuangZoom.Size = new System.Drawing.Size(212, 23);
@@ -146,7 +146,7 @@ namespace Bimbem_App
             // 
             this.linkRuangZoom.AutoSize = true;
             this.linkRuangZoom.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.linkRuangZoom.Location = new System.Drawing.Point(45, 154);
+            this.linkRuangZoom.Location = new System.Drawing.Point(43, 142);
             this.linkRuangZoom.Name = "linkRuangZoom";
             this.linkRuangZoom.Size = new System.Drawing.Size(29, 15);
             this.linkRuangZoom.TabIndex = 3;
@@ -155,7 +155,7 @@ namespace Bimbem_App
             // txtKodeZoom
             // 
             this.txtKodeZoom.BackColor = System.Drawing.Color.Salmon;
-            this.txtKodeZoom.Location = new System.Drawing.Point(129, 103);
+            this.txtKodeZoom.Location = new System.Drawing.Point(43, 111);
             this.txtKodeZoom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtKodeZoom.Name = "txtKodeZoom";
             this.txtKodeZoom.Size = new System.Drawing.Size(212, 23);
@@ -165,7 +165,7 @@ namespace Bimbem_App
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(45, 106);
+            this.label2.Location = new System.Drawing.Point(43, 94);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 15);
             this.label2.TabIndex = 1;
@@ -175,7 +175,7 @@ namespace Bimbem_App
             // 
             this.inputRuangZoom.AutoSize = true;
             this.inputRuangZoom.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.inputRuangZoom.Location = new System.Drawing.Point(77, 42);
+            this.inputRuangZoom.Location = new System.Drawing.Point(43, 31);
             this.inputRuangZoom.Name = "inputRuangZoom";
             this.inputRuangZoom.Size = new System.Drawing.Size(206, 30);
             this.inputRuangZoom.TabIndex = 0;
@@ -185,7 +185,7 @@ namespace Bimbem_App
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(477, 418);
+            this.ClientSize = new System.Drawing.Size(397, 418);
             this.Controls.Add(this.pnlRuangZoom);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
