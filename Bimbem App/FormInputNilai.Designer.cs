@@ -64,6 +64,7 @@ namespace Bimbem_App
             // 
             // pnlRuangZoom
             // 
+            this.pnlRuangZoom.BackColor = System.Drawing.Color.FloralWhite;
             this.pnlRuangZoom.Controls.Add(this.btnBatal);
             this.pnlRuangZoom.Controls.Add(this.btnSimpan);
             this.pnlRuangZoom.Controls.Add(this.txtNilai);
