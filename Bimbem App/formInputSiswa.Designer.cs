@@ -59,7 +59,7 @@ namespace Bimbem_App
             this.pictureBox1.Location = new System.Drawing.Point(3, -6);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(505, 491);
+            this.pictureBox1.Size = new System.Drawing.Size(779, 489);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -84,16 +84,16 @@ namespace Bimbem_App
             this.panelInputSiswa.Controls.Add(this.lblNamaSiswa);
             this.panelInputSiswa.Controls.Add(this.lblNoSiswa);
             this.panelInputSiswa.Controls.Add(this.lblInputSiswa);
-            this.panelInputSiswa.Location = new System.Drawing.Point(25, 22);
+            this.panelInputSiswa.Location = new System.Drawing.Point(24, 23);
             this.panelInputSiswa.Name = "panelInputSiswa";
-            this.panelInputSiswa.Size = new System.Drawing.Size(450, 434);
+            this.panelInputSiswa.Size = new System.Drawing.Size(416, 434);
             this.panelInputSiswa.TabIndex = 2;
             // 
             // btnBatal
             // 
             this.btnBatal.BackColor = System.Drawing.Color.Wheat;
             this.btnBatal.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnBatal.Location = new System.Drawing.Point(335, 371);
+            this.btnBatal.Location = new System.Drawing.Point(322, 371);
             this.btnBatal.Name = "btnBatal";
             this.btnBatal.Size = new System.Drawing.Size(75, 35);
             this.btnBatal.TabIndex = 18;
@@ -257,7 +257,7 @@ namespace Bimbem_App
             // 
             this.lblInputSiswa.AutoSize = true;
             this.lblInputSiswa.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblInputSiswa.Location = new System.Drawing.Point(152, 18);
+            this.lblInputSiswa.Location = new System.Drawing.Point(130, 23);
             this.lblInputSiswa.Name = "lblInputSiswa";
             this.lblInputSiswa.Size = new System.Drawing.Size(133, 30);
             this.lblInputSiswa.TabIndex = 1;
@@ -267,7 +267,7 @@ namespace Bimbem_App
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(509, 512);
+            this.ClientSize = new System.Drawing.Size(465, 566);
             this.Controls.Add(this.panelInputSiswa);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
