@@ -32,8 +32,24 @@ namespace Bimbem_App
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ParentForm));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.btnBiomu = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.btnPengajar = new System.Windows.Forms.Button();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.btnAkademik = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.btnJadwalSiswa = new System.Windows.Forms.Button();
             this.btnLogOut = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lblGreetings = new System.Windows.Forms.Label();
@@ -59,15 +75,46 @@ namespace Bimbem_App
             this.Pelajaran = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.jamMulai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Durasi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pnlAkademikSiswa = new System.Windows.Forms.Panel();
+            this.dgvMataPelajaran = new System.Windows.Forms.DataGridView();
+            this.kodePelajaranSiswa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label4 = new System.Windows.Forms.Label();
+            this.dgvNilaiSiswa = new System.Windows.Forms.DataGridView();
+            this.nama = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kodeKelas = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nilai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pnlPengajar = new System.Windows.Forms.Panel();
+            this.dgvPegawaiSiswa = new System.Windows.Forms.DataGridView();
+            this.noPengajar = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nohp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.panel11.SuspendLayout();
+            this.panel13.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.jadwalSiswa.SuspendLayout();
             this.jadwalKelasSiswa.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvJadwalKelasSiswa)).BeginInit();
             this.jadwalUjianSiswa.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvJadwalUjian)).BeginInit();
+            this.pnlAkademikSiswa.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMataPelajaran)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNilaiSiswa)).BeginInit();
+            this.pnlPengajar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPegawaiSiswa)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -83,14 +130,206 @@ namespace Bimbem_App
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.btnLogOut);
-            this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Location = new System.Drawing.Point(24, 25);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(234, 616);
             this.panel1.TabIndex = 3;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.panel11);
+            this.panel2.Controls.Add(this.panel7);
+            this.panel2.Controls.Add(this.panel9);
+            this.panel2.Controls.Add(this.panel6);
+            this.panel2.Controls.Add(this.panel5);
+            this.panel2.Controls.Add(this.panel4);
+            this.panel2.Controls.Add(this.panel3);
+            this.panel2.Location = new System.Drawing.Point(26, 119);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(180, 393);
+            this.panel2.TabIndex = 3;
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.Tomato;
+            this.panel11.Controls.Add(this.panel13);
+            this.panel11.Controls.Add(this.label6);
+            this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel11.ForeColor = System.Drawing.Color.White;
+            this.panel11.Location = new System.Drawing.Point(0, 206);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(180, 50);
+            this.panel11.TabIndex = 7;
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.Tomato;
+            this.panel13.Controls.Add(this.btnBiomu);
+            this.panel13.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel13.ForeColor = System.Drawing.Color.White;
+            this.panel13.Location = new System.Drawing.Point(0, 0);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(180, 50);
+            this.panel13.TabIndex = 8;
+            // 
+            // btnBiomu
+            // 
+            this.btnBiomu.BackColor = System.Drawing.Color.Tomato;
+            this.btnBiomu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBiomu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnBiomu.ForeColor = System.Drawing.Color.White;
+            this.btnBiomu.Location = new System.Drawing.Point(0, 0);
+            this.btnBiomu.Name = "btnBiomu";
+            this.btnBiomu.Size = new System.Drawing.Size(180, 50);
+            this.btnBiomu.TabIndex = 2;
+            this.btnBiomu.Text = "Biomu!";
+            this.btnBiomu.UseVisualStyleBackColor = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(40, 9);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(103, 28);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Akademik";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel7
+            // 
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel7.Location = new System.Drawing.Point(0, 188);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(180, 18);
+            this.panel7.TabIndex = 6;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.SandyBrown;
+            this.panel9.Controls.Add(this.btnPengajar);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel9.ForeColor = System.Drawing.Color.White;
+            this.panel9.Location = new System.Drawing.Point(0, 138);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(180, 50);
+            this.panel9.TabIndex = 5;
+            // 
+            // btnPengajar
+            // 
+            this.btnPengajar.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnPengajar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPengajar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnPengajar.ForeColor = System.Drawing.Color.White;
+            this.btnPengajar.Location = new System.Drawing.Point(0, 0);
+            this.btnPengajar.Name = "btnPengajar";
+            this.btnPengajar.Size = new System.Drawing.Size(180, 50);
+            this.btnPengajar.TabIndex = 2;
+            this.btnPengajar.Text = "Pengajar";
+            this.btnPengajar.UseVisualStyleBackColor = false;
+            this.btnPengajar.Click += new System.EventHandler(this.btnPengajar_Click);
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.panel10);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel6.Location = new System.Drawing.Point(0, 120);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(180, 18);
+            this.panel6.TabIndex = 3;
+            // 
+            // panel10
+            // 
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel10.Location = new System.Drawing.Point(0, 0);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(180, 18);
+            this.panel10.TabIndex = 4;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.Tomato;
+            this.panel5.Controls.Add(this.panel8);
+            this.panel5.Controls.Add(this.label3);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.ForeColor = System.Drawing.Color.White;
+            this.panel5.Location = new System.Drawing.Point(0, 70);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(180, 50);
+            this.panel5.TabIndex = 2;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.PaleGreen;
+            this.panel8.Controls.Add(this.btnAkademik);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel8.ForeColor = System.Drawing.Color.White;
+            this.panel8.Location = new System.Drawing.Point(0, 0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(180, 50);
+            this.panel8.TabIndex = 3;
+            // 
+            // btnAkademik
+            // 
+            this.btnAkademik.BackColor = System.Drawing.Color.Khaki;
+            this.btnAkademik.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAkademik.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAkademik.ForeColor = System.Drawing.Color.White;
+            this.btnAkademik.Location = new System.Drawing.Point(0, 0);
+            this.btnAkademik.Name = "btnAkademik";
+            this.btnAkademik.Size = new System.Drawing.Size(180, 50);
+            this.btnAkademik.TabIndex = 1;
+            this.btnAkademik.Text = "Akademik";
+            this.btnAkademik.UseVisualStyleBackColor = false;
+            this.btnAkademik.Click += new System.EventHandler(this.btnAkademik_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(40, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(103, 28);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Akademik";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel4
+            // 
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 50);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(180, 20);
+            this.panel4.TabIndex = 1;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.panel3.Controls.Add(this.btnJadwalSiswa);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(180, 50);
+            this.panel3.TabIndex = 0;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
+            // btnJadwalSiswa
+            // 
+            this.btnJadwalSiswa.BackColor = System.Drawing.Color.Turquoise;
+            this.btnJadwalSiswa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnJadwalSiswa.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnJadwalSiswa.ForeColor = System.Drawing.Color.White;
+            this.btnJadwalSiswa.Location = new System.Drawing.Point(0, 0);
+            this.btnJadwalSiswa.Name = "btnJadwalSiswa";
+            this.btnJadwalSiswa.Size = new System.Drawing.Size(180, 50);
+            this.btnJadwalSiswa.TabIndex = 0;
+            this.btnJadwalSiswa.Text = "Jadwalmu!";
+            this.btnJadwalSiswa.UseVisualStyleBackColor = false;
+            this.btnJadwalSiswa.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnLogOut
             // 
@@ -106,25 +345,16 @@ namespace Bimbem_App
             this.btnLogOut.UseVisualStyleBackColor = false;
             this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Bimbem_App.Properties.Resources.schedule;
-            this.pictureBox3.Location = new System.Drawing.Point(34, 138);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(46, 48);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 1;
-            this.pictureBox3.TabStop = false;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(34, 21);
+            this.pictureBox2.Location = new System.Drawing.Point(34, 31);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(164, 55);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // label1
             // 
@@ -136,6 +366,7 @@ namespace Bimbem_App
             this.label1.Size = new System.Drawing.Size(182, 31);
             this.label1.TabIndex = 4;
             this.label1.Text = "Selamat datang,";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // lblGreetings
             // 
@@ -158,6 +389,7 @@ namespace Bimbem_App
             this.jadwalSiswa.SelectedIndex = 0;
             this.jadwalSiswa.Size = new System.Drawing.Size(656, 555);
             this.jadwalSiswa.TabIndex = 8;
+            this.jadwalSiswa.Visible = false;
             this.jadwalSiswa.SelectedIndexChanged += new System.EventHandler(this.jadwalSiswa_SelectedIndexChanged);
             // 
             // jadwalKelasSiswa
@@ -174,6 +406,9 @@ namespace Bimbem_App
             // 
             // dgvJadwalKelasSiswa
             // 
+            this.dgvJadwalKelasSiswa.AllowUserToAddRows = false;
+            this.dgvJadwalKelasSiswa.AllowUserToDeleteRows = false;
+            this.dgvJadwalKelasSiswa.AllowUserToOrderColumns = true;
             this.dgvJadwalKelasSiswa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvJadwalKelasSiswa.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.tanggalJadwalKelasSiswa,
@@ -184,6 +419,7 @@ namespace Bimbem_App
             this.zoomKelasSiswa});
             this.dgvJadwalKelasSiswa.Location = new System.Drawing.Point(3, 3);
             this.dgvJadwalKelasSiswa.Name = "dgvJadwalKelasSiswa";
+            this.dgvJadwalKelasSiswa.ReadOnly = true;
             this.dgvJadwalKelasSiswa.RowHeadersWidth = 51;
             this.dgvJadwalKelasSiswa.RowTemplate.Height = 29;
             this.dgvJadwalKelasSiswa.Size = new System.Drawing.Size(642, 516);
@@ -196,6 +432,7 @@ namespace Bimbem_App
             this.tanggalJadwalKelasSiswa.HeaderText = "Tanggal";
             this.tanggalJadwalKelasSiswa.MinimumWidth = 6;
             this.tanggalJadwalKelasSiswa.Name = "tanggalJadwalKelasSiswa";
+            this.tanggalJadwalKelasSiswa.ReadOnly = true;
             this.tanggalJadwalKelasSiswa.Width = 125;
             // 
             // pengajarKelasSiswa
@@ -204,6 +441,7 @@ namespace Bimbem_App
             this.pengajarKelasSiswa.HeaderText = "Pengajar";
             this.pengajarKelasSiswa.MinimumWidth = 6;
             this.pengajarKelasSiswa.Name = "pengajarKelasSiswa";
+            this.pengajarKelasSiswa.ReadOnly = true;
             this.pengajarKelasSiswa.Width = 125;
             // 
             // pelajaranKelasSiswa
@@ -212,6 +450,7 @@ namespace Bimbem_App
             this.pelajaranKelasSiswa.HeaderText = "Pelajaran";
             this.pelajaranKelasSiswa.MinimumWidth = 6;
             this.pelajaranKelasSiswa.Name = "pelajaranKelasSiswa";
+            this.pelajaranKelasSiswa.ReadOnly = true;
             this.pelajaranKelasSiswa.Width = 125;
             // 
             // jamMulaiKelasSiswa
@@ -220,6 +459,7 @@ namespace Bimbem_App
             this.jamMulaiKelasSiswa.HeaderText = "Jam Mulai";
             this.jamMulaiKelasSiswa.MinimumWidth = 6;
             this.jamMulaiKelasSiswa.Name = "jamMulaiKelasSiswa";
+            this.jamMulaiKelasSiswa.ReadOnly = true;
             this.jamMulaiKelasSiswa.Width = 125;
             // 
             // DurasiKelasSiswa
@@ -228,6 +468,7 @@ namespace Bimbem_App
             this.DurasiKelasSiswa.HeaderText = "Durasi";
             this.DurasiKelasSiswa.MinimumWidth = 6;
             this.DurasiKelasSiswa.Name = "DurasiKelasSiswa";
+            this.DurasiKelasSiswa.ReadOnly = true;
             this.DurasiKelasSiswa.Width = 125;
             // 
             // zoomKelasSiswa
@@ -236,6 +477,7 @@ namespace Bimbem_App
             this.zoomKelasSiswa.HeaderText = "Link Zoom";
             this.zoomKelasSiswa.MinimumWidth = 6;
             this.zoomKelasSiswa.Name = "zoomKelasSiswa";
+            this.zoomKelasSiswa.ReadOnly = true;
             this.zoomKelasSiswa.Width = 125;
             // 
             // jadwalUjianSiswa
@@ -251,6 +493,9 @@ namespace Bimbem_App
             // 
             // dgvJadwalUjian
             // 
+            this.dgvJadwalUjian.AllowUserToAddRows = false;
+            this.dgvJadwalUjian.AllowUserToDeleteRows = false;
+            this.dgvJadwalUjian.AllowUserToOrderColumns = true;
             this.dgvJadwalUjian.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvJadwalUjian.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.kodeUjian,
@@ -261,6 +506,7 @@ namespace Bimbem_App
             this.durasiUjianSiswa});
             this.dgvJadwalUjian.Location = new System.Drawing.Point(3, 3);
             this.dgvJadwalUjian.Name = "dgvJadwalUjian";
+            this.dgvJadwalUjian.ReadOnly = true;
             this.dgvJadwalUjian.RowHeadersWidth = 51;
             this.dgvJadwalUjian.RowTemplate.Height = 29;
             this.dgvJadwalUjian.Size = new System.Drawing.Size(642, 516);
@@ -272,6 +518,7 @@ namespace Bimbem_App
             this.kodeUjian.HeaderText = "Kode Ujian";
             this.kodeUjian.MinimumWidth = 6;
             this.kodeUjian.Name = "kodeUjian";
+            this.kodeUjian.ReadOnly = true;
             this.kodeUjian.Width = 125;
             // 
             // namaUjian
@@ -280,6 +527,7 @@ namespace Bimbem_App
             this.namaUjian.HeaderText = "Nama Ujian";
             this.namaUjian.MinimumWidth = 6;
             this.namaUjian.Name = "namaUjian";
+            this.namaUjian.ReadOnly = true;
             this.namaUjian.Width = 125;
             // 
             // kodePelajaran
@@ -288,6 +536,7 @@ namespace Bimbem_App
             this.kodePelajaran.HeaderText = "Kode Pelajaran";
             this.kodePelajaran.MinimumWidth = 6;
             this.kodePelajaran.Name = "kodePelajaran";
+            this.kodePelajaran.ReadOnly = true;
             this.kodePelajaran.Width = 125;
             // 
             // tanggalUjianSiswa
@@ -296,6 +545,7 @@ namespace Bimbem_App
             this.tanggalUjianSiswa.HeaderText = "Tanggal";
             this.tanggalUjianSiswa.MinimumWidth = 6;
             this.tanggalUjianSiswa.Name = "tanggalUjianSiswa";
+            this.tanggalUjianSiswa.ReadOnly = true;
             this.tanggalUjianSiswa.Width = 125;
             // 
             // jamMulaiUjianSiswa
@@ -304,6 +554,7 @@ namespace Bimbem_App
             this.jamMulaiUjianSiswa.HeaderText = "Jam Mulai";
             this.jamMulaiUjianSiswa.MinimumWidth = 6;
             this.jamMulaiUjianSiswa.Name = "jamMulaiUjianSiswa";
+            this.jamMulaiUjianSiswa.ReadOnly = true;
             this.jamMulaiUjianSiswa.Width = 125;
             // 
             // durasiUjianSiswa
@@ -312,6 +563,7 @@ namespace Bimbem_App
             this.durasiUjianSiswa.HeaderText = "Durasi";
             this.durasiUjianSiswa.MinimumWidth = 6;
             this.durasiUjianSiswa.Name = "durasiUjianSiswa";
+            this.durasiUjianSiswa.ReadOnly = true;
             this.durasiUjianSiswa.Width = 125;
             // 
             // Tanggal
@@ -349,11 +601,234 @@ namespace Bimbem_App
             this.Durasi.Name = "Durasi";
             this.Durasi.Width = 125;
             // 
+            // pnlAkademikSiswa
+            // 
+            this.pnlAkademikSiswa.Controls.Add(this.dgvMataPelajaran);
+            this.pnlAkademikSiswa.Controls.Add(this.label4);
+            this.pnlAkademikSiswa.Controls.Add(this.dgvNilaiSiswa);
+            this.pnlAkademikSiswa.Controls.Add(this.label2);
+            this.pnlAkademikSiswa.Location = new System.Drawing.Point(285, 86);
+            this.pnlAkademikSiswa.Name = "pnlAkademikSiswa";
+            this.pnlAkademikSiswa.Size = new System.Drawing.Size(656, 555);
+            this.pnlAkademikSiswa.TabIndex = 1;
+            this.pnlAkademikSiswa.Visible = false;
+            this.pnlAkademikSiswa.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlAkademikSiswa_Paint);
+            // 
+            // dgvMataPelajaran
+            // 
+            this.dgvMataPelajaran.AllowUserToAddRows = false;
+            this.dgvMataPelajaran.AllowUserToDeleteRows = false;
+            this.dgvMataPelajaran.AllowUserToOrderColumns = true;
+            this.dgvMataPelajaran.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvMataPelajaran.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
+            this.dgvMataPelajaran.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMataPelajaran.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.kodePelajaranSiswa,
+            this.dataGridViewTextBoxColumn3});
+            this.dgvMataPelajaran.GridColor = System.Drawing.Color.MistyRose;
+            this.dgvMataPelajaran.Location = new System.Drawing.Point(16, 315);
+            this.dgvMataPelajaran.Name = "dgvMataPelajaran";
+            this.dgvMataPelajaran.ReadOnly = true;
+            this.dgvMataPelajaran.RowHeadersWidth = 51;
+            this.dgvMataPelajaran.RowTemplate.Height = 29;
+            this.dgvMataPelajaran.Size = new System.Drawing.Size(304, 188);
+            this.dgvMataPelajaran.TabIndex = 3;
+            // 
+            // kodePelajaranSiswa
+            // 
+            this.kodePelajaranSiswa.DataPropertyName = "kodepelajaran";
+            this.kodePelajaranSiswa.HeaderText = "Kode Pelajaran";
+            this.kodePelajaranSiswa.MinimumWidth = 6;
+            this.kodePelajaranSiswa.Name = "kodePelajaranSiswa";
+            this.kodePelajaranSiswa.ReadOnly = true;
+            this.kodePelajaranSiswa.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "pelajaran";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Pelajaran";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.Width = 125;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Tomato;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(16, 273);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(154, 28);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Mata Pelajaran";
+            // 
+            // dgvNilaiSiswa
+            // 
+            this.dgvNilaiSiswa.AllowUserToAddRows = false;
+            this.dgvNilaiSiswa.AllowUserToDeleteRows = false;
+            this.dgvNilaiSiswa.AllowUserToOrderColumns = true;
+            this.dgvNilaiSiswa.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvNilaiSiswa.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
+            this.dgvNilaiSiswa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvNilaiSiswa.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.nama,
+            this.kodeKelas,
+            this.dataGridViewTextBoxColumn1,
+            this.nilai,
+            this.dataGridViewTextBoxColumn2});
+            this.dgvNilaiSiswa.GridColor = System.Drawing.Color.MistyRose;
+            this.dgvNilaiSiswa.Location = new System.Drawing.Point(16, 58);
+            this.dgvNilaiSiswa.Name = "dgvNilaiSiswa";
+            this.dgvNilaiSiswa.ReadOnly = true;
+            this.dgvNilaiSiswa.RowHeadersWidth = 51;
+            this.dgvNilaiSiswa.RowTemplate.Height = 29;
+            this.dgvNilaiSiswa.Size = new System.Drawing.Size(619, 188);
+            this.dgvNilaiSiswa.TabIndex = 1;
+            this.dgvNilaiSiswa.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNilaiSiswa_CellContentClick);
+            // 
+            // nama
+            // 
+            this.nama.DataPropertyName = "nama";
+            this.nama.HeaderText = "Nama";
+            this.nama.MinimumWidth = 6;
+            this.nama.Name = "nama";
+            this.nama.ReadOnly = true;
+            this.nama.Width = 125;
+            // 
+            // kodeKelas
+            // 
+            this.kodeKelas.DataPropertyName = "kodekelas";
+            this.kodeKelas.HeaderText = "Kode Kelas";
+            this.kodeKelas.MinimumWidth = 6;
+            this.kodeKelas.Name = "kodeKelas";
+            this.kodeKelas.ReadOnly = true;
+            this.kodeKelas.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "namaujian";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Nama Ujian";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // nilai
+            // 
+            this.nilai.DataPropertyName = "nilai";
+            this.nilai.HeaderText = "nilai";
+            this.nilai.MinimumWidth = 6;
+            this.nilai.Name = "nilai";
+            this.nilai.ReadOnly = true;
+            this.nilai.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "tanggal";
+            this.dataGridViewTextBoxColumn2.HeaderText = "tanggal";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 125;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Tomato;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(16, 16);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(57, 28);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Nilai";
+            // 
+            // pnlPengajar
+            // 
+            this.pnlPengajar.Controls.Add(this.dgvPegawaiSiswa);
+            this.pnlPengajar.Controls.Add(this.label5);
+            this.pnlPengajar.Location = new System.Drawing.Point(285, 86);
+            this.pnlPengajar.Name = "pnlPengajar";
+            this.pnlPengajar.Size = new System.Drawing.Size(656, 555);
+            this.pnlPengajar.TabIndex = 4;
+            this.pnlPengajar.Visible = false;
+            this.pnlPengajar.Paint += new System.Windows.Forms.PaintEventHandler(this.panel12_Paint);
+            // 
+            // dgvPegawaiSiswa
+            // 
+            this.dgvPegawaiSiswa.AllowUserToAddRows = false;
+            this.dgvPegawaiSiswa.AllowUserToDeleteRows = false;
+            this.dgvPegawaiSiswa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPegawaiSiswa.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.noPengajar,
+            this.dataGridViewTextBoxColumn4,
+            this.nohp,
+            this.email});
+            this.dgvPegawaiSiswa.Location = new System.Drawing.Point(16, 58);
+            this.dgvPegawaiSiswa.Name = "dgvPegawaiSiswa";
+            this.dgvPegawaiSiswa.ReadOnly = true;
+            this.dgvPegawaiSiswa.RowHeadersWidth = 51;
+            this.dgvPegawaiSiswa.RowTemplate.Height = 29;
+            this.dgvPegawaiSiswa.Size = new System.Drawing.Size(619, 477);
+            this.dgvPegawaiSiswa.TabIndex = 1;
+            // 
+            // noPengajar
+            // 
+            this.noPengajar.DataPropertyName = "nopengajar";
+            this.noPengajar.HeaderText = "Nomor Pengajar";
+            this.noPengajar.MinimumWidth = 6;
+            this.noPengajar.Name = "noPengajar";
+            this.noPengajar.ReadOnly = true;
+            this.noPengajar.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "nama";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Nama Pengajar";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            this.dataGridViewTextBoxColumn4.Width = 125;
+            // 
+            // nohp
+            // 
+            this.nohp.DataPropertyName = "nohp";
+            this.nohp.HeaderText = "No HP";
+            this.nohp.MinimumWidth = 6;
+            this.nohp.Name = "nohp";
+            this.nohp.ReadOnly = true;
+            this.nohp.Width = 125;
+            // 
+            // email
+            // 
+            this.email.DataPropertyName = "email";
+            this.email.HeaderText = "email";
+            this.email.MinimumWidth = 6;
+            this.email.Name = "email";
+            this.email.ReadOnly = true;
+            this.email.Width = 125;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.LightCoral;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(16, 16);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(94, 28);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Pengajar";
+            // 
             // ParentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1108, 666);
+            this.Controls.Add(this.pnlPengajar);
+            this.Controls.Add(this.pnlAkademikSiswa);
             this.Controls.Add(this.jadwalSiswa);
             this.Controls.Add(this.lblGreetings);
             this.Controls.Add(this.label1);
@@ -367,13 +842,29 @@ namespace Bimbem_App
             this.Load += new System.EventHandler(this.ParentForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
+            this.panel13.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.jadwalSiswa.ResumeLayout(false);
             this.jadwalKelasSiswa.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvJadwalKelasSiswa)).EndInit();
             this.jadwalUjianSiswa.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvJadwalUjian)).EndInit();
+            this.pnlAkademikSiswa.ResumeLayout(false);
+            this.pnlAkademikSiswa.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMataPelajaran)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNilaiSiswa)).EndInit();
+            this.pnlPengajar.ResumeLayout(false);
+            this.pnlPengajar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPegawaiSiswa)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -385,7 +876,6 @@ namespace Bimbem_App
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblGreetings;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.TabControl jadwalSiswa;
         private System.Windows.Forms.TabPage jadwalKelasSiswa;
@@ -410,5 +900,41 @@ namespace Bimbem_App
         private System.Windows.Forms.DataGridViewTextBoxColumn jamMulaiUjianSiswa;
         private System.Windows.Forms.DataGridViewTextBoxColumn durasiUjianSiswa;
         private System.Windows.Forms.Button btnLogOut;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button btnBiomu;
+        private System.Windows.Forms.Button btnPengajar;
+        private System.Windows.Forms.Button btnAkademik;
+        private System.Windows.Forms.Button btnJadwalSiswa;
+        private System.Windows.Forms.Panel pnlAkademikSiswa;
+        private System.Windows.Forms.DataGridView dgvMataPelajaran;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DataGridView dgvNilaiSiswa;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nama;
+        private System.Windows.Forms.DataGridViewTextBoxColumn kodeKelas;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nilai;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn kodePelajaranSiswa;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.Panel pnlPengajar;
+        private System.Windows.Forms.DataGridView dgvPegawaiSiswa;
+        private System.Windows.Forms.DataGridViewTextBoxColumn noPengajar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nohp;
+        private System.Windows.Forms.DataGridViewTextBoxColumn email;
+        private System.Windows.Forms.Label label5;
     }
 }

@@ -13,7 +13,7 @@ namespace Bimbem_App
         public ParentForm()
         {
             InitializeComponent();
-            this.lblGreetings.Text = "Admin!";
+            this.lblGreetings.Text = "Kamu!";
         }
 
         private void ParentForm_Load(object sender, EventArgs e)
@@ -58,6 +58,8 @@ namespace Bimbem_App
 
         public string noSiswaLogin;
 
+        public Boolean isSiswa;
+
         private void jadwalKelasSiswa_Click(object sender, EventArgs e)
         {
             
@@ -66,6 +68,66 @@ namespace Bimbem_App
         private void btnLogOut_Click(object sender, EventArgs e)
         {
             this.LoginAplikasi();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.jadwalSiswa.Visible = true;
+            this.pnlAkademikSiswa.Visible = false;
+            this.pnlPengajar.Visible = false;
+        }
+
+        private void dgvNilaiSiswa_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void pnlAkademikSiswa_Paint(object sender, PaintEventArgs e)
+        {
+            DataAccess da = new DataAccess();
+            dgvNilaiSiswa.AutoGenerateColumns = false;
+            FormLogin frmLogin = new FormLogin();
+            dgvNilaiSiswa.DataSource = da.getNilaiByID(frmLogin.noSiswaLogin);
+            dgvMataPelajaran.AutoGenerateColumns = false;
+            dgvMataPelajaran.DataSource = da.getAllMatpel();
+        }
+
+        private void btnAkademik_Click(object sender, EventArgs e)
+        {
+            this.pnlAkademikSiswa.Visible = true;
+            this.jadwalSiswa.Visible = false;
+            this.pnlPengajar.Visible = false;
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.pnlAkademikSiswa.Visible = false;
+            this.jadwalSiswa.Visible = false;
+            this.pnlPengajar.Visible = false;
+        }
+
+        private void panel12_Paint(object sender, PaintEventArgs e)
+        {
+            DataAccess da = new DataAccess();
+            dgvPegawaiSiswa.AutoGenerateColumns = false;
+            dgvPegawaiSiswa.DataSource = da.getPegawaiSiswa();
+        }
+
+        private void btnPengajar_Click(object sender, EventArgs e)
+        {
+            this.pnlAkademikSiswa.Visible = false;
+            this.jadwalSiswa.Visible = false;
+            this.pnlPengajar.Visible = true;
         }
     }
 }
