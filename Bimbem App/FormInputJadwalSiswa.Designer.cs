@@ -56,15 +56,15 @@ namespace Bimbem_App
             this.pnlRuangZoom.Controls.Add(this.txtKodeJadwalSiswa);
             this.pnlRuangZoom.Controls.Add(this.label2);
             this.pnlRuangZoom.Controls.Add(this.inputRuangZoom);
-            this.pnlRuangZoom.Location = new System.Drawing.Point(216, 36);
+            this.pnlRuangZoom.Location = new System.Drawing.Point(242, 48);
             this.pnlRuangZoom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlRuangZoom.Name = "pnlRuangZoom";
-            this.pnlRuangZoom.Size = new System.Drawing.Size(367, 364);
+            this.pnlRuangZoom.Size = new System.Drawing.Size(341, 352);
             this.pnlRuangZoom.TabIndex = 4;
             // 
             // btnBatal
             // 
-            this.btnBatal.Location = new System.Drawing.Point(188, 296);
+            this.btnBatal.Location = new System.Drawing.Point(171, 283);
             this.btnBatal.Name = "btnBatal";
             this.btnBatal.Size = new System.Drawing.Size(75, 30);
             this.btnBatal.TabIndex = 8;
@@ -73,7 +73,7 @@ namespace Bimbem_App
             // 
             // btnSimpan
             // 
-            this.btnSimpan.Location = new System.Drawing.Point(107, 296);
+            this.btnSimpan.Location = new System.Drawing.Point(90, 283);
             this.btnSimpan.Name = "btnSimpan";
             this.btnSimpan.Size = new System.Drawing.Size(75, 30);
             this.btnSimpan.TabIndex = 7;
@@ -83,7 +83,7 @@ namespace Bimbem_App
             // txtKodeJadwalPengajar
             // 
             this.txtKodeJadwalPengajar.BackColor = System.Drawing.Color.Salmon;
-            this.txtKodeJadwalPengajar.Location = new System.Drawing.Point(82, 254);
+            this.txtKodeJadwalPengajar.Location = new System.Drawing.Point(65, 241);
             this.txtKodeJadwalPengajar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtKodeJadwalPengajar.Name = "txtKodeJadwalPengajar";
             this.txtKodeJadwalPengajar.Size = new System.Drawing.Size(212, 23);
@@ -93,7 +93,7 @@ namespace Bimbem_App
             // 
             this.lblJadwalPengajar.AutoSize = true;
             this.lblJadwalPengajar.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblJadwalPengajar.Location = new System.Drawing.Point(82, 237);
+            this.lblJadwalPengajar.Location = new System.Drawing.Point(65, 224);
             this.lblJadwalPengajar.Name = "lblJadwalPengajar";
             this.lblJadwalPengajar.Size = new System.Drawing.Size(122, 15);
             this.lblJadwalPengajar.TabIndex = 5;
@@ -102,7 +102,7 @@ namespace Bimbem_App
             // txtNoSiswa
             // 
             this.txtNoSiswa.BackColor = System.Drawing.Color.Salmon;
-            this.txtNoSiswa.Location = new System.Drawing.Point(82, 191);
+            this.txtNoSiswa.Location = new System.Drawing.Point(65, 178);
             this.txtNoSiswa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNoSiswa.Name = "txtNoSiswa";
             this.txtNoSiswa.Size = new System.Drawing.Size(212, 23);
@@ -112,7 +112,7 @@ namespace Bimbem_App
             // 
             this.lblNoSiswa.AutoSize = true;
             this.lblNoSiswa.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblNoSiswa.Location = new System.Drawing.Point(82, 174);
+            this.lblNoSiswa.Location = new System.Drawing.Point(65, 161);
             this.lblNoSiswa.Name = "lblNoSiswa";
             this.lblNoSiswa.Size = new System.Drawing.Size(59, 15);
             this.lblNoSiswa.TabIndex = 3;
@@ -121,7 +121,7 @@ namespace Bimbem_App
             // txtKodeJadwalSiswa
             // 
             this.txtKodeJadwalSiswa.BackColor = System.Drawing.Color.Salmon;
-            this.txtKodeJadwalSiswa.Location = new System.Drawing.Point(82, 129);
+            this.txtKodeJadwalSiswa.Location = new System.Drawing.Point(65, 116);
             this.txtKodeJadwalSiswa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtKodeJadwalSiswa.Name = "txtKodeJadwalSiswa";
             this.txtKodeJadwalSiswa.Size = new System.Drawing.Size(212, 23);
@@ -131,7 +131,7 @@ namespace Bimbem_App
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(82, 109);
+            this.label2.Location = new System.Drawing.Point(65, 96);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(106, 15);
             this.label2.TabIndex = 1;
@@ -141,7 +141,7 @@ namespace Bimbem_App
             // 
             this.inputRuangZoom.AutoSize = true;
             this.inputRuangZoom.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.inputRuangZoom.Location = new System.Drawing.Point(70, 46);
+            this.inputRuangZoom.Location = new System.Drawing.Point(47, 42);
             this.inputRuangZoom.Name = "inputRuangZoom";
             this.inputRuangZoom.Size = new System.Drawing.Size(246, 30);
             this.inputRuangZoom.TabIndex = 0;
@@ -150,10 +150,10 @@ namespace Bimbem_App
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Bimbem_App.Properties.Resources.bimbel_ayy;
-            this.pictureBox1.Location = new System.Drawing.Point(21, -8);
+            this.pictureBox1.Location = new System.Drawing.Point(173, -8);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(867, 498);
+            this.pictureBox1.Size = new System.Drawing.Size(468, 498);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;

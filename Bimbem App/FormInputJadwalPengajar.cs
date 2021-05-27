@@ -8,16 +8,11 @@ using System.Windows.Forms;
 
 namespace Bimbem_App
 {
-    public partial class FormInputUjian : Form
+    public partial class FormInputJadwalPengajar : Form
     {
-        public FormInputUjian()
+        public FormInputJadwalPengajar()
         {
             InitializeComponent();
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
