@@ -75,7 +75,7 @@ namespace Bimbem_App
             // 
             this.btnBatal.BackColor = System.Drawing.Color.Wheat;
             this.btnBatal.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnBatal.Location = new System.Drawing.Point(250, 295);
+            this.btnBatal.Location = new System.Drawing.Point(241, 295);
             this.btnBatal.Name = "btnBatal";
             this.btnBatal.Size = new System.Drawing.Size(87, 35);
             this.btnBatal.TabIndex = 19;
