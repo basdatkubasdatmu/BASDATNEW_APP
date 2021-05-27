@@ -31,7 +31,7 @@ namespace Bimbem_App
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblInputPresensiSiswa = new System.Windows.Forms.Label();
             this.txtNoSiswa = new System.Windows.Forms.TextBox();
             this.txtNamaSiswa = new System.Windows.Forms.TextBox();
             this.txtkodeJadwalSiswa = new System.Windows.Forms.TextBox();
@@ -42,7 +42,7 @@ namespace Bimbem_App
             this.label6 = new System.Windows.Forms.Label();
             this.btnBatal = new System.Windows.Forms.Button();
             this.btnSimpan = new System.Windows.Forms.Button();
-            this.lblInputPresensiSiswa = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -50,17 +50,17 @@ namespace Bimbem_App
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Bimbem_App.Properties.Resources.parent_form;
-            this.pictureBox1.Location = new System.Drawing.Point(1, -2);
+            this.pictureBox1.Location = new System.Drawing.Point(1, 4);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(450, 496);
+            this.pictureBox1.Size = new System.Drawing.Size(449, 490);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Linen;
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.lblInputPresensiSiswa);
             this.panel1.Controls.Add(this.txtNoSiswa);
@@ -80,14 +80,16 @@ namespace Bimbem_App
             this.panel1.Size = new System.Drawing.Size(343, 408);
             this.panel1.TabIndex = 2;
             // 
-            // label1
+            // lblInputPresensiSiswa
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(332, 14);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 30);
-            this.label1.TabIndex = 0;
+            this.lblInputPresensiSiswa.AutoSize = true;
+            this.lblInputPresensiSiswa.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblInputPresensiSiswa.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.lblInputPresensiSiswa.Location = new System.Drawing.Point(48, 29);
+            this.lblInputPresensiSiswa.Name = "lblInputPresensiSiswa";
+            this.lblInputPresensiSiswa.Size = new System.Drawing.Size(248, 32);
+            this.lblInputPresensiSiswa.TabIndex = 24;
+            this.lblInputPresensiSiswa.Text = "Input Presensi Siswa";
             // 
             // txtNoSiswa
             // 
@@ -181,7 +183,7 @@ namespace Bimbem_App
             // 
             this.btnBatal.BackColor = System.Drawing.Color.SandyBrown;
             this.btnBatal.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnBatal.Location = new System.Drawing.Point(137, 340);
+            this.btnBatal.Location = new System.Drawing.Point(226, 345);
             this.btnBatal.Name = "btnBatal";
             this.btnBatal.Size = new System.Drawing.Size(74, 39);
             this.btnBatal.TabIndex = 15;
@@ -192,32 +194,32 @@ namespace Bimbem_App
             // 
             this.btnSimpan.BackColor = System.Drawing.Color.SandyBrown;
             this.btnSimpan.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnSimpan.Location = new System.Drawing.Point(217, 341);
+            this.btnSimpan.Location = new System.Drawing.Point(137, 345);
             this.btnSimpan.Name = "btnSimpan";
             this.btnSimpan.Size = new System.Drawing.Size(83, 39);
             this.btnSimpan.TabIndex = 14;
             this.btnSimpan.Text = "SIMPAN";
             this.btnSimpan.UseVisualStyleBackColor = false;
             // 
-            // lblInputPresensiSiswa
+            // label1
             // 
-            this.lblInputPresensiSiswa.AutoSize = true;
-            this.lblInputPresensiSiswa.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblInputPresensiSiswa.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.lblInputPresensiSiswa.Location = new System.Drawing.Point(48, 29);
-            this.lblInputPresensiSiswa.Name = "lblInputPresensiSiswa";
-            this.lblInputPresensiSiswa.Size = new System.Drawing.Size(248, 32);
-            this.lblInputPresensiSiswa.TabIndex = 24;
-            this.lblInputPresensiSiswa.Text = "Input Presensi Siswa";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(332, 14);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 30);
+            this.label1.TabIndex = 0;
             // 
             // FormInputPresensi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(507, 494);
+            this.ClientSize = new System.Drawing.Size(453, 494);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormInputPresensi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormInputPresensi";
