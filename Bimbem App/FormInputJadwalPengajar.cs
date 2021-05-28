@@ -33,5 +33,15 @@ namespace Bimbem_App
             dgvJadwalPengajar.AutoGenerateColumns = false;
             dgvJadwalPengajar.DataSource = da.getAllJadwalPengajar();
         }
+
+        private void btnHapus_Click(object sender, EventArgs e)
+        {
+            if (dgvJadwalPengajar.SelectedRows.Count > 0)
+            {
+                DataAccess da = new DataAccess();
+                string SelectedKodeJadwalPengajar = dgvJadwalPengajar.SelectedRows[0].Cells[0].Value.ToString();
+                da.hapusDataJadwalPengajar(SelectedKodeJadwalPengajar);
+            }
+        }
     }
 }

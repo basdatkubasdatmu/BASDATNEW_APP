@@ -26,5 +26,15 @@ namespace Bimbem_App
             dgvTransaksi.AutoGenerateColumns = false;
             dgvTransaksi.DataSource = da.getAllPembayaran();
         }
+
+        private void btnHapus_Click(object sender, EventArgs e)
+        {
+            if (dgvTransaksi.SelectedRows.Count > 0)
+            {
+                DataAccess da = new DataAccess();
+                string SelectedKodePembayaran = dgvTransaksi.SelectedRows[0].Cells[0].Value.ToString();
+                da.hapusDataPembayaran(SelectedKodePembayaran);
+            }
+        }
     }
 }

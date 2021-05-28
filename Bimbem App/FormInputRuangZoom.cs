@@ -21,5 +21,15 @@ namespace Bimbem_App
             dgvRuangZoom.AutoGenerateColumns = false;
             dgvRuangZoom.DataSource = da.getAllZoom();
         }
+
+        private void btnHapus_Click(object sender, EventArgs e)
+        {
+            if (dgvRuangZoom.SelectedRows.Count > 0)
+            {
+                DataAccess da = new DataAccess();
+                string SelectedKodeZoom = dgvRuangZoom.SelectedRows[0].Cells[0].Value.ToString();
+                da.hapusDataRuangZoom(SelectedKodeZoom);
+            }
+        }
     }
 }

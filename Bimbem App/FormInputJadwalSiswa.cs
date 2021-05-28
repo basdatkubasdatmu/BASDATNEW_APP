@@ -21,5 +21,15 @@ namespace Bimbem_App
             dgvJadwalSiswa.AutoGenerateColumns = false;
             dgvJadwalSiswa.DataSource = da.getAllJadwalSiswa();
         }
+
+        private void btnHapus_Click(object sender, EventArgs e)
+        {
+            if(dgvJadwalSiswa.SelectedRows.Count>0)
+            {
+                DataAccess da = new DataAccess();
+                string SelectedKodeJadwalSiswa = dgvJadwalSiswa.SelectedRows[0].Cells[0].Value.ToString();
+                da.hapusDataJadwalSiswa(SelectedKodeJadwalSiswa);
+            }
+        }
     }
 }
