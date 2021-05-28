@@ -50,11 +50,8 @@ namespace Bimbem_App
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Bimbem_App.Properties.Resources.parent_form;
-            this.pictureBox1.Location = new System.Drawing.Point(-62, -47);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(478, 511);
             this.pictureBox1.Location = new System.Drawing.Point(-37, -8);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(974, 685);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -77,11 +74,8 @@ namespace Bimbem_App
             this.panel1.Controls.Add(this.btnBatal);
             this.panel1.Controls.Add(this.btnSimpan);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(32, 26);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(343, 403);
             this.panel1.Location = new System.Drawing.Point(58, 56);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(391, 543);
             this.panel1.TabIndex = 2;
@@ -90,8 +84,6 @@ namespace Bimbem_App
             // 
             this.lblInputPresensiSiswa.AutoSize = true;
             this.lblInputPresensiSiswa.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblInputPresensiSiswa.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblInputPresensiSiswa.Location = new System.Drawing.Point(48, 29);
             this.lblInputPresensiSiswa.ForeColor = System.Drawing.Color.Black;
             this.lblInputPresensiSiswa.Location = new System.Drawing.Point(55, 39);
             this.lblInputPresensiSiswa.Name = "lblInputPresensiSiswa";
@@ -154,8 +146,6 @@ namespace Bimbem_App
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label5.Location = new System.Drawing.Point(38, 270);
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(43, 360);
             this.label5.Name = "label5";
@@ -167,8 +157,6 @@ namespace Bimbem_App
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label4.Location = new System.Drawing.Point(38, 209);
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(43, 279);
             this.label4.Name = "label4";
@@ -180,8 +168,6 @@ namespace Bimbem_App
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label3.Location = new System.Drawing.Point(38, 148);
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(43, 197);
             this.label3.Name = "label3";
@@ -193,8 +179,6 @@ namespace Bimbem_App
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label6.Location = new System.Drawing.Point(38, 87);
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(43, 116);
             this.label6.Name = "label6";
@@ -206,9 +190,6 @@ namespace Bimbem_App
             // 
             this.btnBatal.BackColor = System.Drawing.Color.SandyBrown;
             this.btnBatal.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnBatal.Location = new System.Drawing.Point(137, 344);
-            this.btnBatal.Name = "btnBatal";
-            this.btnBatal.Size = new System.Drawing.Size(74, 36);
             this.btnBatal.Location = new System.Drawing.Point(258, 460);
             this.btnBatal.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnBatal.Name = "btnBatal";
@@ -221,9 +202,6 @@ namespace Bimbem_App
             // 
             this.btnSimpan.BackColor = System.Drawing.Color.SandyBrown;
             this.btnSimpan.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnSimpan.Location = new System.Drawing.Point(217, 344);
-            this.btnSimpan.Name = "btnSimpan";
-            this.btnSimpan.Size = new System.Drawing.Size(83, 36);
             this.btnSimpan.Location = new System.Drawing.Point(157, 460);
             this.btnSimpan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSimpan.Name = "btnSimpan";
@@ -245,8 +223,7 @@ namespace Bimbem_App
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(418, 465);
-            this.ClientSize = new System.Drawing.Size(518, 659);
+            this.ClientSize = new System.Drawing.Size(1026, 659);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
