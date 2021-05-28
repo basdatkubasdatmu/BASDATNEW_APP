@@ -14,5 +14,10 @@ namespace Bimbem_App
         {
             InitializeComponent();
         }
+
+        private void txtKeteranganBayar_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
