@@ -29,10 +29,13 @@ namespace Bimbem_App
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelInputPengajar = new System.Windows.Forms.Panel();
             this.dgvPengajar = new System.Windows.Forms.DataGridView();
+            this.nopengajar = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nopegawai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kodepelajaran = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnBatal = new System.Windows.Forms.Button();
             this.btnSimpan = new System.Windows.Forms.Button();
             this.txtKodePelajaran = new System.Windows.Forms.TextBox();
@@ -47,9 +50,6 @@ namespace Bimbem_App
             this.btnTambah = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnHapus = new System.Windows.Forms.Button();
-            this.nopengajar = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nopegawai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kodepelajaran = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelInputPengajar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPengajar)).BeginInit();
@@ -81,14 +81,14 @@ namespace Bimbem_App
             this.dgvPengajar.AllowUserToAddRows = false;
             this.dgvPengajar.AllowUserToDeleteRows = false;
             this.dgvPengajar.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPengajar.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPengajar.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvPengajar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPengajar.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.nopengajar,
@@ -99,6 +99,27 @@ namespace Bimbem_App
             this.dgvPengajar.RowTemplate.Height = 25;
             this.dgvPengajar.Size = new System.Drawing.Size(789, 251);
             this.dgvPengajar.TabIndex = 0;
+            // 
+            // nopengajar
+            // 
+            this.nopengajar.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.nopengajar.HeaderText = "No Pengajar";
+            this.nopengajar.Name = "nopengajar";
+            this.nopengajar.Width = 120;
+            // 
+            // nopegawai
+            // 
+            this.nopegawai.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.nopegawai.HeaderText = "No Pegawai";
+            this.nopegawai.Name = "nopegawai";
+            this.nopegawai.Width = 117;
+            // 
+            // kodepelajaran
+            // 
+            this.kodepelajaran.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.kodepelajaran.HeaderText = "Kode Pelajaran";
+            this.kodepelajaran.Name = "kodepelajaran";
+            this.kodepelajaran.Width = 137;
             // 
             // btnBatal
             // 
@@ -210,6 +231,7 @@ namespace Bimbem_App
             this.btnRefresh.TabIndex = 23;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = false;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // btnTambah
             // 
@@ -243,27 +265,6 @@ namespace Bimbem_App
             this.btnHapus.TabIndex = 20;
             this.btnHapus.Text = "Hapus";
             this.btnHapus.UseVisualStyleBackColor = false;
-            // 
-            // nopengajar
-            // 
-            this.nopengajar.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.nopengajar.HeaderText = "No Pengajar";
-            this.nopengajar.Name = "nopengajar";
-            this.nopengajar.Width = 120;
-            // 
-            // nopegawai
-            // 
-            this.nopegawai.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.nopegawai.HeaderText = "No Pegawai";
-            this.nopegawai.Name = "nopegawai";
-            this.nopegawai.Width = 117;
-            // 
-            // kodepelajaran
-            // 
-            this.kodepelajaran.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.kodepelajaran.HeaderText = "Kode Pelajaran";
-            this.kodepelajaran.Name = "kodepelajaran";
-            this.kodepelajaran.Width = 137;
             // 
             // formInputPengajar
             // 

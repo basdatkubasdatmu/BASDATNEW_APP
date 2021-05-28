@@ -33,6 +33,10 @@ namespace Bimbem_App
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlRuangZoom = new System.Windows.Forms.Panel();
             this.dgvRuangZoom = new System.Windows.Forms.DataGridView();
+            this.kodezoom = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.link = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.meetingid = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.passcode = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnBatal = new System.Windows.Forms.Button();
             this.btnSimpan = new System.Windows.Forms.Button();
             this.txtPasscodeRuangZoom = new System.Windows.Forms.TextBox();
@@ -49,10 +53,6 @@ namespace Bimbem_App
             this.btnTambah = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
-            this.kodezoom = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.link = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.meetingid = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.passcode = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlRuangZoom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRuangZoom)).BeginInit();
@@ -103,6 +103,30 @@ namespace Bimbem_App
             this.dgvRuangZoom.RowTemplate.Height = 25;
             this.dgvRuangZoom.Size = new System.Drawing.Size(784, 308);
             this.dgvRuangZoom.TabIndex = 0;
+            // 
+            // kodezoom
+            // 
+            this.kodezoom.DataPropertyName = "kodezoom";
+            this.kodezoom.HeaderText = "Kode Zoom";
+            this.kodezoom.Name = "kodezoom";
+            // 
+            // link
+            // 
+            this.link.DataPropertyName = "link";
+            this.link.HeaderText = "Link Zoom";
+            this.link.Name = "link";
+            // 
+            // meetingid
+            // 
+            this.meetingid.DataPropertyName = "meetingid";
+            this.meetingid.HeaderText = "Meeting ID";
+            this.meetingid.Name = "meetingid";
+            // 
+            // passcode
+            // 
+            this.passcode.DataPropertyName = "passcode";
+            this.passcode.HeaderText = "Passcode";
+            this.passcode.Name = "passcode";
             // 
             // btnBatal
             // 
@@ -259,6 +283,7 @@ namespace Bimbem_App
             this.btnRefresh.TabIndex = 12;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = false;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // btnHome
             // 
@@ -270,30 +295,6 @@ namespace Bimbem_App
             this.btnHome.TabIndex = 13;
             this.btnHome.Text = "Home";
             this.btnHome.UseVisualStyleBackColor = false;
-            // 
-            // kodezoom
-            // 
-            this.kodezoom.DataPropertyName = "kodezoom";
-            this.kodezoom.HeaderText = "Kode Zoom";
-            this.kodezoom.Name = "kodezoom";
-            // 
-            // link
-            // 
-            this.link.DataPropertyName = "link";
-            this.link.HeaderText = "Link Zoom";
-            this.link.Name = "link";
-            // 
-            // meetingid
-            // 
-            this.meetingid.DataPropertyName = "meetingid";
-            this.meetingid.HeaderText = "Meeting ID";
-            this.meetingid.Name = "meetingid";
-            // 
-            // passcode
-            // 
-            this.passcode.DataPropertyName = "passcode";
-            this.passcode.HeaderText = "Passcode";
-            this.passcode.Name = "passcode";
             // 
             // FormInputRuangZoom
             // 

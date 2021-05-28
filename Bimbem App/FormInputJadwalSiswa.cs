@@ -14,5 +14,12 @@ namespace Bimbem_App
         {
             InitializeComponent();
         }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            DataAccess da = new DataAccess();
+            dgvJadwalSiswa.AutoGenerateColumns = false;
+            dgvJadwalSiswa.DataSource = da.getAllJadwalSiswa();
+        }
     }
 }

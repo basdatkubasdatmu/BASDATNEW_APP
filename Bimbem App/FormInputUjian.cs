@@ -19,5 +19,12 @@ namespace Bimbem_App
         {
 
         }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            DataAccess da = new DataAccess();
+            dgvUjian.AutoGenerateColumns = false;
+            dgvUjian.DataSource = da.getAllUjian();
+        }
     }
 }

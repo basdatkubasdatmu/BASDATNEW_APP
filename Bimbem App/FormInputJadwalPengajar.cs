@@ -26,5 +26,12 @@ namespace Bimbem_App
             dgvJadwalPengajar.AutoGenerateColumns = false;
             dgvJadwalPengajar.DataSource = da.getAllJadwalPengajar();
         }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            DataAccess da = new DataAccess();
+            dgvJadwalPengajar.AutoGenerateColumns = false;
+            dgvJadwalPengajar.DataSource = da.getAllJadwalPengajar();
+        }
     }
 }

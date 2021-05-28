@@ -31,6 +31,13 @@ namespace Bimbem_App
         {
             this.pctrInputNilai = new System.Windows.Forms.PictureBox();
             this.pnlRuangZoom = new System.Windows.Forms.Panel();
+            this.dgvNilai = new System.Windows.Forms.DataGridView();
+            this.kodeujian = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nosiswa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nama = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nopengajar = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kodepelajaran = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nilai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnBatal = new System.Windows.Forms.Button();
             this.btnSimpan = new System.Windows.Forms.Button();
             this.txtNilai = new System.Windows.Forms.TextBox();
@@ -51,13 +58,6 @@ namespace Bimbem_App
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnHapus = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
-            this.dgvNilai = new System.Windows.Forms.DataGridView();
-            this.kodeujian = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nosiswa = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nama = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nopengajar = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kodepelajaran = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nilai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pctrInputNilai)).BeginInit();
             this.pnlRuangZoom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNilai)).BeginInit();
@@ -86,9 +86,58 @@ namespace Bimbem_App
             this.pnlRuangZoom.Size = new System.Drawing.Size(832, 336);
             this.pnlRuangZoom.TabIndex = 3;
             // 
+            // dgvNilai
+            // 
+            this.dgvNilai.AllowUserToAddRows = false;
+            this.dgvNilai.AllowUserToDeleteRows = false;
+            this.dgvNilai.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvNilai.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvNilai.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.kodeujian,
+            this.nosiswa,
+            this.nama,
+            this.nopengajar,
+            this.kodepelajaran,
+            this.nilai});
+            this.dgvNilai.Location = new System.Drawing.Point(19, 21);
+            this.dgvNilai.Name = "dgvNilai";
+            this.dgvNilai.RowTemplate.Height = 25;
+            this.dgvNilai.Size = new System.Drawing.Size(792, 294);
+            this.dgvNilai.TabIndex = 0;
+            // 
+            // kodeujian
+            // 
+            this.kodeujian.HeaderText = "Kode Ujian";
+            this.kodeujian.Name = "kodeujian";
+            // 
+            // nosiswa
+            // 
+            this.nosiswa.HeaderText = "Nomer Siswa";
+            this.nosiswa.Name = "nosiswa";
+            // 
+            // nama
+            // 
+            this.nama.HeaderText = "Nama Siswa";
+            this.nama.Name = "nama";
+            // 
+            // nopengajar
+            // 
+            this.nopengajar.HeaderText = "Nomer Pengajar";
+            this.nopengajar.Name = "nopengajar";
+            // 
+            // kodepelajaran
+            // 
+            this.kodepelajaran.HeaderText = "Kode Pelajaran";
+            this.kodepelajaran.Name = "kodepelajaran";
+            // 
+            // nilai
+            // 
+            this.nilai.HeaderText = "Nilai";
+            this.nilai.Name = "nilai";
+            // 
             // btnBatal
             // 
-            this.btnBatal.BackColor = System.Drawing.Color.Salmon;
+            this.btnBatal.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnBatal.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnBatal.ForeColor = System.Drawing.SystemColors.MenuText;
             this.btnBatal.Location = new System.Drawing.Point(669, 263);
@@ -100,7 +149,7 @@ namespace Bimbem_App
             // 
             // btnSimpan
             // 
-            this.btnSimpan.BackColor = System.Drawing.Color.Salmon;
+            this.btnSimpan.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnSimpan.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnSimpan.ForeColor = System.Drawing.SystemColors.MenuText;
             this.btnSimpan.Location = new System.Drawing.Point(583, 263);
@@ -259,7 +308,7 @@ namespace Bimbem_App
             // 
             // btnRefresh
             // 
-            this.btnRefresh.BackColor = System.Drawing.Color.Salmon;
+            this.btnRefresh.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnRefresh.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnRefresh.Location = new System.Drawing.Point(862, 452);
             this.btnRefresh.Name = "btnRefresh";
@@ -267,10 +316,11 @@ namespace Bimbem_App
             this.btnRefresh.TabIndex = 27;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = false;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // btnTambah
             // 
-            this.btnTambah.BackColor = System.Drawing.Color.Salmon;
+            this.btnTambah.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnTambah.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnTambah.Location = new System.Drawing.Point(862, 404);
             this.btnTambah.Name = "btnTambah";
@@ -281,7 +331,7 @@ namespace Bimbem_App
             // 
             // btnEdit
             // 
-            this.btnEdit.BackColor = System.Drawing.Color.Salmon;
+            this.btnEdit.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnEdit.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnEdit.Location = new System.Drawing.Point(862, 356);
             this.btnEdit.Name = "btnEdit";
@@ -292,7 +342,7 @@ namespace Bimbem_App
             // 
             // btnHapus
             // 
-            this.btnHapus.BackColor = System.Drawing.Color.Salmon;
+            this.btnHapus.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnHapus.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnHapus.Location = new System.Drawing.Point(862, 308);
             this.btnHapus.Name = "btnHapus";
@@ -303,7 +353,7 @@ namespace Bimbem_App
             // 
             // btnHome
             // 
-            this.btnHome.BackColor = System.Drawing.Color.Salmon;
+            this.btnHome.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnHome.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnHome.Location = new System.Drawing.Point(879, 12);
             this.btnHome.Name = "btnHome";
@@ -311,55 +361,6 @@ namespace Bimbem_App
             this.btnHome.TabIndex = 28;
             this.btnHome.Text = "Home";
             this.btnHome.UseVisualStyleBackColor = false;
-            // 
-            // dgvNilai
-            // 
-            this.dgvNilai.AllowUserToAddRows = false;
-            this.dgvNilai.AllowUserToDeleteRows = false;
-            this.dgvNilai.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvNilai.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvNilai.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.kodeujian,
-            this.nosiswa,
-            this.nama,
-            this.nopengajar,
-            this.kodepelajaran,
-            this.nilai});
-            this.dgvNilai.Location = new System.Drawing.Point(19, 21);
-            this.dgvNilai.Name = "dgvNilai";
-            this.dgvNilai.RowTemplate.Height = 25;
-            this.dgvNilai.Size = new System.Drawing.Size(792, 294);
-            this.dgvNilai.TabIndex = 0;
-            // 
-            // kodeujian
-            // 
-            this.kodeujian.HeaderText = "Kode Ujian";
-            this.kodeujian.Name = "kodeujian";
-            // 
-            // nosiswa
-            // 
-            this.nosiswa.HeaderText = "Nomer Siswa";
-            this.nosiswa.Name = "nosiswa";
-            // 
-            // nama
-            // 
-            this.nama.HeaderText = "Nama Siswa";
-            this.nama.Name = "nama";
-            // 
-            // nopengajar
-            // 
-            this.nopengajar.HeaderText = "Nomer Pengajar";
-            this.nopengajar.Name = "nopengajar";
-            // 
-            // kodepelajaran
-            // 
-            this.kodepelajaran.HeaderText = "Kode Pelajaran";
-            this.kodepelajaran.Name = "kodepelajaran";
-            // 
-            // nilai
-            // 
-            this.nilai.HeaderText = "Nilai";
-            this.nilai.Name = "nilai";
             // 
             // FormInputNilai
             // 

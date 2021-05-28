@@ -19,5 +19,12 @@ namespace Bimbem_App
         {
 
         }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            DataAccess da = new DataAccess();
+            dgvNilai.AutoGenerateColumns = false;
+            dgvNilai.DataSource = da.getAllNilai();
+        }
     }
 }

@@ -33,6 +33,10 @@ namespace Bimbem_App
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dgvPresensi = new System.Windows.Forms.DataGridView();
+            this.kodejadwalsiswa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nosiswa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nama = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.waktupresensi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.lblInputPresensiSiswa = new System.Windows.Forms.Label();
             this.txtNoSiswa = new System.Windows.Forms.TextBox();
@@ -50,10 +54,6 @@ namespace Bimbem_App
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnHapus = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
-            this.kodejadwalsiswa = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nosiswa = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nama = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.waktupresensi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPresensi)).BeginInit();
@@ -106,6 +106,36 @@ namespace Bimbem_App
             this.dgvPresensi.RowTemplate.Height = 25;
             this.dgvPresensi.Size = new System.Drawing.Size(782, 318);
             this.dgvPresensi.TabIndex = 1;
+            // 
+            // kodejadwalsiswa
+            // 
+            this.kodejadwalsiswa.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.kodejadwalsiswa.DataPropertyName = "kodejadwalsiswa";
+            this.kodejadwalsiswa.HeaderText = "Kode Jadwal Siswa";
+            this.kodejadwalsiswa.Name = "kodejadwalsiswa";
+            this.kodejadwalsiswa.Width = 151;
+            // 
+            // nosiswa
+            // 
+            this.nosiswa.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.nosiswa.DataPropertyName = "nosiswa";
+            this.nosiswa.HeaderText = "No Siswa";
+            this.nosiswa.Name = "nosiswa";
+            this.nosiswa.Width = 92;
+            // 
+            // nama
+            // 
+            this.nama.DataPropertyName = "nama";
+            this.nama.HeaderText = "Nama Siswa";
+            this.nama.Name = "nama";
+            // 
+            // waktupresensi
+            // 
+            this.waktupresensi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.waktupresensi.DataPropertyName = "waktupresensi";
+            this.waktupresensi.HeaderText = "Waktu Kehadiran";
+            this.waktupresensi.Name = "waktupresensi";
+            this.waktupresensi.Width = 140;
             // 
             // label1
             // 
@@ -247,6 +277,7 @@ namespace Bimbem_App
             this.btnRefresh.TabIndex = 28;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = false;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // btnTambah
             // 
@@ -291,36 +322,6 @@ namespace Bimbem_App
             this.btnHome.TabIndex = 29;
             this.btnHome.Text = "Home";
             this.btnHome.UseVisualStyleBackColor = false;
-            // 
-            // kodejadwalsiswa
-            // 
-            this.kodejadwalsiswa.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.kodejadwalsiswa.DataPropertyName = "kodejadwalsiswa";
-            this.kodejadwalsiswa.HeaderText = "Kode Jadwal Siswa";
-            this.kodejadwalsiswa.Name = "kodejadwalsiswa";
-            this.kodejadwalsiswa.Width = 151;
-            // 
-            // nosiswa
-            // 
-            this.nosiswa.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.nosiswa.DataPropertyName = "nosiswa";
-            this.nosiswa.HeaderText = "No Siswa";
-            this.nosiswa.Name = "nosiswa";
-            this.nosiswa.Width = 92;
-            // 
-            // nama
-            // 
-            this.nama.DataPropertyName = "nama";
-            this.nama.HeaderText = "Nama Siswa";
-            this.nama.Name = "nama";
-            // 
-            // waktupresensi
-            // 
-            this.waktupresensi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.waktupresensi.DataPropertyName = "waktupresensi";
-            this.waktupresensi.HeaderText = "Waktu Kehadiran";
-            this.waktupresensi.Name = "waktupresensi";
-            this.waktupresensi.Width = 140;
             // 
             // FormInputPresensi
             // 

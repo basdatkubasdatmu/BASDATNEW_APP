@@ -29,10 +29,16 @@ namespace Bimbem_App
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvUjian = new System.Windows.Forms.DataGridView();
+            this.kodeUjian = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.namaUjian = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kodePelajaran = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tanggalUjian = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.jamMulai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.durasi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label2 = new System.Windows.Forms.Label();
             this.btnBatal = new System.Windows.Forms.Button();
             this.txtJam = new System.Windows.Forms.MaskedTextBox();
@@ -55,15 +61,9 @@ namespace Bimbem_App
             this.btnHapus = new System.Windows.Forms.Button();
             this.btnMenuUtama = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
-            this.kodeUjian = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.namaUjian = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kodePelajaran = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tanggalUjian = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.jamMulai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.durasi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUjian)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox2
@@ -82,7 +82,7 @@ namespace Bimbem_App
             // 
             this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Controls.Add(this.dgvUjian);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(30, 336);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -90,32 +90,78 @@ namespace Bimbem_App
             this.panel1.Size = new System.Drawing.Size(850, 299);
             this.panel1.TabIndex = 54;
             // 
-            // dataGridView1
+            // dgvUjian
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvUjian.AllowUserToAddRows = false;
+            this.dgvUjian.AllowUserToDeleteRows = false;
+            this.dgvUjian.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvUjian.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvUjian.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvUjian.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.kodeUjian,
             this.namaUjian,
             this.kodePelajaran,
             this.tanggalUjian,
             this.jamMulai,
             this.durasi});
-            this.dataGridView1.Location = new System.Drawing.Point(20, 23);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(807, 253);
-            this.dataGridView1.TabIndex = 1;
+            this.dgvUjian.Location = new System.Drawing.Point(20, 23);
+            this.dgvUjian.Name = "dgvUjian";
+            this.dgvUjian.RowTemplate.Height = 25;
+            this.dgvUjian.Size = new System.Drawing.Size(807, 253);
+            this.dgvUjian.TabIndex = 1;
+            // 
+            // kodeUjian
+            // 
+            this.kodeUjian.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.kodeUjian.DataPropertyName = "kodeUjian";
+            this.kodeUjian.HeaderText = "Kode Ujian";
+            this.kodeUjian.Name = "kodeUjian";
+            this.kodeUjian.ReadOnly = true;
+            this.kodeUjian.Width = 110;
+            // 
+            // namaUjian
+            // 
+            this.namaUjian.DataPropertyName = "namaUjian";
+            this.namaUjian.HeaderText = "Nama Ujian";
+            this.namaUjian.Name = "namaUjian";
+            this.namaUjian.ReadOnly = true;
+            // 
+            // kodePelajaran
+            // 
+            this.kodePelajaran.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.kodePelajaran.DataPropertyName = "kodePelajaran";
+            this.kodePelajaran.HeaderText = "Kode Pelajaran";
+            this.kodePelajaran.Name = "kodePelajaran";
+            this.kodePelajaran.ReadOnly = true;
+            this.kodePelajaran.Width = 137;
+            // 
+            // tanggalUjian
+            // 
+            this.tanggalUjian.DataPropertyName = "tanggalUjian";
+            this.tanggalUjian.HeaderText = "Tanggal Ujian";
+            this.tanggalUjian.Name = "tanggalUjian";
+            this.tanggalUjian.ReadOnly = true;
+            // 
+            // jamMulai
+            // 
+            this.jamMulai.DataPropertyName = "jamMulai";
+            this.jamMulai.HeaderText = "Jam Mulai";
+            this.jamMulai.Name = "jamMulai";
+            this.jamMulai.ReadOnly = true;
+            // 
+            // durasi
+            // 
+            this.durasi.DataPropertyName = "durasi";
+            this.durasi.HeaderText = "Durasi";
+            this.durasi.Name = "durasi";
+            this.durasi.ReadOnly = true;
             // 
             // label2
             // 
@@ -354,7 +400,7 @@ namespace Bimbem_App
             // 
             this.btnMenuUtama.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnMenuUtama.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnMenuUtama.Location = new System.Drawing.Point(892, 12);
+            this.btnMenuUtama.Location = new System.Drawing.Point(886, 12);
             this.btnMenuUtama.Name = "btnMenuUtama";
             this.btnMenuUtama.Size = new System.Drawing.Size(74, 33);
             this.btnMenuUtama.TabIndex = 71;
@@ -372,52 +418,7 @@ namespace Bimbem_App
             this.btnRefresh.TabIndex = 74;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = false;
-            // 
-            // kodeUjian
-            // 
-            this.kodeUjian.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.kodeUjian.DataPropertyName = "kodeUjian";
-            this.kodeUjian.HeaderText = "Kode Ujian";
-            this.kodeUjian.Name = "kodeUjian";
-            this.kodeUjian.ReadOnly = true;
-            this.kodeUjian.Width = 110;
-            // 
-            // namaUjian
-            // 
-            this.namaUjian.DataPropertyName = "namaUjian";
-            this.namaUjian.HeaderText = "Nama Ujian";
-            this.namaUjian.Name = "namaUjian";
-            this.namaUjian.ReadOnly = true;
-            // 
-            // kodePelajaran
-            // 
-            this.kodePelajaran.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.kodePelajaran.DataPropertyName = "kodePelajaran";
-            this.kodePelajaran.HeaderText = "Kode Pelajaran";
-            this.kodePelajaran.Name = "kodePelajaran";
-            this.kodePelajaran.ReadOnly = true;
-            this.kodePelajaran.Width = 125;
-            // 
-            // tanggalUjian
-            // 
-            this.tanggalUjian.DataPropertyName = "tanggalUjian";
-            this.tanggalUjian.HeaderText = "Tanggal Ujian";
-            this.tanggalUjian.Name = "tanggalUjian";
-            this.tanggalUjian.ReadOnly = true;
-            // 
-            // jamMulai
-            // 
-            this.jamMulai.DataPropertyName = "jamMulai";
-            this.jamMulai.HeaderText = "Jam Mulai";
-            this.jamMulai.Name = "jamMulai";
-            this.jamMulai.ReadOnly = true;
-            // 
-            // durasi
-            // 
-            this.durasi.DataPropertyName = "durasi";
-            this.durasi.HeaderText = "Durasi";
-            this.durasi.Name = "durasi";
-            this.durasi.ReadOnly = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // FormInputUjian
             // 
@@ -456,7 +457,7 @@ namespace Bimbem_App
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUjian)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -485,7 +486,7 @@ namespace Bimbem_App
         private System.Windows.Forms.Button btnSimpan;
         private System.Windows.Forms.Button btnTambah;
         private System.Windows.Forms.Button btnEdit;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvUjian;
         private System.Windows.Forms.Button btnHapus;
         private System.Windows.Forms.Button btnMenuUtama;
         private System.Windows.Forms.Button btnRefresh;
