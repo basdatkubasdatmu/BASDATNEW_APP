@@ -50,9 +50,6 @@ namespace Bimbem_App
             this.btHapus = new System.Windows.Forms.Button();
             this.btTambah = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btBatal = new System.Windows.Forms.Button();
-            this.btSimpan = new System.Windows.Forms.Button();
             this.nomorSiswa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.namaSiswa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.jenisKelamin = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -60,6 +57,9 @@ namespace Bimbem_App
             this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.kodeKelas = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.asalDaerah = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btBatal = new System.Windows.Forms.Button();
+            this.btSimpan = new System.Windows.Forms.Button();
             this.btnMenuUtama = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -73,7 +73,7 @@ namespace Bimbem_App
             this.pictureBox1.Location = new System.Drawing.Point(-1, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(979, 666);
+            this.pictureBox1.Size = new System.Drawing.Size(980, 666);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -297,38 +297,6 @@ namespace Bimbem_App
             this.dataGridView1.Size = new System.Drawing.Size(805, 247);
             this.dataGridView1.TabIndex = 20;
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.dataGridView1);
-            this.panel1.Location = new System.Drawing.Point(23, 350);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(850, 290);
-            this.panel1.TabIndex = 21;
-            // 
-            // btBatal
-            // 
-            this.btBatal.BackColor = System.Drawing.SystemColors.Control;
-            this.btBatal.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btBatal.Location = new System.Drawing.Point(597, 312);
-            this.btBatal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btBatal.Name = "btBatal";
-            this.btBatal.Size = new System.Drawing.Size(74, 33);
-            this.btBatal.TabIndex = 22;
-            this.btBatal.Text = "Batal";
-            this.btBatal.UseVisualStyleBackColor = false;
-            // 
-            // btSimpan
-            // 
-            this.btSimpan.BackColor = System.Drawing.SystemColors.Control;
-            this.btSimpan.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btSimpan.Location = new System.Drawing.Point(517, 312);
-            this.btSimpan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btSimpan.Name = "btSimpan";
-            this.btSimpan.Size = new System.Drawing.Size(74, 33);
-            this.btSimpan.TabIndex = 23;
-            this.btSimpan.Text = "Simpan";
-            this.btSimpan.UseVisualStyleBackColor = false;
-            // 
             // nomorSiswa
             // 
             this.nomorSiswa.DataPropertyName = "nomorSiswa";
@@ -370,6 +338,38 @@ namespace Bimbem_App
             this.asalDaerah.DataPropertyName = "asalDaerah";
             this.asalDaerah.HeaderText = "Asal Daerah";
             this.asalDaerah.Name = "asalDaerah";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Location = new System.Drawing.Point(23, 350);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(850, 290);
+            this.panel1.TabIndex = 21;
+            // 
+            // btBatal
+            // 
+            this.btBatal.BackColor = System.Drawing.SystemColors.Control;
+            this.btBatal.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btBatal.Location = new System.Drawing.Point(597, 312);
+            this.btBatal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btBatal.Name = "btBatal";
+            this.btBatal.Size = new System.Drawing.Size(74, 33);
+            this.btBatal.TabIndex = 22;
+            this.btBatal.Text = "Batal";
+            this.btBatal.UseVisualStyleBackColor = false;
+            // 
+            // btSimpan
+            // 
+            this.btSimpan.BackColor = System.Drawing.SystemColors.Control;
+            this.btSimpan.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btSimpan.Location = new System.Drawing.Point(517, 312);
+            this.btSimpan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btSimpan.Name = "btSimpan";
+            this.btSimpan.Size = new System.Drawing.Size(74, 33);
+            this.btSimpan.TabIndex = 23;
+            this.btSimpan.Text = "Simpan";
+            this.btSimpan.UseVisualStyleBackColor = false;
             // 
             // btnMenuUtama
             // 
