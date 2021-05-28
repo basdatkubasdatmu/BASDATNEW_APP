@@ -39,15 +39,15 @@ namespace Bimbem_App
             this.inputRuangZoom = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dgvJadwalSiswa = new System.Windows.Forms.DataGridView();
+            this.kodejadwalsiswa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nosiswa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kodejadwalpengajar = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnTambah = new System.Windows.Forms.Button();
             this.btnHapus = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnBatal = new System.Windows.Forms.Button();
             this.btnSimpan = new System.Windows.Forms.Button();
-            this.kodejadwalsiswa = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nosiswa = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kodejadwalpengajar = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvJadwalSiswa)).BeginInit();
             this.panel1.SuspendLayout();
@@ -154,15 +154,39 @@ namespace Bimbem_App
             this.dgvJadwalSiswa.Location = new System.Drawing.Point(23, 21);
             this.dgvJadwalSiswa.Name = "dgvJadwalSiswa";
             this.dgvJadwalSiswa.RowTemplate.Height = 25;
-            this.dgvJadwalSiswa.Size = new System.Drawing.Size(828, 221);
+            this.dgvJadwalSiswa.Size = new System.Drawing.Size(828, 233);
             this.dgvJadwalSiswa.TabIndex = 0;
+            // 
+            // kodejadwalsiswa
+            // 
+            this.kodejadwalsiswa.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.kodejadwalsiswa.DataPropertyName = "kodejadwalsiswa";
+            this.kodejadwalsiswa.HeaderText = "Kode Jadwal Siswa";
+            this.kodejadwalsiswa.Name = "kodejadwalsiswa";
+            this.kodejadwalsiswa.Width = 151;
+            // 
+            // nosiswa
+            // 
+            this.nosiswa.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.nosiswa.DataPropertyName = "nosiswa";
+            this.nosiswa.HeaderText = "No Siswa";
+            this.nosiswa.Name = "nosiswa";
+            this.nosiswa.Width = 92;
+            // 
+            // kodejadwalpengajar
+            // 
+            this.kodejadwalpengajar.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.kodejadwalpengajar.DataPropertyName = "kodejadwalpengajar";
+            this.kodejadwalpengajar.HeaderText = "Kode Jadwal Pengajar";
+            this.kodejadwalpengajar.Name = "kodejadwalpengajar";
+            this.kodejadwalpengajar.Width = 169;
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.dgvJadwalSiswa);
-            this.panel1.Location = new System.Drawing.Point(12, 388);
+            this.panel1.Location = new System.Drawing.Point(12, 377);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(871, 265);
+            this.panel1.Size = new System.Drawing.Size(871, 276);
             this.panel1.TabIndex = 20;
             // 
             // btnTambah
@@ -202,7 +226,7 @@ namespace Bimbem_App
             // 
             this.btnBatal.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnBatal.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnBatal.Location = new System.Drawing.Point(699, 344);
+            this.btnBatal.Location = new System.Drawing.Point(521, 323);
             this.btnBatal.Name = "btnBatal";
             this.btnBatal.Size = new System.Drawing.Size(74, 32);
             this.btnBatal.TabIndex = 25;
@@ -213,36 +237,12 @@ namespace Bimbem_App
             // 
             this.btnSimpan.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnSimpan.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnSimpan.Location = new System.Drawing.Point(619, 344);
+            this.btnSimpan.Location = new System.Drawing.Point(441, 323);
             this.btnSimpan.Name = "btnSimpan";
             this.btnSimpan.Size = new System.Drawing.Size(74, 32);
             this.btnSimpan.TabIndex = 24;
             this.btnSimpan.Text = "Simpan";
             this.btnSimpan.UseVisualStyleBackColor = false;
-            // 
-            // kodejadwalsiswa
-            // 
-            this.kodejadwalsiswa.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.kodejadwalsiswa.DataPropertyName = "kodejadwalsiswa";
-            this.kodejadwalsiswa.HeaderText = "Kode Jadwal Siswa";
-            this.kodejadwalsiswa.Name = "kodejadwalsiswa";
-            this.kodejadwalsiswa.Width = 151;
-            // 
-            // nosiswa
-            // 
-            this.nosiswa.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.nosiswa.DataPropertyName = "nosiswa";
-            this.nosiswa.HeaderText = "No Siswa";
-            this.nosiswa.Name = "nosiswa";
-            this.nosiswa.Width = 92;
-            // 
-            // kodejadwalpengajar
-            // 
-            this.kodejadwalpengajar.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.kodejadwalpengajar.DataPropertyName = "kodejadwalpengajar";
-            this.kodejadwalpengajar.HeaderText = "Kode Jadwal Pengajar";
-            this.kodejadwalpengajar.Name = "kodejadwalpengajar";
-            this.kodejadwalpengajar.Width = 169;
             // 
             // FormInputJadwalSiswa
             // 
