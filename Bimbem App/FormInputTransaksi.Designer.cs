@@ -29,8 +29,10 @@ namespace Bimbem_App
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlRuangZoom = new System.Windows.Forms.Panel();
+            this.dgvTransaksi = new System.Windows.Forms.DataGridView();
             this.txtKeteranganBayar = new System.Windows.Forms.TextBox();
             this.ktrPembayaran = new System.Windows.Forms.Label();
             this.btnBatal = new System.Windows.Forms.Button();
@@ -47,14 +49,13 @@ namespace Bimbem_App
             this.btnTambah = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnHapus = new System.Windows.Forms.Button();
-            this.dgvTransaksi = new System.Windows.Forms.DataGridView();
+            this.btnMenuUtama = new System.Windows.Forms.Button();
+            this.btnRefresh = new System.Windows.Forms.Button();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.keterangan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnMenuUtama = new System.Windows.Forms.Button();
-            this.btnRefresh = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlRuangZoom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTransaksi)).BeginInit();
@@ -81,6 +82,31 @@ namespace Bimbem_App
             this.pnlRuangZoom.Size = new System.Drawing.Size(850, 302);
             this.pnlRuangZoom.TabIndex = 3;
             // 
+            // dgvTransaksi
+            // 
+            this.dgvTransaksi.AllowUserToAddRows = false;
+            this.dgvTransaksi.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvTransaksi.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvTransaksi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTransaksi.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.keterangan});
+            this.dgvTransaksi.Location = new System.Drawing.Point(21, 19);
+            this.dgvTransaksi.Name = "dgvTransaksi";
+            this.dgvTransaksi.RowTemplate.Height = 25;
+            this.dgvTransaksi.Size = new System.Drawing.Size(809, 264);
+            this.dgvTransaksi.TabIndex = 0;
+            // 
             // txtKeteranganBayar
             // 
             this.txtKeteranganBayar.BackColor = System.Drawing.Color.DarkOrange;
@@ -106,7 +132,7 @@ namespace Bimbem_App
             // 
             // btnBatal
             // 
-            this.btnBatal.BackColor = System.Drawing.SystemColors.Control;
+            this.btnBatal.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnBatal.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnBatal.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnBatal.Location = new System.Drawing.Point(661, 290);
@@ -118,7 +144,7 @@ namespace Bimbem_App
             // 
             // btnSimpan
             // 
-            this.btnSimpan.BackColor = System.Drawing.SystemColors.Control;
+            this.btnSimpan.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnSimpan.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnSimpan.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnSimpan.Location = new System.Drawing.Point(581, 290);
@@ -228,7 +254,7 @@ namespace Bimbem_App
             // 
             // btnTambah
             // 
-            this.btnTambah.BackColor = System.Drawing.SystemColors.Control;
+            this.btnTambah.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnTambah.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnTambah.Location = new System.Drawing.Point(883, 337);
             this.btnTambah.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -240,7 +266,7 @@ namespace Bimbem_App
             // 
             // btnEdit
             // 
-            this.btnEdit.BackColor = System.Drawing.SystemColors.Control;
+            this.btnEdit.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnEdit.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnEdit.Location = new System.Drawing.Point(883, 374);
             this.btnEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -252,7 +278,7 @@ namespace Bimbem_App
             // 
             // btnHapus
             // 
-            this.btnHapus.BackColor = System.Drawing.SystemColors.Control;
+            this.btnHapus.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnHapus.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnHapus.Location = new System.Drawing.Point(883, 411);
             this.btnHapus.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -262,34 +288,46 @@ namespace Bimbem_App
             this.btnHapus.Text = "Hapus";
             this.btnHapus.UseVisualStyleBackColor = false;
             // 
-            // dgvTransaksi
+            // btnMenuUtama
             // 
-            this.dgvTransaksi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTransaksi.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.keterangan});
-            this.dgvTransaksi.Location = new System.Drawing.Point(21, 19);
-            this.dgvTransaksi.Name = "dgvTransaksi";
-            this.dgvTransaksi.RowTemplate.Height = 25;
-            this.dgvTransaksi.Size = new System.Drawing.Size(809, 264);
-            this.dgvTransaksi.TabIndex = 0;
+            this.btnMenuUtama.BackColor = System.Drawing.SystemColors.Control;
+            this.btnMenuUtama.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnMenuUtama.Location = new System.Drawing.Point(892, 12);
+            this.btnMenuUtama.Name = "btnMenuUtama";
+            this.btnMenuUtama.Size = new System.Drawing.Size(74, 33);
+            this.btnMenuUtama.TabIndex = 72;
+            this.btnMenuUtama.Text = "Home";
+            this.btnMenuUtama.UseVisualStyleBackColor = false;
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnRefresh.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRefresh.Location = new System.Drawing.Point(883, 448);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(74, 33);
+            this.btnRefresh.TabIndex = 74;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.UseVisualStyleBackColor = false;
             // 
             // dataGridViewTextBoxColumn1
             // 
+            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn1.DataPropertyName = "kodePembayaran";
             this.dataGridViewTextBoxColumn1.HeaderText = "Kode Pembayaran";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 146;
             // 
             // dataGridViewTextBoxColumn2
             // 
+            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn2.DataPropertyName = "noSiswa";
             this.dataGridViewTextBoxColumn2.HeaderText = "Nomor Siswa";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 118;
             // 
             // dataGridViewTextBoxColumn3
             // 
@@ -311,29 +349,6 @@ namespace Bimbem_App
             this.keterangan.HeaderText = "Keterangan";
             this.keterangan.Name = "keterangan";
             this.keterangan.ReadOnly = true;
-            // 
-            // btnMenuUtama
-            // 
-            this.btnMenuUtama.BackColor = System.Drawing.SystemColors.Control;
-            this.btnMenuUtama.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnMenuUtama.Location = new System.Drawing.Point(892, 12);
-            this.btnMenuUtama.Name = "btnMenuUtama";
-            this.btnMenuUtama.Size = new System.Drawing.Size(74, 33);
-            this.btnMenuUtama.TabIndex = 72;
-            this.btnMenuUtama.Text = "Home";
-            this.btnMenuUtama.UseVisualStyleBackColor = false;
-            // 
-            // btnRefresh
-            // 
-            this.btnRefresh.BackColor = System.Drawing.SystemColors.Control;
-            this.btnRefresh.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnRefresh.Location = new System.Drawing.Point(883, 448);
-            this.btnRefresh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(74, 33);
-            this.btnRefresh.TabIndex = 74;
-            this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.UseVisualStyleBackColor = false;
             // 
             // FormInputTransaksi
             // 
@@ -395,12 +410,12 @@ namespace Bimbem_App
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnHapus;
         private System.Windows.Forms.DataGridView dgvTransaksi;
+        private System.Windows.Forms.Button btnMenuUtama;
+        private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn keterangan;
-        private System.Windows.Forms.Button btnMenuUtama;
-        private System.Windows.Forms.Button btnRefresh;
     }
 }

@@ -29,8 +29,10 @@ namespace Bimbem_App
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlRuangZoom = new System.Windows.Forms.Panel();
+            this.dgvRuangZoom = new System.Windows.Forms.DataGridView();
             this.btnBatal = new System.Windows.Forms.Button();
             this.btnSimpan = new System.Windows.Forms.Button();
             this.txtPasscodeRuangZoom = new System.Windows.Forms.TextBox();
@@ -45,9 +47,12 @@ namespace Bimbem_App
             this.btnHapus = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnTambah = new System.Windows.Forms.Button();
-            this.dgvRuangZoom = new System.Windows.Forms.DataGridView();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
+            this.kodezoom = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.link = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.meetingid = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.passcode = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlRuangZoom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRuangZoom)).BeginInit();
@@ -74,11 +79,36 @@ namespace Bimbem_App
             this.pnlRuangZoom.Size = new System.Drawing.Size(830, 353);
             this.pnlRuangZoom.TabIndex = 2;
             // 
+            // dgvRuangZoom
+            // 
+            this.dgvRuangZoom.AllowUserToAddRows = false;
+            this.dgvRuangZoom.AllowUserToDeleteRows = false;
+            this.dgvRuangZoom.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvRuangZoom.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvRuangZoom.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvRuangZoom.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.kodezoom,
+            this.link,
+            this.meetingid,
+            this.passcode});
+            this.dgvRuangZoom.Location = new System.Drawing.Point(22, 24);
+            this.dgvRuangZoom.Name = "dgvRuangZoom";
+            this.dgvRuangZoom.RowTemplate.Height = 25;
+            this.dgvRuangZoom.Size = new System.Drawing.Size(784, 308);
+            this.dgvRuangZoom.TabIndex = 0;
+            // 
             // btnBatal
             // 
-            this.btnBatal.BackColor = System.Drawing.Color.Salmon;
+            this.btnBatal.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnBatal.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnBatal.Location = new System.Drawing.Point(673, 242);
+            this.btnBatal.Location = new System.Drawing.Point(673, 235);
             this.btnBatal.Name = "btnBatal";
             this.btnBatal.Size = new System.Drawing.Size(72, 37);
             this.btnBatal.TabIndex = 8;
@@ -87,9 +117,9 @@ namespace Bimbem_App
             // 
             // btnSimpan
             // 
-            this.btnSimpan.BackColor = System.Drawing.Color.Salmon;
+            this.btnSimpan.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnSimpan.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnSimpan.Location = new System.Drawing.Point(593, 242);
+            this.btnSimpan.Location = new System.Drawing.Point(593, 235);
             this.btnSimpan.Name = "btnSimpan";
             this.btnSimpan.Size = new System.Drawing.Size(74, 37);
             this.btnSimpan.TabIndex = 7;
@@ -120,7 +150,7 @@ namespace Bimbem_App
             // 
             this.passcodeRuangZoom.AutoSize = true;
             this.passcodeRuangZoom.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.passcodeRuangZoom.Location = new System.Drawing.Point(531, 171);
+            this.passcodeRuangZoom.Location = new System.Drawing.Point(533, 169);
             this.passcodeRuangZoom.Name = "passcodeRuangZoom";
             this.passcodeRuangZoom.Size = new System.Drawing.Size(78, 21);
             this.passcodeRuangZoom.TabIndex = 3;
@@ -130,7 +160,7 @@ namespace Bimbem_App
             // 
             this.idMeetingRuangZoom.AutoSize = true;
             this.idMeetingRuangZoom.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.idMeetingRuangZoom.Location = new System.Drawing.Point(531, 102);
+            this.idMeetingRuangZoom.Location = new System.Drawing.Point(534, 100);
             this.idMeetingRuangZoom.Name = "idMeetingRuangZoom";
             this.idMeetingRuangZoom.Size = new System.Drawing.Size(92, 21);
             this.idMeetingRuangZoom.TabIndex = 5;
@@ -150,7 +180,7 @@ namespace Bimbem_App
             // 
             this.linkRuangZoom.AutoSize = true;
             this.linkRuangZoom.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.linkRuangZoom.Location = new System.Drawing.Point(255, 171);
+            this.linkRuangZoom.Location = new System.Drawing.Point(257, 169);
             this.linkRuangZoom.Name = "linkRuangZoom";
             this.linkRuangZoom.Size = new System.Drawing.Size(39, 21);
             this.linkRuangZoom.TabIndex = 3;
@@ -170,7 +200,7 @@ namespace Bimbem_App
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(255, 102);
+            this.label2.Location = new System.Drawing.Point(256, 100);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(96, 21);
             this.label2.TabIndex = 1;
@@ -180,17 +210,17 @@ namespace Bimbem_App
             // 
             this.inputRuangZoom.AutoSize = true;
             this.inputRuangZoom.Font = new System.Drawing.Font("Segoe UI", 18.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.inputRuangZoom.Location = new System.Drawing.Point(366, 45);
+            this.inputRuangZoom.Location = new System.Drawing.Point(389, 41);
             this.inputRuangZoom.Name = "inputRuangZoom";
-            this.inputRuangZoom.Size = new System.Drawing.Size(271, 35);
+            this.inputRuangZoom.Size = new System.Drawing.Size(188, 35);
             this.inputRuangZoom.TabIndex = 0;
-            this.inputRuangZoom.Text = "INPUT RUANG ZOOM";
+            this.inputRuangZoom.Text = "RUANG ZOOM";
             // 
             // btnHapus
             // 
-            this.btnHapus.BackColor = System.Drawing.Color.Salmon;
+            this.btnHapus.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnHapus.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnHapus.Location = new System.Drawing.Point(862, 284);
+            this.btnHapus.Location = new System.Drawing.Point(879, 284);
             this.btnHapus.Name = "btnHapus";
             this.btnHapus.Size = new System.Drawing.Size(87, 42);
             this.btnHapus.TabIndex = 9;
@@ -199,9 +229,9 @@ namespace Bimbem_App
             // 
             // btnEdit
             // 
-            this.btnEdit.BackColor = System.Drawing.Color.Salmon;
+            this.btnEdit.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnEdit.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnEdit.Location = new System.Drawing.Point(862, 332);
+            this.btnEdit.Location = new System.Drawing.Point(879, 332);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(87, 42);
             this.btnEdit.TabIndex = 10;
@@ -210,30 +240,20 @@ namespace Bimbem_App
             // 
             // btnTambah
             // 
-            this.btnTambah.BackColor = System.Drawing.Color.Salmon;
+            this.btnTambah.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnTambah.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnTambah.Location = new System.Drawing.Point(862, 380);
+            this.btnTambah.Location = new System.Drawing.Point(879, 380);
             this.btnTambah.Name = "btnTambah";
             this.btnTambah.Size = new System.Drawing.Size(87, 42);
             this.btnTambah.TabIndex = 11;
             this.btnTambah.Text = "Tambah";
             this.btnTambah.UseVisualStyleBackColor = false;
             // 
-            // dgvRuangZoom
-            // 
-            this.dgvRuangZoom.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvRuangZoom.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvRuangZoom.Location = new System.Drawing.Point(15, 15);
-            this.dgvRuangZoom.Name = "dgvRuangZoom";
-            this.dgvRuangZoom.RowTemplate.Height = 25;
-            this.dgvRuangZoom.Size = new System.Drawing.Size(801, 320);
-            this.dgvRuangZoom.TabIndex = 0;
-            // 
             // btnRefresh
             // 
-            this.btnRefresh.BackColor = System.Drawing.Color.Salmon;
+            this.btnRefresh.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnRefresh.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnRefresh.Location = new System.Drawing.Point(862, 428);
+            this.btnRefresh.Location = new System.Drawing.Point(879, 428);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(87, 42);
             this.btnRefresh.TabIndex = 12;
@@ -242,14 +262,38 @@ namespace Bimbem_App
             // 
             // btnHome
             // 
-            this.btnHome.BackColor = System.Drawing.Color.Salmon;
+            this.btnHome.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnHome.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnHome.Location = new System.Drawing.Point(862, 595);
+            this.btnHome.Location = new System.Drawing.Point(879, 12);
             this.btnHome.Name = "btnHome";
             this.btnHome.Size = new System.Drawing.Size(87, 42);
             this.btnHome.TabIndex = 13;
             this.btnHome.Text = "Home";
             this.btnHome.UseVisualStyleBackColor = false;
+            // 
+            // kodezoom
+            // 
+            this.kodezoom.DataPropertyName = "kodezoom";
+            this.kodezoom.HeaderText = "Kode Zoom";
+            this.kodezoom.Name = "kodezoom";
+            // 
+            // link
+            // 
+            this.link.DataPropertyName = "link";
+            this.link.HeaderText = "Link Zoom";
+            this.link.Name = "link";
+            // 
+            // meetingid
+            // 
+            this.meetingid.DataPropertyName = "meetingid";
+            this.meetingid.HeaderText = "Meeting ID";
+            this.meetingid.Name = "meetingid";
+            // 
+            // passcode
+            // 
+            this.passcode.DataPropertyName = "passcode";
+            this.passcode.HeaderText = "Passcode";
+            this.passcode.Name = "passcode";
             // 
             // FormInputRuangZoom
             // 
@@ -309,5 +353,9 @@ namespace Bimbem_App
         private System.Windows.Forms.Button btnTambah;
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.Button btnHome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn kodezoom;
+        private System.Windows.Forms.DataGridViewTextBoxColumn link;
+        private System.Windows.Forms.DataGridViewTextBoxColumn meetingid;
+        private System.Windows.Forms.DataGridViewTextBoxColumn passcode;
     }
 }

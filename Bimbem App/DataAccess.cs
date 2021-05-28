@@ -920,7 +920,7 @@ namespace Bimbem_App
       
         
         
-        // sini bang
+        // hapusyyyyy
 
     }
 
