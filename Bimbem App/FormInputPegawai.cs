@@ -56,5 +56,15 @@ namespace Bimbem_App
             dgvPegawai.AutoGenerateColumns = false;
             dgvPegawai.DataSource = da.getAllPegawai();
         }
+
+        private void btnHapus_Click(object sender, EventArgs e)
+        {
+            if (dgvPegawai.SelectedRows.Count > 0)
+            {
+                DataAccess da = new DataAccess();
+                string SelectedNoPegawai = dgvPegawai.SelectedRows[0].Cells[0].Value.ToString();
+                da.hapusDataPegawai(SelectedNoPegawai);
+            }
+        }
     }
 }

@@ -26,5 +26,15 @@ namespace Bimbem_App
             dgvUjian.AutoGenerateColumns = false;
             dgvUjian.DataSource = da.getAllUjian();
         }
+
+        private void btnHapus_Click(object sender, EventArgs e)
+        {
+            if (dgvUjian.SelectedRows.Count > 0)
+            {
+                DataAccess da = new DataAccess();
+                string SelectedKodeUjian = dgvUjian.SelectedRows[0].Cells[0].Value.ToString();
+                da.hapusDataJadwalUjian(SelectedKodeUjian);
+            }
+        }
     }
 }

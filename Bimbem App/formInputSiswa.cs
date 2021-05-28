@@ -21,5 +21,15 @@ namespace Bimbem_App
             dgvSiswa.AutoGenerateColumns = false;
             dgvSiswa.DataSource = da.getAllSiswa();
         }
+
+        private void btHapus_Click(object sender, EventArgs e)
+        {
+            if (dgvSiswa.SelectedRows.Count > 0)
+            {
+                DataAccess da = new DataAccess();
+                string SelectedNoSiswa = dgvSiswa.SelectedRows[0].Cells[0].Value.ToString();
+                da.hapusDataSiswa(SelectedNoSiswa);
+            }
+        }
     }
 }

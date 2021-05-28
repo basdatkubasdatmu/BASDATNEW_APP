@@ -213,6 +213,7 @@ namespace Bimbem_App
             this.btnHapus.TabIndex = 27;
             this.btnHapus.Text = "Hapus";
             this.btnHapus.UseVisualStyleBackColor = false;
+            this.btnHapus.Click += new System.EventHandler(this.btnHapus_Click);
             // 
             // btnEdit
             // 

@@ -31,5 +31,15 @@ namespace Bimbem_App
             dgvMatpel.AutoGenerateColumns = false;
             dgvMatpel.DataSource = da.getAllMatpel();
         }
+
+        private void btnHapus_Click(object sender, EventArgs e)
+        {
+            if (dgvMatpel.SelectedRows.Count > 0)
+            {
+                DataAccess da = new DataAccess();
+                string SelectedKodePelajaran = dgvMatpel.SelectedRows[0].Cells[0].Value.ToString();
+                da.hapusDataMatpel(SelectedKodePelajaran);
+            }
+        }
     }
 }
