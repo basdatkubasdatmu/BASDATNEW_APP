@@ -10,8 +10,6 @@ namespace Bimbem_App
 {
     public partial class FormInputMatpel : Form
     {
-        public bool isEditMaPel = false;
-
         public FormInputMatpel()
         {
             InitializeComponent();
@@ -19,16 +17,7 @@ namespace Bimbem_App
 
         private void btnSimpan_Click(object sender, EventArgs e)
         {
-            DataAccess da = new DataAccess();
 
-            if (isEditMaPel)
-            {
-                da.updateDataMatPel(txtKodeMapel.Text, textNamaMapel.Text);
-            }
-            else
-            {
-                da.insertDataMapel(txtKodeMapel.Text, textNamaMapel.Text);
-            }
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -51,11 +40,6 @@ namespace Bimbem_App
                 string SelectedKodePelajaran = dgvMatpel.SelectedRows[0].Cells[0].Value.ToString();
                 da.hapusDataMatpel(SelectedKodePelajaran);
             }
-        }
-
-        private void btnTambah_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

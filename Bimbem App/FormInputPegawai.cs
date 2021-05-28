@@ -10,8 +10,6 @@ namespace Bimbem_App
 {
     public partial class FormInputPegawai : Form
     {
-        public bool isEditPegawai = false;
-
         public FormInputPegawai()
         {
             InitializeComponent();
@@ -66,30 +64,6 @@ namespace Bimbem_App
                 DataAccess da = new DataAccess();
                 string SelectedNoPegawai = dgvPegawai.SelectedRows[0].Cells[0].Value.ToString();
                 da.hapusDataPegawai(SelectedNoPegawai);
-            }
-        }
-
-        private void btSimpan_Click(object sender, EventArgs e)
-        {
-            DataAccess da = new DataAccess();
-
-            string jnsKelamin = "";
-            if (rbLakiLaki.Checked)
-            {
-                jnsKelamin = "Laki-laki";
-            }
-            else if (rbPerempuan.Checked)
-            {
-                jnsKelamin = "Perempuan";
-            }
-
-            if (isEditPegawai)
-            {
-                da.updateDataPegawai(tbKodePegawai.Text, tbNamaPegawai.Text, jnsKelamin, tbNomorHP.Text, tbEmail.Text, tbPosisi.Text);
-            }
-            else
-            {
-                da.insertDataPegawai(tbKodePegawai.Text, tbNamaPegawai.Text, jnsKelamin, tbNomorHP.Text, tbEmail.Text, tbPosisi.Text);
             }
         }
     }

@@ -142,7 +142,6 @@ namespace Bimbem_App
             this.btnSimpan.TabIndex = 18;
             this.btnSimpan.Text = "Simpan";
             this.btnSimpan.UseVisualStyleBackColor = false;
-            this.btnSimpan.Click += new System.EventHandler(this.btnSimpan_Click);
             // 
             // txtKodePelajaran
             // 

@@ -10,8 +10,6 @@ namespace Bimbem_App
 {
     public partial class formInputPengajar : Form
     {
-        public bool isEditPengajar = false;
-
         public formInputPengajar()
         {
             InitializeComponent();
@@ -31,20 +29,6 @@ namespace Bimbem_App
                 DataAccess da = new DataAccess();
                 string SelectedNoPengajar = dgvPengajar.SelectedRows[0].Cells[0].Value.ToString();
                 da.hapusDataPengajar(SelectedNoPengajar);
-            }
-        }
-
-        private void btnSimpan_Click(object sender, EventArgs e)
-        {
-            DataAccess da = new DataAccess();
-
-            if (isEditPengajar)
-            {
-                da.updateDataPengajar(txtNoPengajar.Text, txtKodePelajaran.Text, txtNoPegawai.Text);
-            }
-            else
-            {
-                da.insertDataPengajar(txtNoPengajar.Text, txtKodePelajaran.Text, txtNoPegawai.Text);
             }
         }
     }

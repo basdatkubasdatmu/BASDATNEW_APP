@@ -158,7 +158,6 @@ namespace Bimbem_App
             this.btnSimpan.TabIndex = 9;
             this.btnSimpan.Text = "Simpan";
             this.btnSimpan.UseVisualStyleBackColor = false;
-            this.btnSimpan.Click += new System.EventHandler(this.btnSimpan_Click);
             // 
             // txtNilai
             // 
@@ -329,7 +328,6 @@ namespace Bimbem_App
             this.btnTambah.TabIndex = 26;
             this.btnTambah.Text = "Tambah";
             this.btnTambah.UseVisualStyleBackColor = false;
-            this.btnTambah.Click += new System.EventHandler(this.btnTambah_Click);
             // 
             // btnEdit
             // 
