@@ -14,5 +14,22 @@ namespace Bimbem_App
         {
             InitializeComponent();
         }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            DataAccess da = new DataAccess();
+            dgvKelas.AutoGenerateColumns = false;
+            dgvKelas.DataSource = da.getAllKelas();
+        }
+
+        private void btnHapus_Click(object sender, EventArgs e)
+        {
+            if (dgvKelas.SelectedRows.Count > 0)
+            {
+                DataAccess da = new DataAccess();
+                string SelectedKodeKelas = dgvKelas.SelectedRows[0].Cells[0].Value.ToString();
+                da.hapusDataKelas(SelectedKodeKelas);
+            }
+        }
     }
 }
