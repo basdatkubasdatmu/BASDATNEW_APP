@@ -10,6 +10,8 @@ namespace Bimbem_App
 {
     public partial class FormInputJadwalSiswa : Form
     {
+        public bool isEditJadwal = false;
+
         public FormInputJadwalSiswa()
         {
             InitializeComponent();
@@ -30,6 +32,24 @@ namespace Bimbem_App
                 string SelectedKodeJadwalSiswa = dgvJadwalSiswa.SelectedRows[0].Cells[0].Value.ToString();
                 da.hapusDataJadwalSiswa(SelectedKodeJadwalSiswa);
             }
+        }
+
+        private void btnSimpan_Click(object sender, EventArgs e)
+        {
+            DataAccess da = new DataAccess();
+
+            if (isEditJadwal)
+            {
+                da.updateDataJadwalSiswa(txtKodeJadwalSiswa.Text, txtNoSiswa.Text, txtKodeJadwalPengajar.Text);
+            } else
+            {
+                da.insertDataJadwalSiswa(txtKodeJadwalSiswa.Text, txtNoSiswa.Text, txtKodeJadwalPengajar.Text);
+            }
+        }
+
+        private void btnTambah_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

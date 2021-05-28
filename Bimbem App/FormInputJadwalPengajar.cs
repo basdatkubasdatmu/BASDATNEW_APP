@@ -10,6 +10,8 @@ namespace Bimbem_App
 {
     public partial class FormInputJadwalPengajar : Form
     {
+        public bool isEditJadwal = false;
+
         public FormInputJadwalPengajar()
         {
             InitializeComponent();
@@ -42,6 +44,25 @@ namespace Bimbem_App
                 string SelectedKodeJadwalPengajar = dgvJadwalPengajar.SelectedRows[0].Cells[0].Value.ToString();
                 da.hapusDataJadwalPengajar(SelectedKodeJadwalPengajar);
             }
+        }
+
+        private void btnSimpan_Click(object sender, EventArgs e)
+        {
+            DataAccess da = new DataAccess();
+
+            if (isEditJadwal)
+            {
+                da.updateDataJadwalPengajar(txtKodeJadwalPengajar.Text, txtKodeKelas.Text, txtNoPengajar.Text, txtKodePelajaran.Text, maskedTextBox1.Text, txtJamMulai.Text, maskedTextBox2.Text, txtKodeZoom.Text);
+            }
+            else
+            {
+                da.insertDataJadwalPengajar(txtKodeJadwalPengajar.Text, txtKodeKelas.Text, txtNoPengajar.Text, txtKodePelajaran.Text, maskedTextBox1.Text, txtJamMulai.Text, maskedTextBox2.Text, txtKodeZoom.Text);
+            }
+        }
+
+        private void btnTambah_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

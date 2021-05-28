@@ -141,6 +141,7 @@ namespace Bimbem_App
             this.btSimpan.TabIndex = 19;
             this.btSimpan.Text = "Simpan";
             this.btSimpan.UseVisualStyleBackColor = false;
+            this.btSimpan.Click += new System.EventHandler(this.btSimpan_Click);
             // 
             // rbPerempuan
             // 

@@ -10,6 +10,8 @@ namespace Bimbem_App
 {
     public partial class FormInputNilai : Form
     {
+        public bool isEditNilai = false;
+
         public FormInputNilai()
         {
             InitializeComponent();
@@ -35,6 +37,25 @@ namespace Bimbem_App
                 string SelectedKodeUjian = dgvNilai.SelectedRows[0].Cells[0].Value.ToString();
                 da.hapusDataNilai(SelectedKodeUjian);
             }
+        }
+
+        private void btnSimpan_Click(object sender, EventArgs e)
+        {
+            DataAccess da = new DataAccess();
+
+            if (isEditNilai)
+            {
+                da.updateDataNilai(txtKodeUjian.Text, txtNoSiswa.Text, txtNoPengajar.Text, txtKodePelajaran.Text, txtNilai.Text);
+            }
+            else
+            {
+                da.insertDataNilai(txtKodeUjian.Text, txtNoSiswa.Text, txtNoPengajar.Text, txtKodePelajaran.Text, txtNilai.Text);
+            }
+        }
+
+        private void btnTambah_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
