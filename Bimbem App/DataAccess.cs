@@ -352,7 +352,7 @@ namespace Bimbem_App
 
                 NpgsqlCommand cmd = new NpgsqlCommand();
                 cmd.Connection = conn;
-                cmd.CommandText = "SELECT n.kodeujian, s.nosiswa, s.nama, png.nopengajar, p.nama, n.kodepelajaran, n.nilai FROM (nilai n JOIN siswa s USING(nosiswa)) JOIN (nilai JOIN(pegawai p JOIN pengajar png USING(nopegawai)) USING(nopengajar))  USING(kodeujian)";
+                cmd.CommandText = "SELECT n.kodeujian, s.nosiswa, s.nama, p.nama, n.kodepelajaran, n.nilai FROM (nilai n JOIN siswa s USING(nosiswa)) JOIN (nilai JOIN(pegawai p JOIN pengajar png USING(nopegawai)) USING(nopengajar))  USING(kodeujian)";
                 cmd.CommandType = CommandType.Text;
 
                 NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd);
