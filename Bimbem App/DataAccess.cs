@@ -352,7 +352,7 @@ namespace Bimbem_App
 
                 NpgsqlCommand cmd = new NpgsqlCommand();
                 cmd.Connection = conn;
-                cmd.CommandText = "SELECT n.kodeujian, s.nosiswa, s.nama, png.nopengajar, p.nama, n.kodepelajaran, n.nilai FROM (nilai n JOIN siswa s USING(nosiswa)) JOIN (nilai JOIN(pegawai p JOIN pengajar png USING(nopegawai)) USING(nopengajar))  USING(kodeujian)";
+                cmd.CommandText = "SELECT n.kodeujian, s.nosiswa, s.nama, p.nama, n.kodepelajaran, n.nilai FROM (nilai n JOIN siswa s USING(nosiswa)) JOIN (nilai JOIN(pegawai p JOIN pengajar png USING(nopegawai)) USING(nopengajar))  USING(kodeujian)";
                 cmd.CommandType = CommandType.Text;
 
                 NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd);
@@ -917,13 +917,361 @@ namespace Bimbem_App
 
             return dt;
         }
-      
-        
-        
-        // sini bang
+
+
+
+        // hapusyyyyy
+        public void hapusDataJadwalPengajar(string kodejadwalpengajar)
+        {
+            NpgsqlConnection conn = new NpgsqlConnection(strConnString);
+
+            try
+            {
+                conn.Open();
+
+                NpgsqlCommand cmd = new NpgsqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = string.Format(@"delete from jadwalpengajar 
+                                where kodejadwalpengajar = '{0}'" + kodejadwalpengajar + "';", kodejadwalpengajar);
+                cmd.CommandType = CommandType.Text;
+
+                cmd.ExecuteNonQuery();
+
+                cmd.Dispose();
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Data gagal dibaca:" + ex.Message.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        public void hapusDataJadwalSiswa(string kodejadwalsiswa)
+        {
+            NpgsqlConnection conn = new NpgsqlConnection(strConnString);
+
+            try
+            {
+                conn.Open();
+
+                NpgsqlCommand cmd = new NpgsqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = string.Format(@"delete from jadwalsiswa 
+                                where kodejadwalsiswa = '{0}'" + kodejadwalsiswa + "';", kodejadwalsiswa);
+                cmd.CommandType = CommandType.Text;
+
+                cmd.ExecuteNonQuery();
+
+                cmd.Dispose();
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Data gagal dibaca:" + ex.Message.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        public void hapusDataSiswa(string nosiswa)
+        {
+            NpgsqlConnection conn = new NpgsqlConnection(strConnString);
+
+            try
+            {
+                conn.Open();
+
+                NpgsqlCommand cmd = new NpgsqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = string.Format(@"delete from siswa 
+                                where nosiswa = '{0}'" + nosiswa + "';", nosiswa);
+                cmd.CommandType = CommandType.Text;
+
+                cmd.ExecuteNonQuery();
+
+                cmd.Dispose();
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Data gagal dibaca:" + ex.Message.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        public void hapusDataPengajar(string nopengajar)
+        {
+            NpgsqlConnection conn = new NpgsqlConnection(strConnString);
+
+            try
+            {
+                conn.Open();
+
+                NpgsqlCommand cmd = new NpgsqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = string.Format(@"delete from pengajar 
+                                where nopengajar = '{0}'" + nopengajar + "';", nopengajar);
+                cmd.CommandType = CommandType.Text;
+
+                cmd.ExecuteNonQuery();
+
+                cmd.Dispose();
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Data gagal dibaca:" + ex.Message.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        public void hapusDataPegawai(string nopegawai)
+        {
+            NpgsqlConnection conn = new NpgsqlConnection(strConnString);
+
+            try
+            {
+                conn.Open();
+
+                NpgsqlCommand cmd = new NpgsqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = string.Format(@"delete from pegawai 
+                                where nopegawai = '{0}'" + nopegawai + "';", nopegawai);
+                cmd.CommandType = CommandType.Text;
+
+                cmd.ExecuteNonQuery();
+
+                cmd.Dispose();
+            }
+
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Data gagal dibaca:" + ex.Message.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        public void hapusDataKelas(string kodekelas)
+        {
+            NpgsqlConnection conn = new NpgsqlConnection(strConnString);
+
+            try
+            {
+                conn.Open();
+
+                NpgsqlCommand cmd = new NpgsqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = string.Format(@"delete from kelas 
+                                where kodekelas = '{0}'" + kodekelas + "';", kodekelas);
+                cmd.CommandType = CommandType.Text;
+
+                cmd.ExecuteNonQuery();
+
+                cmd.Dispose();
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Data gagal dibaca:" + ex.Message.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        public void hapusDataPresensi(string kodejadwalsiswa)
+        {
+            NpgsqlConnection conn = new NpgsqlConnection(strConnString);
+
+            try
+            {
+                conn.Open();
+
+                NpgsqlCommand cmd = new NpgsqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = string.Format(@"delete from presensisiswa 
+                                where kodejadwalsiswa = '{0}'" + kodejadwalsiswa + "';", kodejadwalsiswa);
+                cmd.CommandType = CommandType.Text;
+
+                cmd.ExecuteNonQuery();
+
+                cmd.Dispose();
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Data gagal dibaca:" + ex.Message.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        public void hapusDataJadwalUjian(string kodeujian)
+        {
+            NpgsqlConnection conn = new NpgsqlConnection(strConnString);
+
+            try
+            {
+                conn.Open();
+
+                NpgsqlCommand cmd = new NpgsqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = string.Format(@"delete from ujian 
+                                where kodeujian = '{0}'" + kodeujian + "';", kodeujian);
+                cmd.CommandType = CommandType.Text;
+
+                cmd.ExecuteNonQuery();
+
+                cmd.Dispose();
+            }
+
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Data gagal dibaca:" + ex.Message.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        public void hapusDataNilai(string kodeujian)
+        {
+            NpgsqlConnection conn = new NpgsqlConnection(strConnString);
+
+            try
+            {
+                conn.Open();
+
+                NpgsqlCommand cmd = new NpgsqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = string.Format(@"delete from nilai 
+                                where kodeujian = '{0}'" + kodeujian + "';", kodeujian);
+                cmd.CommandType = CommandType.Text;
+
+                cmd.ExecuteNonQuery();
+
+                cmd.Dispose();
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Data gagal dibaca:" + ex.Message.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        public void hapusDataRuangZoom(string kodezoom)
+        {
+            NpgsqlConnection conn = new NpgsqlConnection(strConnString);
+
+            try
+            {
+                conn.Open();
+
+                NpgsqlCommand cmd = new NpgsqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = string.Format(@"delete from ruangzoom 
+                                where kodezoom = '{0}'" + kodezoom + "';", kodezoom);
+                cmd.CommandType = CommandType.Text;
+
+                cmd.ExecuteNonQuery();
+
+                cmd.Dispose();
+            }
+
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Data gagal dibaca:" + ex.Message.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        public void hapusDataMatpel(string kodepelajaran)
+        {
+            NpgsqlConnection conn = new NpgsqlConnection(strConnString);
+
+            try
+            {
+                conn.Open();
+
+                NpgsqlCommand cmd = new NpgsqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = string.Format(@"delete from matapelajaran 
+                                where kodepelajaran = '{0}'" + kodepelajaran + "';", kodepelajaran);
+                cmd.CommandType = CommandType.Text;
+
+                cmd.ExecuteNonQuery();
+
+                cmd.Dispose();
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Data gagal dibaca:" + ex.Message.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        public void hapusDataPembayaran(string kodepembayaran)
+        {
+            NpgsqlConnection conn = new NpgsqlConnection(strConnString);
+
+            try
+            {
+                conn.Open();
+
+                NpgsqlCommand cmd = new NpgsqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = string.Format(@"delete from pembayaran 
+                                where kodepembayaran = '{0}'" + kodepembayaran + "';", kodepembayaran);
+                cmd.CommandType = CommandType.Text;
+
+                cmd.ExecuteNonQuery();
+
+                cmd.Dispose();
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Data gagal dibaca:" + ex.Message.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
 
     }
-
-    
 
 }
