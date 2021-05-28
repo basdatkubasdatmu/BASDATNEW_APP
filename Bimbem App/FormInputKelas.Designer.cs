@@ -50,6 +50,7 @@ namespace Bimbem_App
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel1.Controls.Add(this.btBatal);
             this.panel1.Controls.Add(this.btSimpan);
             this.panel1.Controls.Add(this.checkedListBox1);
@@ -63,7 +64,7 @@ namespace Bimbem_App
             this.panel1.Controls.Add(this.lbNamaKelas);
             this.panel1.Controls.Add(this.lbNomorKelas);
             this.panel1.Controls.Add(this.lbJudulInputKelas);
-            this.panel1.Location = new System.Drawing.Point(38, 31);
+            this.panel1.Location = new System.Drawing.Point(44, 39);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(447, 359);
@@ -71,29 +72,29 @@ namespace Bimbem_App
             // 
             // btBatal
             // 
-            this.btBatal.BackColor = System.Drawing.Color.Salmon;
+            this.btBatal.BackColor = System.Drawing.Color.SeaShell;
             this.btBatal.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btBatal.Location = new System.Drawing.Point(332, 300);
             this.btBatal.Name = "btBatal";
             this.btBatal.Size = new System.Drawing.Size(83, 30);
             this.btBatal.TabIndex = 18;
-            this.btBatal.Text = "BATAL";
+            this.btBatal.Text = "Batal";
             this.btBatal.UseVisualStyleBackColor = false;
             // 
             // btSimpan
             // 
-            this.btSimpan.BackColor = System.Drawing.Color.Salmon;
+            this.btSimpan.BackColor = System.Drawing.Color.SeaShell;
             this.btSimpan.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btSimpan.Location = new System.Drawing.Point(243, 300);
             this.btSimpan.Name = "btSimpan";
             this.btSimpan.Size = new System.Drawing.Size(83, 30);
             this.btSimpan.TabIndex = 17;
-            this.btSimpan.Text = "SIMPAN";
+            this.btSimpan.Text = "Simpan";
             this.btSimpan.UseVisualStyleBackColor = false;
             // 
             // checkedListBox1
             // 
-            this.checkedListBox1.BackColor = System.Drawing.Color.Salmon;
+            this.checkedListBox1.BackColor = System.Drawing.Color.SlateBlue;
             this.checkedListBox1.FormattingEnabled = true;
             this.checkedListBox1.Items.AddRange(new object[] {
             "Gratis Modul",
@@ -117,7 +118,7 @@ namespace Bimbem_App
             // 
             // tbBiayaKelas
             // 
-            this.tbBiayaKelas.BackColor = System.Drawing.Color.Salmon;
+            this.tbBiayaKelas.BackColor = System.Drawing.Color.SlateBlue;
             this.tbBiayaKelas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbBiayaKelas.Location = new System.Drawing.Point(39, 252);
             this.tbBiayaKelas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -137,7 +138,7 @@ namespace Bimbem_App
             // 
             // tbKuotaKelas
             // 
-            this.tbKuotaKelas.BackColor = System.Drawing.Color.Salmon;
+            this.tbKuotaKelas.BackColor = System.Drawing.Color.SlateBlue;
             this.tbKuotaKelas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbKuotaKelas.Location = new System.Drawing.Point(39, 195);
             this.tbKuotaKelas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -157,7 +158,7 @@ namespace Bimbem_App
             // 
             // tbNamaKelas
             // 
-            this.tbNamaKelas.BackColor = System.Drawing.Color.Salmon;
+            this.tbNamaKelas.BackColor = System.Drawing.Color.SlateBlue;
             this.tbNamaKelas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbNamaKelas.Location = new System.Drawing.Point(39, 140);
             this.tbNamaKelas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -167,7 +168,7 @@ namespace Bimbem_App
             // 
             // tbNomorKelas
             // 
-            this.tbNomorKelas.BackColor = System.Drawing.Color.Salmon;
+            this.tbNomorKelas.BackColor = System.Drawing.Color.SlateBlue;
             this.tbNomorKelas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbNomorKelas.Location = new System.Drawing.Point(39, 88);
             this.tbNomorKelas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -198,12 +199,12 @@ namespace Bimbem_App
             // lbJudulInputKelas
             // 
             this.lbJudulInputKelas.AutoSize = true;
-            this.lbJudulInputKelas.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbJudulInputKelas.Location = new System.Drawing.Point(130, 15);
+            this.lbJudulInputKelas.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbJudulInputKelas.Location = new System.Drawing.Point(145, 16);
             this.lbJudulInputKelas.Name = "lbJudulInputKelas";
-            this.lbJudulInputKelas.Size = new System.Drawing.Size(184, 30);
+            this.lbJudulInputKelas.Size = new System.Drawing.Size(166, 32);
             this.lbJudulInputKelas.TabIndex = 0;
-            this.lbJudulInputKelas.Text = "Input Data Kelas";
+            this.lbJudulInputKelas.Text = "INPUT KELAS";
             // 
             // pictureBox1
             // 
@@ -211,7 +212,7 @@ namespace Bimbem_App
             this.pictureBox1.Location = new System.Drawing.Point(-34, -24);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(869, 498);
+            this.pictureBox1.Size = new System.Drawing.Size(874, 498);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -224,7 +225,10 @@ namespace Bimbem_App
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormInputKelas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormInputKelas";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

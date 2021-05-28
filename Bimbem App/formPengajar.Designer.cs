@@ -31,10 +31,10 @@ namespace Bimbem_App
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.lblDataPengajar = new System.Windows.Forms.Label();
             this.noPengajar = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.kodePelajaran = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.noPegawai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblDataPengajar = new System.Windows.Forms.Label();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.btnTambah = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
@@ -56,6 +56,9 @@ namespace Bimbem_App
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.noPengajar,
@@ -66,16 +69,6 @@ namespace Bimbem_App
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(543, 341);
             this.dataGridView1.TabIndex = 2;
-            // 
-            // lblDataPengajar
-            // 
-            this.lblDataPengajar.AutoSize = true;
-            this.lblDataPengajar.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblDataPengajar.Location = new System.Drawing.Point(45, 23);
-            this.lblDataPengajar.Name = "lblDataPengajar";
-            this.lblDataPengajar.Size = new System.Drawing.Size(159, 30);
-            this.lblDataPengajar.TabIndex = 5;
-            this.lblDataPengajar.Text = "Data Pengajar";
             // 
             // noPengajar
             // 
@@ -97,6 +90,16 @@ namespace Bimbem_App
             this.noPegawai.HeaderText = "No. Pegawai";
             this.noPegawai.MaxInputLength = 10;
             this.noPegawai.Name = "noPegawai";
+            // 
+            // lblDataPengajar
+            // 
+            this.lblDataPengajar.AutoSize = true;
+            this.lblDataPengajar.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblDataPengajar.Location = new System.Drawing.Point(45, 23);
+            this.lblDataPengajar.Name = "lblDataPengajar";
+            this.lblDataPengajar.Size = new System.Drawing.Size(159, 30);
+            this.lblDataPengajar.TabIndex = 5;
+            this.lblDataPengajar.Text = "Data Pengajar";
             // 
             // btnRefresh
             // 
@@ -142,7 +145,7 @@ namespace Bimbem_App
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(675, 542);
+            this.ClientSize = new System.Drawing.Size(675, 525);
             this.Controls.Add(this.btnHapus);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnTambah);

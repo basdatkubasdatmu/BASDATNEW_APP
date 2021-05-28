@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup />
   <ItemGroup>
     <Compile Update="FormInputJadwalPengajar.cs">
       <SubType>Form</SubType>
@@ -9,6 +8,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FormInputKelas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormInputMataPel.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FormInputNilai.cs">
@@ -29,6 +31,9 @@
     <Compile Update="formInputSiswa.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FormInputTransaksi.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FormInputUjian.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -39,9 +44,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="formSiswa.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="FormTemplate.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="ParentForm.cs">

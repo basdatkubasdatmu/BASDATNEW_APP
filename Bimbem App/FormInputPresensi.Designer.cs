@@ -51,6 +51,7 @@ namespace Bimbem_App
             // 
             this.pictureBox1.Image = global::Bimbem_App.Properties.Resources.parent_form;
             this.pictureBox1.Location = new System.Drawing.Point(-37, -8);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(974, 685);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -74,6 +75,7 @@ namespace Bimbem_App
             this.panel1.Controls.Add(this.btnSimpan);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(58, 56);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(391, 543);
             this.panel1.TabIndex = 2;
@@ -193,7 +195,7 @@ namespace Bimbem_App
             this.btnBatal.Name = "btnBatal";
             this.btnBatal.Size = new System.Drawing.Size(85, 40);
             this.btnBatal.TabIndex = 15;
-            this.btnBatal.Text = "BATAL";
+            this.btnBatal.Text = "Batal";
             this.btnBatal.UseVisualStyleBackColor = false;
             // 
             // btnSimpan
@@ -205,7 +207,7 @@ namespace Bimbem_App
             this.btnSimpan.Name = "btnSimpan";
             this.btnSimpan.Size = new System.Drawing.Size(95, 40);
             this.btnSimpan.TabIndex = 14;
-            this.btnSimpan.Text = "SIMPAN";
+            this.btnSimpan.Text = "Simpan";
             this.btnSimpan.UseVisualStyleBackColor = false;
             // 
             // label1
@@ -221,7 +223,7 @@ namespace Bimbem_App
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(518, 659);
+            this.ClientSize = new System.Drawing.Size(1026, 659);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

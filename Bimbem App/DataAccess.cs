@@ -12,6 +12,44 @@ namespace Bimbem_App
         string strConnString = "Server = localhost; Port = 5432; User id = postgres; Password = kiwkiwbgtlho; Database = bimbel";
 
         // Jadwal Kelas Siswa
+
+        public DataTable getNilaiByID(string nosiswa)
+        {
+            NpgsqlConnection conn = new NpgsqlConnection();
+            DataTable dt = new DataTable();
+            try
+            {
+                conn.ConnectionString = strConnString;
+                conn.Open();
+
+                NpgsqlCommand cmd = new NpgsqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = "SELECT s.nama as nama, s.kodekelas as kodekelas, u.nama as namaujian, n.nilai as nilai, u.tanggal as tanggal  FROM ((siswa s FULL OUTER JOIN nilai n USING(nosiswa)) FULL OUTER JOIN pengajar p USING(nopengajar))  FULL OUTER JOIN pegawai pw USING(nopegawai)  FULL OUTER JOIN matapelajaran m ON n.kodepelajaran = m.kodepelajaran FULL OUTER JOIN ujian u USING(kodeujian) WHERE s.nosiswa = '" + nosiswa + "';";
+                cmd.CommandType = CommandType.Text;
+
+                NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd);
+                DataSet ds = new DataSet();
+
+
+                ds.Reset();
+                da.Fill(ds);
+                dt = ds.Tables[0];
+
+                cmd.Dispose();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Data gagal dibaca:" + ex.Message.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return dt;
+
+        }
+
         public DataTable getJadwalKelasByID(string nosiswa)
         {
             NpgsqlConnection conn = new NpgsqlConnection();
@@ -124,6 +162,41 @@ namespace Bimbem_App
 
             return dt;
 
+        }
+
+        public DataTable getPegawaiSiswa()
+        {
+            NpgsqlConnection conn = new NpgsqlConnection();
+            DataTable dt = new DataTable();
+            try
+            {
+                conn.ConnectionString = strConnString;
+                conn.Open();
+
+                NpgsqlCommand cmd = new NpgsqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = "SELECT pj.nopengajar as nopengajar, pw.nama as nama, pw.nohp, pw.email FROM pengajar pj JOIN pegawai pw USING(nopegawai);";
+                cmd.CommandType = CommandType.Text;
+
+                NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd);
+                DataSet ds = new DataSet();
+
+                ds.Reset();
+                da.Fill(ds);
+                dt = ds.Tables[0];
+
+                cmd.Dispose();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Data pegawai gagal dibaca :" + ex.Message.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return dt;
         }
 
         // GET ALLLLL
@@ -547,6 +620,11 @@ namespace Bimbem_App
 
             return dt;
         }
+
+        // Getnilai by ID
+
+
+
 
         // sini bang
 

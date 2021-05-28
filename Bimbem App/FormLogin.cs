@@ -47,7 +47,11 @@ namespace Bimbem_App
         // Img exit button
         private void pictureBox1_Click_1(object sender, EventArgs e)
         {
-            Application.Exit();
+            DialogResult dialogResult = MessageBox.Show("Yakin keluar?", "Keluar", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (dialogResult == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -60,11 +64,16 @@ namespace Bimbem_App
 
         public string noPegawaiLogin = "";
 
-        public Boolean isSiswa;
+        public string isSiswa;
+
+        public Boolean loginCek = false;
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            if ((!rbPegawai.Checked && !rbSiswa.Checked) || (txtUsername.Text == "") || (txtPassword.Text == "") )
+            {
+                MessageBox.Show("Cek semua isian, masi ada yang kosong tuh!", "Log in", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
             if(rbSiswa.Checked)
             {
                 if (txtUsername.Text != "" && txtPassword.Text != "")
@@ -84,7 +93,8 @@ namespace Bimbem_App
                         {
                             this.noSiswaLogin = txtUsername.Text;
                             this.DialogResult = DialogResult.OK;
-                            this.isSiswa = true;
+                            this.isSiswa = "siswa";
+                            this.loginCek = true;
                         }
                         else
                         {
@@ -118,7 +128,8 @@ namespace Bimbem_App
                         {
                             this.noPegawaiLogin = txtUsername.Text;
                             this.DialogResult = DialogResult.OK;
-                            this.isSiswa = false;
+                            this.isSiswa = "pegawai";
+                            this.loginCek = true;
                         }
                         else
                         {
@@ -130,6 +141,39 @@ namespace Bimbem_App
                 {
                     MessageBox.Show("Silakan masukan username dan password terlebih dahulu", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
+            }
+            if (loginCek)
+            {
+                MessageBox.Show("Log in berhasil!", "Log in", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            
+        }
+
+        private void rbSiswa_CheckedChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void rbPegawai_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void exit_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Yakin keluar?", "Keluar", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (dialogResult == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Yakin keluar?", "Keluar", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (dialogResult == DialogResult.Yes)
+            {
+                Application.Exit();
             }
         }
     }
