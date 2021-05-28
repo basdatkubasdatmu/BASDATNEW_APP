@@ -260,10 +260,11 @@ namespace Bimbem_App
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FloralWhite;
             this.panel1.Controls.Add(this.dgvJadwalPengajar);
             this.panel1.Location = new System.Drawing.Point(12, 388);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(871, 265);
+            this.panel1.Size = new System.Drawing.Size(871, 254);
             this.panel1.TabIndex = 19;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -271,6 +272,7 @@ namespace Bimbem_App
             // 
             this.dgvJadwalPengajar.AllowUserToAddRows = false;
             this.dgvJadwalPengajar.AllowUserToDeleteRows = false;
+            this.dgvJadwalPengajar.BackgroundColor = System.Drawing.Color.Salmon;
             this.dgvJadwalPengajar.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
@@ -294,7 +296,7 @@ namespace Bimbem_App
             this.dgvJadwalPengajar.Name = "dgvJadwalPengajar";
             this.dgvJadwalPengajar.RowHeadersWidth = 51;
             this.dgvJadwalPengajar.RowTemplate.Height = 25;
-            this.dgvJadwalPengajar.Size = new System.Drawing.Size(828, 221);
+            this.dgvJadwalPengajar.Size = new System.Drawing.Size(828, 214);
             this.dgvJadwalPengajar.TabIndex = 0;
             // 
             // kodejadwalpengajar
@@ -365,7 +367,7 @@ namespace Bimbem_App
             // 
             this.btnHapus.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnHapus.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnHapus.Location = new System.Drawing.Point(889, 391);
+            this.btnHapus.Location = new System.Drawing.Point(889, 388);
             this.btnHapus.Name = "btnHapus";
             this.btnHapus.Size = new System.Drawing.Size(74, 32);
             this.btnHapus.TabIndex = 22;
@@ -377,7 +379,7 @@ namespace Bimbem_App
             // 
             this.btnEdit.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnEdit.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnEdit.Location = new System.Drawing.Point(889, 429);
+            this.btnEdit.Location = new System.Drawing.Point(889, 426);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(74, 32);
             this.btnEdit.TabIndex = 21;
@@ -388,7 +390,7 @@ namespace Bimbem_App
             // 
             this.btnTambah.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnTambah.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnTambah.Location = new System.Drawing.Point(889, 467);
+            this.btnTambah.Location = new System.Drawing.Point(889, 464);
             this.btnTambah.Name = "btnTambah";
             this.btnTambah.Size = new System.Drawing.Size(74, 32);
             this.btnTambah.TabIndex = 23;
@@ -405,6 +407,7 @@ namespace Bimbem_App
             this.btnBatal.TabIndex = 20;
             this.btnBatal.Text = "Batal";
             this.btnBatal.UseVisualStyleBackColor = false;
+            this.btnBatal.Click += new System.EventHandler(this.btnBatal_Click);
             // 
             // btnSimpan
             // 
@@ -421,7 +424,7 @@ namespace Bimbem_App
             // 
             this.btnRefresh.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnRefresh.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnRefresh.Location = new System.Drawing.Point(889, 505);
+            this.btnRefresh.Location = new System.Drawing.Point(889, 502);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(74, 32);
             this.btnRefresh.TabIndex = 31;
@@ -433,7 +436,7 @@ namespace Bimbem_App
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(978, 591);
+            this.ClientSize = new System.Drawing.Size(978, 665);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnTambah);
             this.Controls.Add(this.btnHapus);

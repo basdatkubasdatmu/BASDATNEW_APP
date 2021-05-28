@@ -43,5 +43,10 @@ namespace Bimbem_App
                 da.hapusDataJadwalPengajar(SelectedKodeJadwalPengajar);
             }
         }
+
+        private void btnBatal_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
