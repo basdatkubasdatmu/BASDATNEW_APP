@@ -8,11 +8,21 @@ using System.Windows.Forms;
 
 namespace Bimbem_App
 {
-    public partial class FormInputPembayaran : Form
+    public partial class FormInputMatpel : Form
     {
-        public FormInputPembayaran()
+        public FormInputMatpel()
         {
             InitializeComponent();
+        }
+
+        private void btnSimpan_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
