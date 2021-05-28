@@ -31,12 +31,8 @@ namespace Bimbem_App
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ParentForm));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlMenuSiswa = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.btnBiomu = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.btnPengajar = new System.Windows.Forms.Button();
@@ -94,11 +90,10 @@ namespace Bimbem_App
             this.nohp = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label5 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.pnlMenuSiswa.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel11.SuspendLayout();
-            this.panel13.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -120,28 +115,27 @@ namespace Bimbem_App
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Bimbem_App.Properties.Resources.parent_form;
-            this.pictureBox1.Location = new System.Drawing.Point(0, -2);
+            this.pictureBox1.Location = new System.Drawing.Point(-3, -3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1038, 696);
+            this.pictureBox1.Size = new System.Drawing.Size(1038, 673);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // panel1
+            // pnlMenuSiswa
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.btnLogOut);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Location = new System.Drawing.Point(24, 25);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(234, 616);
-            this.panel1.TabIndex = 3;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            this.pnlMenuSiswa.BackColor = System.Drawing.Color.White;
+            this.pnlMenuSiswa.Controls.Add(this.panel2);
+            this.pnlMenuSiswa.Controls.Add(this.btnLogOut);
+            this.pnlMenuSiswa.Controls.Add(this.pictureBox2);
+            this.pnlMenuSiswa.Location = new System.Drawing.Point(24, 25);
+            this.pnlMenuSiswa.Name = "pnlMenuSiswa";
+            this.pnlMenuSiswa.Size = new System.Drawing.Size(234, 616);
+            this.pnlMenuSiswa.TabIndex = 3;
+            this.pnlMenuSiswa.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.panel11);
             this.panel2.Controls.Add(this.panel7);
             this.panel2.Controls.Add(this.panel9);
             this.panel2.Controls.Add(this.panel6);
@@ -152,53 +146,6 @@ namespace Bimbem_App
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(180, 393);
             this.panel2.TabIndex = 3;
-            // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.Color.Tomato;
-            this.panel11.Controls.Add(this.panel13);
-            this.panel11.Controls.Add(this.label6);
-            this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel11.ForeColor = System.Drawing.Color.White;
-            this.panel11.Location = new System.Drawing.Point(0, 206);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(180, 50);
-            this.panel11.TabIndex = 7;
-            // 
-            // panel13
-            // 
-            this.panel13.BackColor = System.Drawing.Color.Tomato;
-            this.panel13.Controls.Add(this.btnBiomu);
-            this.panel13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel13.ForeColor = System.Drawing.Color.White;
-            this.panel13.Location = new System.Drawing.Point(0, 0);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(180, 50);
-            this.panel13.TabIndex = 8;
-            // 
-            // btnBiomu
-            // 
-            this.btnBiomu.BackColor = System.Drawing.Color.Tomato;
-            this.btnBiomu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBiomu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnBiomu.ForeColor = System.Drawing.Color.White;
-            this.btnBiomu.Location = new System.Drawing.Point(0, 0);
-            this.btnBiomu.Name = "btnBiomu";
-            this.btnBiomu.Size = new System.Drawing.Size(180, 50);
-            this.btnBiomu.TabIndex = 2;
-            this.btnBiomu.Text = "Biomu!";
-            this.btnBiomu.UseVisualStyleBackColor = false;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(40, 9);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(103, 28);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Akademik";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel7
             // 
@@ -771,7 +718,7 @@ namespace Bimbem_App
             this.dgvPegawaiSiswa.ReadOnly = true;
             this.dgvPegawaiSiswa.RowHeadersWidth = 51;
             this.dgvPegawaiSiswa.RowTemplate.Height = 29;
-            this.dgvPegawaiSiswa.Size = new System.Drawing.Size(619, 477);
+            this.dgvPegawaiSiswa.Size = new System.Drawing.Size(555, 477);
             this.dgvPegawaiSiswa.TabIndex = 1;
             // 
             // noPengajar
@@ -822,17 +769,33 @@ namespace Bimbem_App
             this.label5.TabIndex = 0;
             this.label5.Text = "Pengajar";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.LightCoral;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(828, 27);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(113, 29);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Refresh";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // ParentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1108, 666);
+            this.ClientSize = new System.Drawing.Size(978, 665);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pnlPengajar);
             this.Controls.Add(this.pnlAkademikSiswa);
             this.Controls.Add(this.jadwalSiswa);
             this.Controls.Add(this.lblGreetings);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnlMenuSiswa);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IsMdiContainer = true;
@@ -841,11 +804,8 @@ namespace Bimbem_App
             this.Text = "ParentForm";
             this.Load += new System.EventHandler(this.ParentForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel1.ResumeLayout(false);
+            this.pnlMenuSiswa.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
-            this.panel13.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
@@ -873,7 +833,7 @@ namespace Bimbem_App
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnlMenuSiswa;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblGreetings;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -901,9 +861,6 @@ namespace Bimbem_App
         private System.Windows.Forms.DataGridViewTextBoxColumn durasiUjianSiswa;
         private System.Windows.Forms.Button btnLogOut;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel6;
@@ -913,7 +870,6 @@ namespace Bimbem_App
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button btnBiomu;
         private System.Windows.Forms.Button btnPengajar;
         private System.Windows.Forms.Button btnAkademik;
         private System.Windows.Forms.Button btnJadwalSiswa;
@@ -936,5 +892,6 @@ namespace Bimbem_App
         private System.Windows.Forms.DataGridViewTextBoxColumn nohp;
         private System.Windows.Forms.DataGridViewTextBoxColumn email;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button button1;
     }
 }

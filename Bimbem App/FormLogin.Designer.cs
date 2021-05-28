@@ -31,6 +31,7 @@ namespace Bimbem_App
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.picClose = new System.Windows.Forms.PictureBox();
             this.checkBox_Password = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -52,6 +53,7 @@ namespace Bimbem_App
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.picClose);
             this.panel1.Controls.Add(this.checkBox_Password);
             this.panel1.Controls.Add(this.button1);
@@ -69,6 +71,21 @@ namespace Bimbem_App
             this.panel1.Size = new System.Drawing.Size(331, 705);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.Control;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button2.ForeColor = System.Drawing.Color.DimGray;
+            this.button2.Location = new System.Drawing.Point(97, 620);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(56, 42);
+            this.button2.TabIndex = 10;
+            this.button2.Text = "Exit";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // picClose
             // 
@@ -125,6 +142,7 @@ namespace Bimbem_App
             this.rbPegawai.TabStop = true;
             this.rbPegawai.Text = "pegawai";
             this.rbPegawai.UseVisualStyleBackColor = false;
+            this.rbPegawai.CheckedChanged += new System.EventHandler(this.rbPegawai_CheckedChanged);
             // 
             // rbSiswa
             // 
@@ -139,6 +157,7 @@ namespace Bimbem_App
             this.rbSiswa.TabStop = true;
             this.rbSiswa.Text = "siswa";
             this.rbSiswa.UseVisualStyleBackColor = false;
+            this.rbSiswa.CheckedChanged += new System.EventHandler(this.rbSiswa_CheckedChanged);
             // 
             // label3
             // 
@@ -208,9 +227,9 @@ namespace Bimbem_App
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(328, 0);
+            this.pictureBox3.Location = new System.Drawing.Point(318, 0);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(707, 705);
+            this.pictureBox3.Size = new System.Drawing.Size(717, 707);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
@@ -251,5 +270,6 @@ namespace Bimbem_App
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox picClose;
+        private System.Windows.Forms.Button button2;
     }
 }
