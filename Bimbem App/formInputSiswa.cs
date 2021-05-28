@@ -57,5 +57,10 @@ namespace Bimbem_App
                 da.insertDataSiswa(txtNoSiswa.Text, textBox1.Text, jnsKelamin, txtKodeKelas.Text, txtNoHPSiswa.Text, txtEmailSiswa.Text, txtAsalDaerah.Text);
             }
         }
+
+        private void btnMenuUtama_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

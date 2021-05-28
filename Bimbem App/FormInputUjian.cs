@@ -52,5 +52,10 @@ namespace Bimbem_App
                 da.insertDataJadwalUjian(txtKodeUjian.Text, txtNamaUjian.Text, txtKodePelajaran.Text, txtTanggal.Text, txtJam.Text, txtDurasi.Text);
             }
         }
+
+        private void btnMenuUtama_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

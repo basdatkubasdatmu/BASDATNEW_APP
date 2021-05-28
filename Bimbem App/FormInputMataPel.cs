@@ -41,5 +41,10 @@ namespace Bimbem_App
                 da.hapusDataMatpel(SelectedKodePelajaran);
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

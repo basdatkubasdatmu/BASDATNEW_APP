@@ -51,5 +51,10 @@ namespace Bimbem_App
                 da.insertDataPembayaran(txtPembayaran.Text, txtNoSiswa.Text, txtKodeKelas.Text, txtTglPembayaran.Text, txtKeteranganBayar.Text, "1,000,000");
             }
         }
+
+        private void btnMenuUtama_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -47,5 +47,10 @@ namespace Bimbem_App
                 da.insertDataRuang(txtKodeZoom.Text, txtLinkRuangZoom.Text, txtIdMeetingRuangZoom.Text, txtPasscodeRuangZoom.Text);
             }
         }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

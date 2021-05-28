@@ -46,6 +46,11 @@ namespace Bimbem_App
 
         private void btnBatal_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
             this.Close();
         }
     }

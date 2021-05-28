@@ -17,9 +17,7 @@ namespace Bimbem_App
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            FormMenuPegawai frmMenuPegawai = new FormMenuPegawai();
-            frmMenuPegawai.ShowDialog();
+            this.Close();
         }
     }
 }

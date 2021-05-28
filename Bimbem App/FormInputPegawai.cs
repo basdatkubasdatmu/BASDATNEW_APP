@@ -66,5 +66,10 @@ namespace Bimbem_App
                 da.hapusDataPegawai(SelectedNoPegawai);
             }
         }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

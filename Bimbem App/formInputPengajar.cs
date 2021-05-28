@@ -31,5 +31,10 @@ namespace Bimbem_App
                 da.hapusDataPengajar(SelectedNoPengajar);
             }
         }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

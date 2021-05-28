@@ -31,5 +31,15 @@ namespace Bimbem_App
                 da.hapusDataKelas(SelectedKodeKelas);
             }
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

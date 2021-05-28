@@ -47,40 +47,40 @@ namespace Bimbem_App
             this.jamMulai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Durasi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlMenuPegawai = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.btnZoom = new System.Windows.Forms.Button();
+            this.btnSiswa = new System.Windows.Forms.Button();
+            this.btnTransaksi = new System.Windows.Forms.Button();
+            this.btnMataPelajaran = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnPresensiPgw = new System.Windows.Forms.Button();
             this.btnNilaiPgw = new System.Windows.Forms.Button();
             this.btnKelas = new System.Windows.Forms.Button();
             this.btnUjian = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.btnPegaawai = new System.Windows.Forms.Button();
+            this.btnJadwalPengajar = new System.Windows.Forms.Button();
+            this.btnJadwalMenuSiswaPgw = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.btnSiswa = new System.Windows.Forms.Button();
-            this.btnTransaksi = new System.Windows.Forms.Button();
-            this.btnMataPelajaran = new System.Windows.Forms.Button();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.btnJadwalMenuSiswaPgw = new System.Windows.Forms.Button();
-            this.btnJadwalPengajar = new System.Windows.Forms.Button();
-            this.btnPegaawai = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.btnPresensiPgw = new System.Windows.Forms.Button();
-            this.btnZoom = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlMenuSiswa.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.pnlMenuPegawai.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panel3.SuspendLayout();
-            this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -204,7 +204,6 @@ namespace Bimbem_App
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // label1
             // 
@@ -263,11 +262,153 @@ namespace Bimbem_App
             this.pnlMenuPegawai.Controls.Add(this.panel5);
             this.pnlMenuPegawai.Controls.Add(this.button4);
             this.pnlMenuPegawai.Controls.Add(this.pictureBox3);
-            this.pnlMenuPegawai.Location = new System.Drawing.Point(102, 105);
+            this.pnlMenuPegawai.Location = new System.Drawing.Point(115, 105);
             this.pnlMenuPegawai.Name = "pnlMenuPegawai";
             this.pnlMenuPegawai.Size = new System.Drawing.Size(722, 488);
             this.pnlMenuPegawai.TabIndex = 6;
             this.pnlMenuPegawai.Visible = false;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.Firebrick;
+            this.panel8.Location = new System.Drawing.Point(655, 133);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(10, 300);
+            this.panel8.TabIndex = 7;
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.btnZoom);
+            this.panel7.Controls.Add(this.btnSiswa);
+            this.panel7.Controls.Add(this.btnTransaksi);
+            this.panel7.Controls.Add(this.btnMataPelajaran);
+            this.panel7.Location = new System.Drawing.Point(443, 146);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(199, 301);
+            this.panel7.TabIndex = 6;
+            // 
+            // btnZoom
+            // 
+            this.btnZoom.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnZoom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnZoom.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnZoom.ForeColor = System.Drawing.Color.White;
+            this.btnZoom.Location = new System.Drawing.Point(9, 215);
+            this.btnZoom.Name = "btnZoom";
+            this.btnZoom.Size = new System.Drawing.Size(180, 50);
+            this.btnZoom.TabIndex = 5;
+            this.btnZoom.Text = "Zoom";
+            this.btnZoom.UseVisualStyleBackColor = false;
+            this.btnZoom.Click += new System.EventHandler(this.btnZoom_Click);
+            // 
+            // btnSiswa
+            // 
+            this.btnSiswa.BackColor = System.Drawing.Color.Gold;
+            this.btnSiswa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSiswa.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSiswa.ForeColor = System.Drawing.Color.White;
+            this.btnSiswa.Location = new System.Drawing.Point(9, 17);
+            this.btnSiswa.Name = "btnSiswa";
+            this.btnSiswa.Size = new System.Drawing.Size(180, 50);
+            this.btnSiswa.TabIndex = 1;
+            this.btnSiswa.Text = "Siswa";
+            this.btnSiswa.UseVisualStyleBackColor = false;
+            this.btnSiswa.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // btnTransaksi
+            // 
+            this.btnTransaksi.BackColor = System.Drawing.Color.Turquoise;
+            this.btnTransaksi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTransaksi.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnTransaksi.ForeColor = System.Drawing.Color.White;
+            this.btnTransaksi.Location = new System.Drawing.Point(9, 83);
+            this.btnTransaksi.Name = "btnTransaksi";
+            this.btnTransaksi.Size = new System.Drawing.Size(180, 50);
+            this.btnTransaksi.TabIndex = 0;
+            this.btnTransaksi.Text = "Transaksi";
+            this.btnTransaksi.UseVisualStyleBackColor = false;
+            this.btnTransaksi.Click += new System.EventHandler(this.btnTransaksi_Click);
+            // 
+            // btnMataPelajaran
+            // 
+            this.btnMataPelajaran.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnMataPelajaran.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMataPelajaran.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnMataPelajaran.ForeColor = System.Drawing.Color.White;
+            this.btnMataPelajaran.Location = new System.Drawing.Point(9, 149);
+            this.btnMataPelajaran.Name = "btnMataPelajaran";
+            this.btnMataPelajaran.Size = new System.Drawing.Size(180, 50);
+            this.btnMataPelajaran.TabIndex = 2;
+            this.btnMataPelajaran.Text = "Mata Pelajaran";
+            this.btnMataPelajaran.UseVisualStyleBackColor = false;
+            this.btnMataPelajaran.Click += new System.EventHandler(this.btnMataPelajaran_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.btnPresensiPgw);
+            this.panel3.Controls.Add(this.btnNilaiPgw);
+            this.panel3.Controls.Add(this.btnKelas);
+            this.panel3.Controls.Add(this.btnUjian);
+            this.panel3.Location = new System.Drawing.Point(243, 146);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(199, 301);
+            this.panel3.TabIndex = 5;
+            // 
+            // btnPresensiPgw
+            // 
+            this.btnPresensiPgw.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnPresensiPgw.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPresensiPgw.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnPresensiPgw.ForeColor = System.Drawing.Color.White;
+            this.btnPresensiPgw.Location = new System.Drawing.Point(9, 215);
+            this.btnPresensiPgw.Name = "btnPresensiPgw";
+            this.btnPresensiPgw.Size = new System.Drawing.Size(180, 50);
+            this.btnPresensiPgw.TabIndex = 4;
+            this.btnPresensiPgw.Text = "Presensi";
+            this.btnPresensiPgw.UseVisualStyleBackColor = false;
+            this.btnPresensiPgw.Click += new System.EventHandler(this.btnPresensiPgw_Click);
+            // 
+            // btnNilaiPgw
+            // 
+            this.btnNilaiPgw.BackColor = System.Drawing.Color.Gold;
+            this.btnNilaiPgw.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNilaiPgw.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnNilaiPgw.ForeColor = System.Drawing.Color.White;
+            this.btnNilaiPgw.Location = new System.Drawing.Point(9, 17);
+            this.btnNilaiPgw.Name = "btnNilaiPgw";
+            this.btnNilaiPgw.Size = new System.Drawing.Size(180, 50);
+            this.btnNilaiPgw.TabIndex = 1;
+            this.btnNilaiPgw.Text = "Nilai";
+            this.btnNilaiPgw.UseVisualStyleBackColor = false;
+            this.btnNilaiPgw.Click += new System.EventHandler(this.btnNilaiPgw_Click);
+            // 
+            // btnKelas
+            // 
+            this.btnKelas.BackColor = System.Drawing.Color.Turquoise;
+            this.btnKelas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnKelas.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnKelas.ForeColor = System.Drawing.Color.White;
+            this.btnKelas.Location = new System.Drawing.Point(9, 83);
+            this.btnKelas.Name = "btnKelas";
+            this.btnKelas.Size = new System.Drawing.Size(180, 50);
+            this.btnKelas.TabIndex = 0;
+            this.btnKelas.Text = "Kelas";
+            this.btnKelas.UseVisualStyleBackColor = false;
+            this.btnKelas.Click += new System.EventHandler(this.btnKelas_Click);
+            // 
+            // btnUjian
+            // 
+            this.btnUjian.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnUjian.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUjian.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnUjian.ForeColor = System.Drawing.Color.White;
+            this.btnUjian.Location = new System.Drawing.Point(9, 149);
+            this.btnUjian.Name = "btnUjian";
+            this.btnUjian.Size = new System.Drawing.Size(180, 50);
+            this.btnUjian.TabIndex = 2;
+            this.btnUjian.Text = "Ujian";
+            this.btnUjian.UseVisualStyleBackColor = false;
+            this.btnUjian.Click += new System.EventHandler(this.btnUjian_Click);
             // 
             // label2
             // 
@@ -280,6 +421,74 @@ namespace Bimbem_App
             this.label2.TabIndex = 5;
             this.label2.Text = "Selamat datang, Admin!";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label2.Click += new System.EventHandler(this.label2_Click_1);
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.btnPegaawai);
+            this.panel4.Controls.Add(this.btnJadwalPengajar);
+            this.panel4.Controls.Add(this.btnJadwalMenuSiswaPgw);
+            this.panel4.Controls.Add(this.button3);
+            this.panel4.Location = new System.Drawing.Point(43, 146);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(199, 301);
+            this.panel4.TabIndex = 4;
+            // 
+            // btnPegaawai
+            // 
+            this.btnPegaawai.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnPegaawai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPegaawai.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnPegaawai.ForeColor = System.Drawing.Color.White;
+            this.btnPegaawai.Location = new System.Drawing.Point(9, 215);
+            this.btnPegaawai.Name = "btnPegaawai";
+            this.btnPegaawai.Size = new System.Drawing.Size(180, 50);
+            this.btnPegaawai.TabIndex = 3;
+            this.btnPegaawai.Text = "Pegawai";
+            this.btnPegaawai.UseVisualStyleBackColor = false;
+            this.btnPegaawai.Click += new System.EventHandler(this.btnPegaawai_Click);
+            // 
+            // btnJadwalPengajar
+            // 
+            this.btnJadwalPengajar.BackColor = System.Drawing.Color.Gold;
+            this.btnJadwalPengajar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnJadwalPengajar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnJadwalPengajar.ForeColor = System.Drawing.Color.White;
+            this.btnJadwalPengajar.Location = new System.Drawing.Point(9, 17);
+            this.btnJadwalPengajar.Name = "btnJadwalPengajar";
+            this.btnJadwalPengajar.Size = new System.Drawing.Size(180, 50);
+            this.btnJadwalPengajar.TabIndex = 1;
+            this.btnJadwalPengajar.Text = "Jadwal Pengajar";
+            this.btnJadwalPengajar.UseVisualStyleBackColor = false;
+            this.btnJadwalPengajar.Click += new System.EventHandler(this.btnJadwalPengajar_Click);
+            // 
+            // btnJadwalMenuSiswaPgw
+            // 
+            this.btnJadwalMenuSiswaPgw.BackColor = System.Drawing.Color.Turquoise;
+            this.btnJadwalMenuSiswaPgw.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnJadwalMenuSiswaPgw.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnJadwalMenuSiswaPgw.ForeColor = System.Drawing.Color.White;
+            this.btnJadwalMenuSiswaPgw.Location = new System.Drawing.Point(9, 83);
+            this.btnJadwalMenuSiswaPgw.Name = "btnJadwalMenuSiswaPgw";
+            this.btnJadwalMenuSiswaPgw.Size = new System.Drawing.Size(180, 50);
+            this.btnJadwalMenuSiswaPgw.TabIndex = 0;
+            this.btnJadwalMenuSiswaPgw.Text = "Jadwal Siswa";
+            this.btnJadwalMenuSiswaPgw.UseVisualStyleBackColor = false;
+            this.btnJadwalMenuSiswaPgw.Click += new System.EventHandler(this.btnJadwalMenuSiswaPgw_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.SandyBrown;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(9, 149);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(180, 50);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "Pengajar";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // panel5
             // 
@@ -301,6 +510,7 @@ namespace Bimbem_App
             this.button4.TabIndex = 2;
             this.button4.Text = "Log Out";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // pictureBox3
             // 
@@ -311,56 +521,6 @@ namespace Bimbem_App
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.btnPresensiPgw);
-            this.panel3.Controls.Add(this.btnNilaiPgw);
-            this.panel3.Controls.Add(this.btnKelas);
-            this.panel3.Controls.Add(this.btnUjian);
-            this.panel3.Location = new System.Drawing.Point(243, 146);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(199, 301);
-            this.panel3.TabIndex = 5;
-            // 
-            // btnNilaiPgw
-            // 
-            this.btnNilaiPgw.BackColor = System.Drawing.Color.Gold;
-            this.btnNilaiPgw.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNilaiPgw.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnNilaiPgw.ForeColor = System.Drawing.Color.White;
-            this.btnNilaiPgw.Location = new System.Drawing.Point(9, 17);
-            this.btnNilaiPgw.Name = "btnNilaiPgw";
-            this.btnNilaiPgw.Size = new System.Drawing.Size(180, 50);
-            this.btnNilaiPgw.TabIndex = 1;
-            this.btnNilaiPgw.Text = "Nilai";
-            this.btnNilaiPgw.UseVisualStyleBackColor = false;
-            // 
-            // btnKelas
-            // 
-            this.btnKelas.BackColor = System.Drawing.Color.Turquoise;
-            this.btnKelas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnKelas.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnKelas.ForeColor = System.Drawing.Color.White;
-            this.btnKelas.Location = new System.Drawing.Point(9, 83);
-            this.btnKelas.Name = "btnKelas";
-            this.btnKelas.Size = new System.Drawing.Size(180, 50);
-            this.btnKelas.TabIndex = 0;
-            this.btnKelas.Text = "Kelas";
-            this.btnKelas.UseVisualStyleBackColor = false;
-            // 
-            // btnUjian
-            // 
-            this.btnUjian.BackColor = System.Drawing.Color.SandyBrown;
-            this.btnUjian.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUjian.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnUjian.ForeColor = System.Drawing.Color.White;
-            this.btnUjian.Location = new System.Drawing.Point(9, 149);
-            this.btnUjian.Name = "btnUjian";
-            this.btnUjian.Size = new System.Drawing.Size(180, 50);
-            this.btnUjian.TabIndex = 2;
-            this.btnUjian.Text = "Ujian";
-            this.btnUjian.UseVisualStyleBackColor = false;
             // 
             // panel6
             // 
@@ -411,155 +571,6 @@ namespace Bimbem_App
             this.button10.Text = "Pengajar";
             this.button10.UseVisualStyleBackColor = false;
             // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.btnZoom);
-            this.panel7.Controls.Add(this.btnSiswa);
-            this.panel7.Controls.Add(this.btnTransaksi);
-            this.panel7.Controls.Add(this.btnMataPelajaran);
-            this.panel7.Location = new System.Drawing.Point(443, 146);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(199, 301);
-            this.panel7.TabIndex = 6;
-            // 
-            // btnSiswa
-            // 
-            this.btnSiswa.BackColor = System.Drawing.Color.Gold;
-            this.btnSiswa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSiswa.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnSiswa.ForeColor = System.Drawing.Color.White;
-            this.btnSiswa.Location = new System.Drawing.Point(9, 17);
-            this.btnSiswa.Name = "btnSiswa";
-            this.btnSiswa.Size = new System.Drawing.Size(180, 50);
-            this.btnSiswa.TabIndex = 1;
-            this.btnSiswa.Text = "Siswa";
-            this.btnSiswa.UseVisualStyleBackColor = false;
-            this.btnSiswa.Click += new System.EventHandler(this.button11_Click);
-            // 
-            // btnTransaksi
-            // 
-            this.btnTransaksi.BackColor = System.Drawing.Color.Turquoise;
-            this.btnTransaksi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTransaksi.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnTransaksi.ForeColor = System.Drawing.Color.White;
-            this.btnTransaksi.Location = new System.Drawing.Point(9, 83);
-            this.btnTransaksi.Name = "btnTransaksi";
-            this.btnTransaksi.Size = new System.Drawing.Size(180, 50);
-            this.btnTransaksi.TabIndex = 0;
-            this.btnTransaksi.Text = "Transaksi";
-            this.btnTransaksi.UseVisualStyleBackColor = false;
-            // 
-            // btnMataPelajaran
-            // 
-            this.btnMataPelajaran.BackColor = System.Drawing.Color.SandyBrown;
-            this.btnMataPelajaran.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMataPelajaran.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnMataPelajaran.ForeColor = System.Drawing.Color.White;
-            this.btnMataPelajaran.Location = new System.Drawing.Point(9, 149);
-            this.btnMataPelajaran.Name = "btnMataPelajaran";
-            this.btnMataPelajaran.Size = new System.Drawing.Size(180, 50);
-            this.btnMataPelajaran.TabIndex = 2;
-            this.btnMataPelajaran.Text = "Mata Pelajaran";
-            this.btnMataPelajaran.UseVisualStyleBackColor = false;
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.Firebrick;
-            this.panel8.Location = new System.Drawing.Point(655, 133);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(10, 300);
-            this.panel8.TabIndex = 7;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.SandyBrown;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(9, 149);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(180, 50);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Pengajar";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // btnJadwalMenuSiswaPgw
-            // 
-            this.btnJadwalMenuSiswaPgw.BackColor = System.Drawing.Color.Turquoise;
-            this.btnJadwalMenuSiswaPgw.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnJadwalMenuSiswaPgw.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnJadwalMenuSiswaPgw.ForeColor = System.Drawing.Color.White;
-            this.btnJadwalMenuSiswaPgw.Location = new System.Drawing.Point(9, 83);
-            this.btnJadwalMenuSiswaPgw.Name = "btnJadwalMenuSiswaPgw";
-            this.btnJadwalMenuSiswaPgw.Size = new System.Drawing.Size(180, 50);
-            this.btnJadwalMenuSiswaPgw.TabIndex = 0;
-            this.btnJadwalMenuSiswaPgw.Text = "Jadwal Siswa";
-            this.btnJadwalMenuSiswaPgw.UseVisualStyleBackColor = false;
-            // 
-            // btnJadwalPengajar
-            // 
-            this.btnJadwalPengajar.BackColor = System.Drawing.Color.Gold;
-            this.btnJadwalPengajar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnJadwalPengajar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnJadwalPengajar.ForeColor = System.Drawing.Color.White;
-            this.btnJadwalPengajar.Location = new System.Drawing.Point(9, 17);
-            this.btnJadwalPengajar.Name = "btnJadwalPengajar";
-            this.btnJadwalPengajar.Size = new System.Drawing.Size(180, 50);
-            this.btnJadwalPengajar.TabIndex = 1;
-            this.btnJadwalPengajar.Text = "Jadwal Pengajar";
-            this.btnJadwalPengajar.UseVisualStyleBackColor = false;
-            this.btnJadwalPengajar.Click += new System.EventHandler(this.btnJadwalPengajar_Click);
-            // 
-            // btnPegaawai
-            // 
-            this.btnPegaawai.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.btnPegaawai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPegaawai.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnPegaawai.ForeColor = System.Drawing.Color.White;
-            this.btnPegaawai.Location = new System.Drawing.Point(9, 215);
-            this.btnPegaawai.Name = "btnPegaawai";
-            this.btnPegaawai.Size = new System.Drawing.Size(180, 50);
-            this.btnPegaawai.TabIndex = 3;
-            this.btnPegaawai.Text = "Pegawai";
-            this.btnPegaawai.UseVisualStyleBackColor = false;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.btnPegaawai);
-            this.panel4.Controls.Add(this.btnJadwalPengajar);
-            this.panel4.Controls.Add(this.btnJadwalMenuSiswaPgw);
-            this.panel4.Controls.Add(this.button3);
-            this.panel4.Location = new System.Drawing.Point(43, 146);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(199, 301);
-            this.panel4.TabIndex = 4;
-            // 
-            // btnPresensiPgw
-            // 
-            this.btnPresensiPgw.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.btnPresensiPgw.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPresensiPgw.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnPresensiPgw.ForeColor = System.Drawing.Color.White;
-            this.btnPresensiPgw.Location = new System.Drawing.Point(9, 215);
-            this.btnPresensiPgw.Name = "btnPresensiPgw";
-            this.btnPresensiPgw.Size = new System.Drawing.Size(180, 50);
-            this.btnPresensiPgw.TabIndex = 4;
-            this.btnPresensiPgw.Text = "Presensi";
-            this.btnPresensiPgw.UseVisualStyleBackColor = false;
-            // 
-            // btnZoom
-            // 
-            this.btnZoom.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.btnZoom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnZoom.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnZoom.ForeColor = System.Drawing.Color.White;
-            this.btnZoom.Location = new System.Drawing.Point(9, 215);
-            this.btnZoom.Name = "btnZoom";
-            this.btnZoom.Size = new System.Drawing.Size(180, 50);
-            this.btnZoom.TabIndex = 5;
-            this.btnZoom.Text = "Zoom";
-            this.btnZoom.UseVisualStyleBackColor = false;
-            // 
             // ParentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -570,6 +581,7 @@ namespace Bimbem_App
             this.Controls.Add(this.pnlMenuSiswa);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.Name = "ParentForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -582,11 +594,11 @@ namespace Bimbem_App
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.pnlMenuPegawai.ResumeLayout(false);
             this.pnlMenuPegawai.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.panel6.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

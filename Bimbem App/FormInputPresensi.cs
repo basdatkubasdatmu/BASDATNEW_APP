@@ -47,5 +47,10 @@ namespace Bimbem_App
                 da.insertDataPresensi(txtkodeJadwalSiswa.Text, txtNoSiswa.Text, dtpPresensi.Value.ToString());
             }
         }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

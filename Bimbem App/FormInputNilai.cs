@@ -36,5 +36,10 @@ namespace Bimbem_App
                 da.hapusDataNilai(SelectedKodeUjian);
             }
         }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
