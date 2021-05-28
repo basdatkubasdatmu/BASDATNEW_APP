@@ -78,19 +78,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ASUS\\.nuget\\packages\\": {}
+    "C:\\Users\\Hp\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\New\\Bimbel new 2\\BASDATNEW_APP\\Bimbem App\\Bimbem App.csproj",
+      "projectUniqueName": "E:\\basdat\\BASDATNEW_APP\\Bimbem App\\Bimbem App.csproj",
       "projectName": "Bimbem App",
-      "projectPath": "E:\\New\\Bimbel new 2\\BASDATNEW_APP\\Bimbem App\\Bimbem App.csproj",
-      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "E:\\New\\Bimbel new 2\\BASDATNEW_APP\\Bimbem App\\obj\\",
+      "projectPath": "E:\\basdat\\BASDATNEW_APP\\Bimbem App\\Bimbem App.csproj",
+      "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
+      "outputPath": "E:\\basdat\\BASDATNEW_APP\\Bimbem App\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

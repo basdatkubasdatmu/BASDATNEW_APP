@@ -15,5 +15,44 @@ namespace Bimbem_App
             InitializeComponent();
         }
 
+        private void lbKodePegawai_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbKodePegawai_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbNamaPegawai_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbNamaPegawai_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbJenisKelamin_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbPosisi_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
