@@ -29,6 +29,7 @@ namespace Bimbem_App
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.rdPerempuan = new System.Windows.Forms.RadioButton();
             this.rdLakilaki = new System.Windows.Forms.RadioButton();
@@ -49,10 +50,12 @@ namespace Bimbem_App
             this.btnEdit = new System.Windows.Forms.Button();
             this.btHapus = new System.Windows.Forms.Button();
             this.btTambah = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvSiswa = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btBatal = new System.Windows.Forms.Button();
             this.btSimpan = new System.Windows.Forms.Button();
+            this.btnMenuUtama = new System.Windows.Forms.Button();
+            this.btnRefresh = new System.Windows.Forms.Button();
             this.nomorSiswa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.namaSiswa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.jenisKelamin = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -60,10 +63,8 @@ namespace Bimbem_App
             this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.kodeKelas = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.asalDaerah = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnMenuUtama = new System.Windows.Forms.Button();
-            this.btnRefresh = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSiswa)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -280,10 +281,21 @@ namespace Bimbem_App
             this.btTambah.Text = "Tambah";
             this.btTambah.UseVisualStyleBackColor = false;
             // 
-            // dataGridView1
+            // dgvSiswa
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvSiswa.AllowUserToAddRows = false;
+            this.dgvSiswa.AllowUserToDeleteRows = false;
+            this.dgvSiswa.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvSiswa.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvSiswa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSiswa.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.nomorSiswa,
             this.namaSiswa,
             this.jenisKelamin,
@@ -291,15 +303,15 @@ namespace Bimbem_App
             this.email,
             this.kodeKelas,
             this.asalDaerah});
-            this.dataGridView1.Location = new System.Drawing.Point(22, 23);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(805, 247);
-            this.dataGridView1.TabIndex = 20;
+            this.dgvSiswa.Location = new System.Drawing.Point(22, 23);
+            this.dgvSiswa.Name = "dgvSiswa";
+            this.dgvSiswa.RowTemplate.Height = 25;
+            this.dgvSiswa.Size = new System.Drawing.Size(805, 247);
+            this.dgvSiswa.TabIndex = 20;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Controls.Add(this.dgvSiswa);
             this.panel1.Location = new System.Drawing.Point(23, 350);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(850, 290);
@@ -309,7 +321,7 @@ namespace Bimbem_App
             // 
             this.btBatal.BackColor = System.Drawing.SystemColors.Control;
             this.btBatal.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btBatal.Location = new System.Drawing.Point(597, 312);
+            this.btBatal.Location = new System.Drawing.Point(603, 312);
             this.btBatal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btBatal.Name = "btBatal";
             this.btBatal.Size = new System.Drawing.Size(74, 33);
@@ -321,55 +333,13 @@ namespace Bimbem_App
             // 
             this.btSimpan.BackColor = System.Drawing.SystemColors.Control;
             this.btSimpan.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btSimpan.Location = new System.Drawing.Point(517, 312);
+            this.btSimpan.Location = new System.Drawing.Point(523, 312);
             this.btSimpan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btSimpan.Name = "btSimpan";
             this.btSimpan.Size = new System.Drawing.Size(74, 33);
             this.btSimpan.TabIndex = 23;
             this.btSimpan.Text = "Simpan";
             this.btSimpan.UseVisualStyleBackColor = false;
-            // 
-            // nomorSiswa
-            // 
-            this.nomorSiswa.DataPropertyName = "nomorSiswa";
-            this.nomorSiswa.HeaderText = "Nomor Siswa";
-            this.nomorSiswa.Name = "nomorSiswa";
-            // 
-            // namaSiswa
-            // 
-            this.namaSiswa.DataPropertyName = "namaSiswa";
-            this.namaSiswa.HeaderText = "Nama Siswa";
-            this.namaSiswa.Name = "namaSiswa";
-            // 
-            // jenisKelamin
-            // 
-            this.jenisKelamin.DataPropertyName = "jenisKelamin";
-            this.jenisKelamin.HeaderText = "Jenis Kelamin";
-            this.jenisKelamin.Name = "jenisKelamin";
-            // 
-            // nomorHP
-            // 
-            this.nomorHP.DataPropertyName = "nomorHP";
-            this.nomorHP.HeaderText = "Nomor HP";
-            this.nomorHP.Name = "nomorHP";
-            // 
-            // email
-            // 
-            this.email.DataPropertyName = "email";
-            this.email.HeaderText = "Email";
-            this.email.Name = "email";
-            // 
-            // kodeKelas
-            // 
-            this.kodeKelas.DataPropertyName = "kodeKelas";
-            this.kodeKelas.HeaderText = "Kode Kelas";
-            this.kodeKelas.Name = "kodeKelas";
-            // 
-            // asalDaerah
-            // 
-            this.asalDaerah.DataPropertyName = "asalDaerah";
-            this.asalDaerah.HeaderText = "Asal Daerah";
-            this.asalDaerah.Name = "asalDaerah";
             // 
             // btnMenuUtama
             // 
@@ -393,6 +363,51 @@ namespace Bimbem_App
             this.btnRefresh.TabIndex = 73;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = false;
+            // 
+            // nomorSiswa
+            // 
+            this.nomorSiswa.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.nomorSiswa.DataPropertyName = "nomorSiswa";
+            this.nomorSiswa.HeaderText = "Nomor Siswa";
+            this.nomorSiswa.Name = "nomorSiswa";
+            this.nomorSiswa.Width = 129;
+            // 
+            // namaSiswa
+            // 
+            this.namaSiswa.DataPropertyName = "namaSiswa";
+            this.namaSiswa.HeaderText = "Nama Siswa";
+            this.namaSiswa.Name = "namaSiswa";
+            // 
+            // jenisKelamin
+            // 
+            this.jenisKelamin.DataPropertyName = "jenisKelamin";
+            this.jenisKelamin.HeaderText = "Jenis Kelamin";
+            this.jenisKelamin.Name = "jenisKelamin";
+            // 
+            // nomorHP
+            // 
+            this.nomorHP.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.nomorHP.DataPropertyName = "nomorHP";
+            this.nomorHP.HeaderText = "Nomor HP";
+            this.nomorHP.Name = "nomorHP";
+            // 
+            // email
+            // 
+            this.email.DataPropertyName = "email";
+            this.email.HeaderText = "Email";
+            this.email.Name = "email";
+            // 
+            // kodeKelas
+            // 
+            this.kodeKelas.DataPropertyName = "kodeKelas";
+            this.kodeKelas.HeaderText = "Kode Kelas";
+            this.kodeKelas.Name = "kodeKelas";
+            // 
+            // asalDaerah
+            // 
+            this.asalDaerah.DataPropertyName = "asalDaerah";
+            this.asalDaerah.HeaderText = "Asal Daerah";
+            this.asalDaerah.Name = "asalDaerah";
             // 
             // formInputSiswa
             // 
@@ -431,7 +446,7 @@ namespace Bimbem_App
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Input Siswa";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSiswa)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -460,10 +475,12 @@ namespace Bimbem_App
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btHapus;
         private System.Windows.Forms.Button btTambah;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvSiswa;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btBatal;
         private System.Windows.Forms.Button btSimpan;
+        private System.Windows.Forms.Button btnMenuUtama;
+        private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomorSiswa;
         private System.Windows.Forms.DataGridViewTextBoxColumn namaSiswa;
         private System.Windows.Forms.DataGridViewTextBoxColumn jenisKelamin;
@@ -471,7 +488,5 @@ namespace Bimbem_App
         private System.Windows.Forms.DataGridViewTextBoxColumn email;
         private System.Windows.Forms.DataGridViewTextBoxColumn kodeKelas;
         private System.Windows.Forms.DataGridViewTextBoxColumn asalDaerah;
-        private System.Windows.Forms.Button btnMenuUtama;
-        private System.Windows.Forms.Button btnRefresh;
     }
 }
