@@ -350,41 +350,49 @@ namespace Bimbem_App
             // 
             // kodejadwalpengajar
             // 
+            this.kodejadwalpengajar.DataPropertyName = "kodejadwalpengajar";
             this.kodejadwalpengajar.HeaderText = "Kode Jadwal";
             this.kodejadwalpengajar.Name = "kodejadwalpengajar";
             // 
             // kodekelas
             // 
+            this.kodekelas.DataPropertyName = "kodekelas";
             this.kodekelas.HeaderText = "Kode Kelas";
             this.kodekelas.Name = "kodekelas";
             // 
             // nopengajar
             // 
+            this.nopengajar.DataPropertyName = "nopengajar";
             this.nopengajar.HeaderText = "No Pengajar";
             this.nopengajar.Name = "nopengajar";
             // 
             // kodepelajaran
             // 
+            this.kodepelajaran.DataPropertyName = "kodepelajaran";
             this.kodepelajaran.HeaderText = "Kode Pelajaran";
             this.kodepelajaran.Name = "kodepelajaran";
             // 
             // tanggal
             // 
+            this.tanggal.DataPropertyName = "tanggal";
             this.tanggal.HeaderText = "Tanggal";
             this.tanggal.Name = "tanggal";
             // 
             // jammulai
             // 
+            this.jammulai.DataPropertyName = "jammulai";
             this.jammulai.HeaderText = "Jam Mulai";
             this.jammulai.Name = "jammulai";
             // 
             // durasi
             // 
+            this.durasi.DataPropertyName = "durasi";
             this.durasi.HeaderText = "Durasi";
             this.durasi.Name = "durasi";
             // 
             // kodezoom
             // 
+            this.kodezoom.DataPropertyName = "kodezoom";
             this.kodezoom.HeaderText = "Kode Zoom";
             this.kodezoom.Name = "kodezoom";
             // 
