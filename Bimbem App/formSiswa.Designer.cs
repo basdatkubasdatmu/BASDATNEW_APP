@@ -31,11 +31,6 @@ namespace Bimbem_App
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dgvSiswa = new System.Windows.Forms.DataGridView();
-            this.lblDataSiswa = new System.Windows.Forms.Label();
-            this.btnRefresh = new System.Windows.Forms.Button();
-            this.btnEdit = new System.Windows.Forms.Button();
-            this.btnTambah = new System.Windows.Forms.Button();
-            this.btnHapus = new System.Windows.Forms.Button();
             this.noSiswa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.namaSiswa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.jeniskelaminSiswa = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,6 +38,11 @@ namespace Bimbem_App
             this.noHPSiswa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailSiswa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.asalDaerah = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblDataSiswa = new System.Windows.Forms.Label();
+            this.btnRefresh = new System.Windows.Forms.Button();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.btnTambah = new System.Windows.Forms.Button();
+            this.btnHapus = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSiswa)).BeginInit();
             this.SuspendLayout();
@@ -60,6 +60,9 @@ namespace Bimbem_App
             // 
             // dgvSiswa
             // 
+            this.dgvSiswa.AllowUserToAddRows = false;
+            this.dgvSiswa.AllowUserToDeleteRows = false;
+            this.dgvSiswa.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvSiswa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSiswa.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.noSiswa,
@@ -74,6 +77,53 @@ namespace Bimbem_App
             this.dgvSiswa.RowTemplate.Height = 25;
             this.dgvSiswa.Size = new System.Drawing.Size(658, 379);
             this.dgvSiswa.TabIndex = 3;
+            // 
+            // noSiswa
+            // 
+            this.noSiswa.DataPropertyName = "nosiswa";
+            this.noSiswa.HeaderText = "No. Siswa";
+            this.noSiswa.MaxInputLength = 10;
+            this.noSiswa.Name = "noSiswa";
+            // 
+            // namaSiswa
+            // 
+            this.namaSiswa.DataPropertyName = "nama";
+            this.namaSiswa.HeaderText = "Nama Siswa";
+            this.namaSiswa.MaxInputLength = 30;
+            this.namaSiswa.Name = "namaSiswa";
+            // 
+            // jeniskelaminSiswa
+            // 
+            this.jeniskelaminSiswa.DataPropertyName = "jeniskelamin";
+            this.jeniskelaminSiswa.HeaderText = "Jenis Kelamin";
+            this.jeniskelaminSiswa.Name = "jeniskelaminSiswa";
+            // 
+            // kodeKelas
+            // 
+            this.kodeKelas.DataPropertyName = "kodekelas";
+            this.kodeKelas.HeaderText = "Kode Kelas";
+            this.kodeKelas.MaxInputLength = 5;
+            this.kodeKelas.Name = "kodeKelas";
+            // 
+            // noHPSiswa
+            // 
+            this.noHPSiswa.DataPropertyName = "nohp";
+            this.noHPSiswa.HeaderText = "No HP";
+            this.noHPSiswa.Name = "noHPSiswa";
+            // 
+            // emailSiswa
+            // 
+            this.emailSiswa.DataPropertyName = "email";
+            this.emailSiswa.HeaderText = "Email";
+            this.emailSiswa.MaxInputLength = 30;
+            this.emailSiswa.Name = "emailSiswa";
+            // 
+            // asalDaerah
+            // 
+            this.asalDaerah.DataPropertyName = "asaldaerah";
+            this.asalDaerah.HeaderText = "Asal Daerah";
+            this.asalDaerah.MaxInputLength = 20;
+            this.asalDaerah.Name = "asalDaerah";
             // 
             // lblDataSiswa
             // 
@@ -124,53 +174,6 @@ namespace Bimbem_App
             this.btnHapus.TabIndex = 22;
             this.btnHapus.Text = "Hapus";
             this.btnHapus.UseVisualStyleBackColor = true;
-            // 
-            // noSiswa
-            // 
-            this.noSiswa.DataPropertyName = "nosiswa";
-            this.noSiswa.HeaderText = "No. Siswa";
-            this.noSiswa.MaxInputLength = 10;
-            this.noSiswa.Name = "noSiswa";
-            // 
-            // namaSiswa
-            // 
-            this.namaSiswa.DataPropertyName = "nama";
-            this.namaSiswa.HeaderText = "Nama Siswa";
-            this.namaSiswa.MaxInputLength = 30;
-            this.namaSiswa.Name = "namaSiswa";
-            // 
-            // jeniskelaminSiswa
-            // 
-            this.jeniskelaminSiswa.DataPropertyName = "jeniskelamin";
-            this.jeniskelaminSiswa.HeaderText = "Jenis Kelamin";
-            this.jeniskelaminSiswa.Name = "jeniskelaminSiswa";
-            // 
-            // kodeKelas
-            // 
-            this.kodeKelas.DataPropertyName = "kodekelas";
-            this.kodeKelas.HeaderText = "Kode Kelas";
-            this.kodeKelas.MaxInputLength = 5;
-            this.kodeKelas.Name = "kodeKelas";
-            // 
-            // noHPSiswa
-            // 
-            this.noHPSiswa.DataPropertyName = "nohp";
-            this.noHPSiswa.HeaderText = "No HP";
-            this.noHPSiswa.Name = "noHPSiswa";
-            // 
-            // emailSiswa
-            // 
-            this.emailSiswa.DataPropertyName = "email";
-            this.emailSiswa.HeaderText = "Email";
-            this.emailSiswa.MaxInputLength = 30;
-            this.emailSiswa.Name = "emailSiswa";
-            // 
-            // asalDaerah
-            // 
-            this.asalDaerah.DataPropertyName = "asaldaerah";
-            this.asalDaerah.HeaderText = "Asal Daerah";
-            this.asalDaerah.MaxInputLength = 20;
-            this.asalDaerah.Name = "asalDaerah";
             // 
             // formSiswa
             // 
