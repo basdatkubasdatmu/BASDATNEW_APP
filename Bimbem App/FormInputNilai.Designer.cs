@@ -54,10 +54,10 @@ namespace Bimbem_App
             // 
             this.pctrInputNilai.Image = global::Bimbem_App.Properties.Resources.bimbel_ayy;
             this.pctrInputNilai.InitialImage = null;
-            this.pctrInputNilai.Location = new System.Drawing.Point(-2, -8);
+            this.pctrInputNilai.Location = new System.Drawing.Point(-7, -12);
             this.pctrInputNilai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pctrInputNilai.Name = "pctrInputNilai";
-            this.pctrInputNilai.Size = new System.Drawing.Size(589, 584);
+            this.pctrInputNilai.Size = new System.Drawing.Size(622, 588);
             this.pctrInputNilai.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctrInputNilai.TabIndex = 0;
             this.pctrInputNilai.TabStop = false;
@@ -265,7 +265,10 @@ namespace Bimbem_App
             this.Controls.Add(this.pnlRuangZoom);
             this.Controls.Add(this.pctrInputNilai);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormInputNilai";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormInputNilai";
             ((System.ComponentModel.ISupportInitialize)(this.pctrInputNilai)).EndInit();
             this.pnlRuangZoom.ResumeLayout(false);

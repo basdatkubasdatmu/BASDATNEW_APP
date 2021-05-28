@@ -58,7 +58,7 @@ namespace Bimbem_App
             this.pictureBox2.Location = new System.Drawing.Point(-314, -39);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(717, 625);
+            this.pictureBox2.Size = new System.Drawing.Size(719, 625);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
@@ -291,6 +291,7 @@ namespace Bimbem_App
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormInputUjian";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormInputUjian";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);

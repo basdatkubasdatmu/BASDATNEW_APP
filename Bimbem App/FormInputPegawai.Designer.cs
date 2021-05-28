@@ -246,7 +246,7 @@ namespace Bimbem_App
             this.pictureBox1.Location = new System.Drawing.Point(-34, -3);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(743, 708);
+            this.pictureBox1.Size = new System.Drawing.Size(698, 708);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -259,7 +259,10 @@ namespace Bimbem_App
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormInputPegawai";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormInputPegawai";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

@@ -49,10 +49,10 @@ namespace Bimbem_App
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Bimbem_App.Properties.Resources.bimbel_ayy;
-            this.pictureBox1.Location = new System.Drawing.Point(-158, -26);
+            this.pictureBox1.Location = new System.Drawing.Point(-368, -22);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(636, 451);
+            this.pictureBox1.Size = new System.Drawing.Size(927, 683);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -71,7 +71,7 @@ namespace Bimbem_App
             this.pnlRuangZoom.Controls.Add(this.txtKodeZoom);
             this.pnlRuangZoom.Controls.Add(this.label2);
             this.pnlRuangZoom.Controls.Add(this.inputRuangZoom);
-            this.pnlRuangZoom.Location = new System.Drawing.Point(48, 27);
+            this.pnlRuangZoom.Location = new System.Drawing.Point(41, 29);
             this.pnlRuangZoom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlRuangZoom.Name = "pnlRuangZoom";
             this.pnlRuangZoom.Size = new System.Drawing.Size(300, 364);
@@ -193,11 +193,14 @@ namespace Bimbem_App
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(397, 418);
+            this.ClientSize = new System.Drawing.Size(385, 418);
             this.Controls.Add(this.pnlRuangZoom);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormInputRuangZoom";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormInputRuangZoom";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlRuangZoom.ResumeLayout(false);

@@ -53,7 +53,7 @@ namespace Bimbem_App
             this.pictureBox1.Location = new System.Drawing.Point(-32, -6);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(852, 514);
+            this.pictureBox1.Size = new System.Drawing.Size(914, 514);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -94,37 +94,34 @@ namespace Bimbem_App
             // txtNoSiswa
             // 
             this.txtNoSiswa.BackColor = System.Drawing.Color.SlateBlue;
-            this.txtNoSiswa.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNoSiswa.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtNoSiswa.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txtNoSiswa.Location = new System.Drawing.Point(38, 171);
             this.txtNoSiswa.MaxLength = 10;
             this.txtNoSiswa.Name = "txtNoSiswa";
-            this.txtNoSiswa.Size = new System.Drawing.Size(262, 22);
+            this.txtNoSiswa.Size = new System.Drawing.Size(262, 29);
             this.txtNoSiswa.TabIndex = 23;
             // 
             // txtNamaSiswa
             // 
             this.txtNamaSiswa.BackColor = System.Drawing.Color.SlateBlue;
-            this.txtNamaSiswa.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNamaSiswa.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtNamaSiswa.Location = new System.Drawing.Point(38, 232);
             this.txtNamaSiswa.MaxLength = 30;
             this.txtNamaSiswa.Name = "txtNamaSiswa";
             this.txtNamaSiswa.ReadOnly = true;
-            this.txtNamaSiswa.Size = new System.Drawing.Size(262, 22);
+            this.txtNamaSiswa.Size = new System.Drawing.Size(262, 29);
             this.txtNamaSiswa.TabIndex = 22;
             // 
             // txtkodeJadwalSiswa
             // 
             this.txtkodeJadwalSiswa.BackColor = System.Drawing.Color.SlateBlue;
-            this.txtkodeJadwalSiswa.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtkodeJadwalSiswa.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtkodeJadwalSiswa.ForeColor = System.Drawing.Color.SaddleBrown;
             this.txtkodeJadwalSiswa.Location = new System.Drawing.Point(38, 110);
             this.txtkodeJadwalSiswa.MaxLength = 10;
             this.txtkodeJadwalSiswa.Name = "txtkodeJadwalSiswa";
-            this.txtkodeJadwalSiswa.Size = new System.Drawing.Size(262, 22);
+            this.txtkodeJadwalSiswa.Size = new System.Drawing.Size(262, 29);
             this.txtkodeJadwalSiswa.TabIndex = 21;
             // 
             // dtpPresensi

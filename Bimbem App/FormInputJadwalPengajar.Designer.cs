@@ -275,10 +275,10 @@ namespace Bimbem_App
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Bimbem_App.Properties.Resources.parent_form;
-            this.pictureBox1.Location = new System.Drawing.Point(-254, -2);
+            this.pictureBox1.Location = new System.Drawing.Point(-254, -27);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(988, 631);
+            this.pictureBox1.Size = new System.Drawing.Size(1143, 656);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
@@ -291,7 +291,10 @@ namespace Bimbem_App
             this.Controls.Add(this.pnlRuangZoom);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormInputJadwalPengajar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormInputJadwalPengajar";
             this.pnlRuangZoom.ResumeLayout(false);
             this.pnlRuangZoom.PerformLayout();

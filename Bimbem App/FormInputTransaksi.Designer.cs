@@ -53,7 +53,7 @@ namespace Bimbem_App
             this.pictureBox1.Image = global::Bimbem_App.Properties.Resources.parent_form;
             this.pictureBox1.Location = new System.Drawing.Point(-280, -230);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(698, 700);
+            this.pictureBox1.Size = new System.Drawing.Size(675, 700);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -233,7 +233,10 @@ namespace Bimbem_App
             this.Controls.Add(this.pnlRuangZoom);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormInputTransaksi";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormInputTransaksi";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlRuangZoom.ResumeLayout(false);

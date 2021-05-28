@@ -56,7 +56,7 @@ namespace Bimbem_App
             this.pnlRuangZoom.Controls.Add(this.txtKodeJadwalSiswa);
             this.pnlRuangZoom.Controls.Add(this.label2);
             this.pnlRuangZoom.Controls.Add(this.inputRuangZoom);
-            this.pnlRuangZoom.Location = new System.Drawing.Point(203, 27);
+            this.pnlRuangZoom.Location = new System.Drawing.Point(32, 30);
             this.pnlRuangZoom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlRuangZoom.Name = "pnlRuangZoom";
             this.pnlRuangZoom.Size = new System.Drawing.Size(341, 352);
@@ -157,10 +157,10 @@ namespace Bimbem_App
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Bimbem_App.Properties.Resources.bimbel_ayy;
-            this.pictureBox1.Location = new System.Drawing.Point(173, -8);
+            this.pictureBox1.Location = new System.Drawing.Point(0, -62);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(544, 588);
+            this.pictureBox1.Size = new System.Drawing.Size(589, 645);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
@@ -169,11 +169,14 @@ namespace Bimbem_App
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(578, 408);
+            this.ClientSize = new System.Drawing.Size(414, 413);
             this.Controls.Add(this.pnlRuangZoom);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormInputJadwalSiswa";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "FormInputJadwalSiswa";
             this.pnlRuangZoom.ResumeLayout(false);
             this.pnlRuangZoom.PerformLayout();

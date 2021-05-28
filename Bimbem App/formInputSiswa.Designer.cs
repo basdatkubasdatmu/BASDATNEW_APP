@@ -59,7 +59,7 @@ namespace Bimbem_App
             this.pictureBox1.Location = new System.Drawing.Point(-303, -53);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(739, 477);
+            this.pictureBox1.Size = new System.Drawing.Size(746, 477);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -86,7 +86,7 @@ namespace Bimbem_App
             this.panelInputSiswa.Controls.Add(this.lblNamaSiswa);
             this.panelInputSiswa.Controls.Add(this.lblNoSiswa);
             this.panelInputSiswa.Controls.Add(this.lblInputSiswa);
-            this.panelInputSiswa.Location = new System.Drawing.Point(33, 32);
+            this.panelInputSiswa.Location = new System.Drawing.Point(35, 32);
             this.panelInputSiswa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelInputSiswa.Name = "panelInputSiswa";
             this.panelInputSiswa.Size = new System.Drawing.Size(361, 326);
@@ -290,7 +290,10 @@ namespace Bimbem_App
             this.Controls.Add(this.panelInputSiswa);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "formInputSiswa";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Input Siswa";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelInputSiswa.ResumeLayout(false);

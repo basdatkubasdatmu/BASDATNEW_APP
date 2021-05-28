@@ -50,7 +50,7 @@ namespace Bimbem_App
             this.pictureBox1.Location = new System.Drawing.Point(-1, 2);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(653, 547);
+            this.pictureBox1.Size = new System.Drawing.Size(703, 547);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -58,6 +58,7 @@ namespace Bimbem_App
             // panelInputPengajar
             // 
             this.panelInputPengajar.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panelInputPengajar.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panelInputPengajar.Controls.Add(this.btnBatal);
             this.panelInputPengajar.Controls.Add(this.btnSimpan);
             this.panelInputPengajar.Controls.Add(this.txtKodePelajaran);
@@ -76,7 +77,7 @@ namespace Bimbem_App
             // 
             this.btnBatal.BackColor = System.Drawing.Color.SeaShell;
             this.btnBatal.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnBatal.Location = new System.Drawing.Point(241, 295);
+            this.btnBatal.Location = new System.Drawing.Point(220, 294);
             this.btnBatal.Name = "btnBatal";
             this.btnBatal.Size = new System.Drawing.Size(87, 35);
             this.btnBatal.TabIndex = 19;
@@ -87,7 +88,7 @@ namespace Bimbem_App
             // 
             this.btnSimpan.BackColor = System.Drawing.Color.SeaShell;
             this.btnSimpan.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnSimpan.Location = new System.Drawing.Point(148, 295);
+            this.btnSimpan.Location = new System.Drawing.Point(127, 294);
             this.btnSimpan.Name = "btnSimpan";
             this.btnSimpan.Size = new System.Drawing.Size(87, 35);
             this.btnSimpan.TabIndex = 18;
@@ -98,7 +99,7 @@ namespace Bimbem_App
             // 
             this.txtKodePelajaran.BackColor = System.Drawing.Color.SlateBlue;
             this.txtKodePelajaran.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtKodePelajaran.Location = new System.Drawing.Point(25, 238);
+            this.txtKodePelajaran.Location = new System.Drawing.Point(42, 241);
             this.txtKodePelajaran.Name = "txtKodePelajaran";
             this.txtKodePelajaran.Size = new System.Drawing.Size(265, 29);
             this.txtKodePelajaran.TabIndex = 12;
@@ -107,7 +108,7 @@ namespace Bimbem_App
             // 
             this.txtNoPegawai.BackColor = System.Drawing.Color.SlateBlue;
             this.txtNoPegawai.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtNoPegawai.Location = new System.Drawing.Point(25, 168);
+            this.txtNoPegawai.Location = new System.Drawing.Point(42, 171);
             this.txtNoPegawai.Name = "txtNoPegawai";
             this.txtNoPegawai.Size = new System.Drawing.Size(265, 29);
             this.txtNoPegawai.TabIndex = 11;
@@ -116,7 +117,7 @@ namespace Bimbem_App
             // 
             this.txtNoPengajar.BackColor = System.Drawing.Color.SlateBlue;
             this.txtNoPengajar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtNoPengajar.Location = new System.Drawing.Point(25, 99);
+            this.txtNoPengajar.Location = new System.Drawing.Point(42, 102);
             this.txtNoPengajar.Name = "txtNoPengajar";
             this.txtNoPengajar.Size = new System.Drawing.Size(265, 29);
             this.txtNoPengajar.TabIndex = 10;
@@ -125,7 +126,7 @@ namespace Bimbem_App
             // 
             this.lblKodePelajaran.AutoSize = true;
             this.lblKodePelajaran.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblKodePelajaran.Location = new System.Drawing.Point(25, 215);
+            this.lblKodePelajaran.Location = new System.Drawing.Point(42, 218);
             this.lblKodePelajaran.Name = "lblKodePelajaran";
             this.lblKodePelajaran.Size = new System.Drawing.Size(117, 21);
             this.lblKodePelajaran.TabIndex = 5;
@@ -135,7 +136,7 @@ namespace Bimbem_App
             // 
             this.lblNoPegawai.AutoSize = true;
             this.lblNoPegawai.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblNoPegawai.Location = new System.Drawing.Point(25, 145);
+            this.lblNoPegawai.Location = new System.Drawing.Point(42, 148);
             this.lblNoPegawai.Name = "lblNoPegawai";
             this.lblNoPegawai.Size = new System.Drawing.Size(125, 21);
             this.lblNoPegawai.TabIndex = 4;
@@ -145,7 +146,7 @@ namespace Bimbem_App
             // 
             this.lblNoPengajar.AutoSize = true;
             this.lblNoPengajar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblNoPengajar.Location = new System.Drawing.Point(25, 76);
+            this.lblNoPengajar.Location = new System.Drawing.Point(42, 79);
             this.lblNoPengajar.Name = "lblNoPengajar";
             this.lblNoPengajar.Size = new System.Drawing.Size(128, 21);
             this.lblNoPengajar.TabIndex = 3;
@@ -154,10 +155,10 @@ namespace Bimbem_App
             // lblInputPengajar
             // 
             this.lblInputPengajar.AutoSize = true;
-            this.lblInputPengajar.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblInputPengajar.Location = new System.Drawing.Point(74, 24);
+            this.lblInputPengajar.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblInputPengajar.Location = new System.Drawing.Point(62, 26);
             this.lblInputPengajar.Name = "lblInputPengajar";
-            this.lblInputPengajar.Size = new System.Drawing.Size(199, 30);
+            this.lblInputPengajar.Size = new System.Drawing.Size(219, 32);
             this.lblInputPengajar.TabIndex = 2;
             this.lblInputPengajar.Text = "INPUT PENGAJAR";
             // 
@@ -169,7 +170,10 @@ namespace Bimbem_App
             this.Controls.Add(this.panelInputPengajar);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "formInputPengajar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Input Pengajar";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelInputPengajar.ResumeLayout(false);
