@@ -30,6 +30,13 @@ namespace Bimbem_App
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dgvPegawai = new System.Windows.Forms.DataGridView();
+            this.noPegawai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.namaPegawai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.jenisKelaminPegawai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.noHPPegawai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailPegawai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.posisi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btBatal = new System.Windows.Forms.Button();
             this.btSimpan = new System.Windows.Forms.Button();
             this.rbPerempuan = new System.Windows.Forms.RadioButton();
@@ -47,20 +54,14 @@ namespace Bimbem_App
             this.lbKodePegawai = new System.Windows.Forms.Label();
             this.lbJudulInputPegawai = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dgvPegawai = new System.Windows.Forms.DataGridView();
             this.btnHapus = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnTambah = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
-            this.noPegawai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.namaPegawai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.jenisKelaminPegawai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.noHPPegawai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailPegawai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.posisi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnHome = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPegawai)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -72,6 +73,52 @@ namespace Bimbem_App
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(700, 283);
             this.panel1.TabIndex = 3;
+            // 
+            // dgvPegawai
+            // 
+            this.dgvPegawai.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPegawai.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.noPegawai,
+            this.namaPegawai,
+            this.jenisKelaminPegawai,
+            this.noHPPegawai,
+            this.emailPegawai,
+            this.posisi});
+            this.dgvPegawai.Location = new System.Drawing.Point(23, 26);
+            this.dgvPegawai.Name = "dgvPegawai";
+            this.dgvPegawai.RowTemplate.Height = 25;
+            this.dgvPegawai.Size = new System.Drawing.Size(644, 232);
+            this.dgvPegawai.TabIndex = 0;
+            // 
+            // noPegawai
+            // 
+            this.noPegawai.HeaderText = "No. Pegawai";
+            this.noPegawai.Name = "noPegawai";
+            // 
+            // namaPegawai
+            // 
+            this.namaPegawai.HeaderText = "Nama ";
+            this.namaPegawai.Name = "namaPegawai";
+            // 
+            // jenisKelaminPegawai
+            // 
+            this.jenisKelaminPegawai.HeaderText = "Jenis Kelamin";
+            this.jenisKelaminPegawai.Name = "jenisKelaminPegawai";
+            // 
+            // noHPPegawai
+            // 
+            this.noHPPegawai.HeaderText = "Nomor HP";
+            this.noHPPegawai.Name = "noHPPegawai";
+            // 
+            // emailPegawai
+            // 
+            this.emailPegawai.HeaderText = "Email";
+            this.emailPegawai.Name = "emailPegawai";
+            // 
+            // posisi
+            // 
+            this.posisi.HeaderText = "Posisi";
+            this.posisi.Name = "posisi";
             // 
             // btBatal
             // 
@@ -261,22 +308,6 @@ namespace Bimbem_App
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // dgvPegawai
-            // 
-            this.dgvPegawai.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPegawai.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.noPegawai,
-            this.namaPegawai,
-            this.jenisKelaminPegawai,
-            this.noHPPegawai,
-            this.emailPegawai,
-            this.posisi});
-            this.dgvPegawai.Location = new System.Drawing.Point(23, 26);
-            this.dgvPegawai.Name = "dgvPegawai";
-            this.dgvPegawai.RowTemplate.Height = 25;
-            this.dgvPegawai.Size = new System.Drawing.Size(644, 232);
-            this.dgvPegawai.TabIndex = 0;
-            // 
             // btnHapus
             // 
             this.btnHapus.BackColor = System.Drawing.Color.SeaShell;
@@ -322,41 +353,23 @@ namespace Bimbem_App
             this.btnRefresh.UseVisualStyleBackColor = false;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
-            // noPegawai
+            // btnHome
             // 
-            this.noPegawai.HeaderText = "No. Pegawai";
-            this.noPegawai.Name = "noPegawai";
-            // 
-            // namaPegawai
-            // 
-            this.namaPegawai.HeaderText = "Nama ";
-            this.namaPegawai.Name = "namaPegawai";
-            // 
-            // jenisKelaminPegawai
-            // 
-            this.jenisKelaminPegawai.HeaderText = "Jenis Kelamin";
-            this.jenisKelaminPegawai.Name = "jenisKelaminPegawai";
-            // 
-            // noHPPegawai
-            // 
-            this.noHPPegawai.HeaderText = "Nomor HP";
-            this.noHPPegawai.Name = "noHPPegawai";
-            // 
-            // emailPegawai
-            // 
-            this.emailPegawai.HeaderText = "Email";
-            this.emailPegawai.Name = "emailPegawai";
-            // 
-            // posisi
-            // 
-            this.posisi.HeaderText = "Posisi";
-            this.posisi.Name = "posisi";
+            this.btnHome.BackColor = System.Drawing.Color.SeaShell;
+            this.btnHome.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnHome.Location = new System.Drawing.Point(793, 23);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(83, 31);
+            this.btnHome.TabIndex = 26;
+            this.btnHome.Text = "HOME";
+            this.btnHome.UseVisualStyleBackColor = false;
             // 
             // FormInputPegawai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(921, 719);
+            this.Controls.Add(this.btnHome);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnTambah);
             this.Controls.Add(this.btnEdit);
@@ -386,8 +399,8 @@ namespace Bimbem_App
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormInputPegawai";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPegawai)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -424,5 +437,6 @@ namespace Bimbem_App
         private System.Windows.Forms.DataGridViewTextBoxColumn noHPPegawai;
         private System.Windows.Forms.DataGridViewTextBoxColumn emailPegawai;
         private System.Windows.Forms.DataGridViewTextBoxColumn posisi;
+        private System.Windows.Forms.Button btnHome;
     }
 }

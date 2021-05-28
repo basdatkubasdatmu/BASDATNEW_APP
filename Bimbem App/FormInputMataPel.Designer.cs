@@ -31,6 +31,10 @@ namespace Bimbem_App
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.kodePelajaran = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pelajaran = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
             this.textNamaMapel = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtKodeMapel = new System.Windows.Forms.TextBox();
@@ -38,14 +42,11 @@ namespace Bimbem_App
             this.label4 = new System.Windows.Forms.Label();
             this.btnBatal = new System.Windows.Forms.Button();
             this.btnSimpan = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.btnHapus = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnTambah = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.kodePelajaran = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pelajaran = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnHome = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -74,6 +75,37 @@ namespace Bimbem_App
             this.panel1.Size = new System.Drawing.Size(613, 277);
             this.panel1.TabIndex = 3;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.kodePelajaran,
+            this.pelajaran});
+            this.dataGridView1.Location = new System.Drawing.Point(60, 34);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(458, 215);
+            this.dataGridView1.TabIndex = 1;
+            // 
+            // kodePelajaran
+            // 
+            this.kodePelajaran.HeaderText = "Kode Pelajaran";
+            this.kodePelajaran.Name = "kodePelajaran";
+            // 
+            // pelajaran
+            // 
+            this.pelajaran.HeaderText = "Pelajaran";
+            this.pelajaran.Name = "pelajaran";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(332, 14);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 30);
+            this.label1.TabIndex = 0;
             // 
             // textNamaMapel
             // 
@@ -152,15 +184,6 @@ namespace Bimbem_App
             this.btnSimpan.UseVisualStyleBackColor = false;
             this.btnSimpan.Click += new System.EventHandler(this.btnSimpan_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(332, 14);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 30);
-            this.label1.TabIndex = 0;
-            // 
             // btnHapus
             // 
             this.btnHapus.BackColor = System.Drawing.Color.SeaShell;
@@ -205,33 +228,23 @@ namespace Bimbem_App
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = false;
             // 
-            // dataGridView1
+            // btnHome
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.kodePelajaran,
-            this.pelajaran});
-            this.dataGridView1.Location = new System.Drawing.Point(60, 34);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(458, 215);
-            this.dataGridView1.TabIndex = 1;
-            // 
-            // kodePelajaran
-            // 
-            this.kodePelajaran.HeaderText = "Kode Pelajaran";
-            this.kodePelajaran.Name = "kodePelajaran";
-            // 
-            // pelajaran
-            // 
-            this.pelajaran.HeaderText = "Pelajaran";
-            this.pelajaran.Name = "pelajaran";
+            this.btnHome.BackColor = System.Drawing.Color.SeaShell;
+            this.btnHome.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnHome.Location = new System.Drawing.Point(708, 38);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(83, 31);
+            this.btnHome.TabIndex = 25;
+            this.btnHome.Text = "HOME";
+            this.btnHome.UseVisualStyleBackColor = false;
             // 
             // FormInputMatpel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(860, 665);
+            this.Controls.Add(this.btnHome);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnTambah);
             this.Controls.Add(this.btnEdit);
@@ -279,5 +292,6 @@ namespace Bimbem_App
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn kodePelajaran;
         private System.Windows.Forms.DataGridViewTextBoxColumn pelajaran;
+        private System.Windows.Forms.Button btnHome;
     }
 }
