@@ -387,6 +387,7 @@ namespace Bimbem_App
             this.btSimpan.TabIndex = 23;
             this.btSimpan.Text = "Simpan";
             this.btSimpan.UseVisualStyleBackColor = false;
+            this.btSimpan.Click += new System.EventHandler(this.btSimpan_Click);
             // 
             // btnMenuUtama
             // 

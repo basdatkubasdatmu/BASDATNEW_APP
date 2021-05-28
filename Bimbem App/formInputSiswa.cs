@@ -10,6 +10,8 @@ namespace Bimbem_App
 {
     public partial class formInputSiswa : Form
     {
+        public bool isEditSiswa = false;
+
         public formInputSiswa()
         {
             InitializeComponent();
@@ -29,6 +31,30 @@ namespace Bimbem_App
                 DataAccess da = new DataAccess();
                 string SelectedNoSiswa = dgvSiswa.SelectedRows[0].Cells[0].Value.ToString();
                 da.hapusDataSiswa(SelectedNoSiswa);
+            }
+        }
+
+        private void btSimpan_Click(object sender, EventArgs e)
+        {
+            DataAccess da = new DataAccess();
+
+            string jnsKelamin = " ";
+            if (rdLakilaki.Checked)
+            {
+                jnsKelamin = "Laki-laki";
+            }
+            else if (rdPerempuan.Checked)
+            {
+                jnsKelamin = "Perempuan";
+            }
+
+            if (isEditSiswa)
+            {
+                da.updateDataSiswa(txtNoSiswa.Text, textBox1.Text, jnsKelamin, txtKodeKelas.Text, txtNoHPSiswa.Text, txtEmailSiswa.Text, txtAsalDaerah.Text);
+            }
+            else
+            {
+                da.insertDataSiswa(txtNoSiswa.Text, textBox1.Text, jnsKelamin, txtKodeKelas.Text, txtNoHPSiswa.Text, txtEmailSiswa.Text, txtAsalDaerah.Text);
             }
         }
     }

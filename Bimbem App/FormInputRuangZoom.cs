@@ -10,6 +10,8 @@ namespace Bimbem_App
 {
     public partial class FormInputRuangZoom : Form
     {
+        public bool isEditRuang = false;
+
         public FormInputRuangZoom()
         {
             InitializeComponent();
@@ -29,6 +31,20 @@ namespace Bimbem_App
                 DataAccess da = new DataAccess();
                 string SelectedKodeZoom = dgvRuangZoom.SelectedRows[0].Cells[0].Value.ToString();
                 da.hapusDataRuangZoom(SelectedKodeZoom);
+            }
+        }
+
+        private void btnSimpan_Click(object sender, EventArgs e)
+        {
+            DataAccess da = new DataAccess();
+
+            if (isEditRuang)
+            {
+                da.updateDataRuangZoom(txtKodeZoom.Text, txtLinkRuangZoom.Text, txtIdMeetingRuangZoom.Text, txtPasscodeRuangZoom.Text);
+            }
+            else
+            {
+                da.insertDataRuang(txtKodeZoom.Text, txtLinkRuangZoom.Text, txtIdMeetingRuangZoom.Text, txtPasscodeRuangZoom.Text);
             }
         }
     }

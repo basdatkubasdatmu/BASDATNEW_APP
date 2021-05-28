@@ -1737,5 +1737,354 @@ namespace Bimbem_App
             }
         }
 
+
+        //insert
+        public void insertDataJadwalPengajar(string kodeJadwalPengajar, string kodeKelas, string noPengajar, string kodePelajaran, string tanggal, string jamMulai, string durasi, string kodeZoom)
+        {
+            NpgsqlConnection conn = new NpgsqlConnection();
+            try
+            {
+                conn.ConnectionString = strConnString;
+                conn.Open();
+
+                NpgsqlCommand cmd = new NpgsqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = "insert into jadwalpengajar(kodejadwalpengajar, kodekelas, nopengajar, kodepelajaran, tanggal, jammulai, durasi, kodezoom) values('" + kodeJadwalPengajar + "', '" + kodeKelas + "', '" + noPengajar + "', '" + kodePelajaran + "', '" + tanggal + "', '" + jamMulai + "', '" + durasi + "');";
+                cmd.CommandType = CommandType.Text;
+
+                cmd.ExecuteNonQuery();
+
+                cmd.Dispose();
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Silahkan coba lagi. Error : '" + ex.Message.ToString() + "'", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        public void insertDataJadwalSiswa(string kodeJadwalSiswa, string noSiswa, string kodeJadwalPengajar)
+        {
+            NpgsqlConnection conn = new NpgsqlConnection();
+            try
+            {
+                conn.ConnectionString = strConnString;
+                conn.Open();
+
+                NpgsqlCommand cmd = new NpgsqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = "insert into jadwalsiswa(kodejadwalsiswa, nosiswa, kodejadwalpengajar) values('" + kodeJadwalSiswa + "', '" + noSiswa + "', '" + kodeJadwalPengajar + "');";
+                cmd.CommandType = CommandType.Text;
+
+                cmd.ExecuteNonQuery();
+
+                cmd.Dispose();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Silahkan coba lagi. Error : '" + ex.Message.ToString() + "'", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        public void insertDataKelas(string kodeKelas, string nama, string biaya, string kuota, string fasilitas)
+        {
+            NpgsqlConnection conn = new NpgsqlConnection();
+            try
+            {
+                conn.ConnectionString = strConnString;
+                conn.Open();
+
+                NpgsqlCommand cmd = new NpgsqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = "insert into kelas(kodekelas, nama, biaya, kuota, fasilitas) values('" + kodeKelas + "', '" + nama + "', '" + biaya + "', '" + kuota + "', '" + fasilitas + "');";
+                cmd.CommandType = CommandType.Text;
+
+                cmd.ExecuteNonQuery();
+
+                cmd.Dispose();
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Silahkan coba lagi. Error : '" + ex.Message.ToString() + "'", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        public void insertDataMapel(string kodePelajaran, string pelajaran)
+        {
+            NpgsqlConnection conn = new NpgsqlConnection();
+            try
+            {
+                conn.ConnectionString = strConnString;
+                conn.Open();
+
+                NpgsqlCommand cmd = new NpgsqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = "insert into matpel(kodepelajaran, pelajaran) values('" + kodePelajaran + "', '" + pelajaran + "');";
+                cmd.CommandType = CommandType.Text;
+
+                cmd.ExecuteNonQuery();
+
+                cmd.Dispose();
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Silahkan coba lagi. Error : '" + ex.Message.ToString() + "'", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        public void insertDataNilai(string kodeUjian, string nosiswa, string noPengajar, string kodePelajaran, string nilai)
+        {
+            NpgsqlConnection conn = new NpgsqlConnection();
+            try
+            {
+                conn.ConnectionString = strConnString;
+                conn.Open();
+
+                NpgsqlCommand cmd = new NpgsqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = "insert into nilai(kodeujian, nosiswa, nopengajar, kodepelajaran, nilai) values('" + kodeUjian + "', '" + nosiswa + "', '" + noPengajar + "', '" + kodePelajaran + "', '" + nilai + "');";
+                cmd.CommandType = CommandType.Text;
+
+                cmd.ExecuteNonQuery();
+
+                cmd.Dispose();
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Silahkan coba lagi. Error : '" + ex.Message.ToString() + "'", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        public void insertDataPegawai(string noPegawai, string nama, string jenisKelamin, string noHP, string email, string posisi)
+        {
+            NpgsqlConnection conn = new NpgsqlConnection();
+            try
+            {
+                conn.ConnectionString = strConnString;
+                conn.Open();
+
+                NpgsqlCommand cmd = new NpgsqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = "insert into pegawai(nopegawai, nama, jeniskelamin, nohp, email, posisi) values('" + noPegawai + "', '" + nama + "', '" + jenisKelamin + "', '" + noHP + "', '" + email + "', '" + posisi + "');";
+                cmd.CommandType = CommandType.Text;
+
+                cmd.ExecuteNonQuery();
+
+                cmd.Dispose();
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Silahkan coba lagi. Error : '" + ex.Message.ToString() + "'", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        public void insertDataPengajar(string noPengajar, string nopegawai, string kodePelajaran)
+        {
+            NpgsqlConnection conn = new NpgsqlConnection();
+            try
+            {
+                conn.ConnectionString = strConnString;
+                conn.Open();
+
+                NpgsqlCommand cmd = new NpgsqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = "insert into pengajar(nopengajar, nopegawai, kodePelajaran) values('" + noPengajar + "', '" + nopegawai + "', '" + kodePelajaran + "');";
+                cmd.CommandType = CommandType.Text;
+
+                cmd.ExecuteNonQuery();
+
+                cmd.Dispose();
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Silahkan coba lagi. Error : '" + ex.Message.ToString() + "'", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        public void insertDataPresensi(string kodeJadwalSiswa, string noSiswa, string waktuPresensi)
+        {
+            NpgsqlConnection conn = new NpgsqlConnection();
+            try
+            {
+                conn.ConnectionString = strConnString;
+                conn.Open();
+
+                NpgsqlCommand cmd = new NpgsqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = "insert into presensi(kodejadwalsiswa, nosiswa, waktupresensi) values('" + kodeJadwalSiswa + "', '" + noSiswa + "', '" + waktuPresensi + "');";
+                cmd.CommandType = CommandType.Text;
+
+                cmd.ExecuteNonQuery();
+
+                cmd.Dispose();
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Silahkan coba lagi. Error : '" + ex.Message.ToString() + "'", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        public void insertDataRuang(string kodeZoom, string link, string idMeeting, string passcode)
+        {
+            NpgsqlConnection conn = new NpgsqlConnection();
+            try
+            {
+                conn.ConnectionString = strConnString;
+                conn.Open();
+
+                NpgsqlCommand cmd = new NpgsqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = "insert into ruangzoom(kodezoom, link, meetingid, passcode) values('" + kodeZoom + "', '" + link + "', '" + idMeeting + "', '" + passcode + "');";
+                cmd.CommandType = CommandType.Text;
+
+                cmd.ExecuteNonQuery();
+
+                cmd.Dispose();
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Silahkan coba lagi. Error : '" + ex.Message.ToString() + "'", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        public void insertDataSiswa(string noSiswa, string nama, string jenisKelamin, string kodeKelas, string noHP, string email, string asalDaerah)
+        {
+            NpgsqlConnection conn = new NpgsqlConnection();
+            try
+            {
+                conn.ConnectionString = strConnString;
+                conn.Open();
+
+                NpgsqlCommand cmd = new NpgsqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = "insert into siswa(nosiswa, nama, jeniskelamin, kodekelas, nohp, email, asaldaerah) values('" + noSiswa + "', '" + nama + "', '" + jenisKelamin + "', '" + kodeKelas + "', '" + noHP + "', '" + email + "', '" + asalDaerah + "');";
+                cmd.CommandType = CommandType.Text;
+
+                cmd.ExecuteNonQuery();
+
+                cmd.Dispose();
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Silahkan coba lagi. Error : '" + ex.Message.ToString() + "'", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        public void insertDataPembayaran(string kodePembayaran, string noSiswa, string kodeKelas, string tanggalPembayaran, string status, string jumlah)
+        {
+            NpgsqlConnection conn = new NpgsqlConnection();
+            try
+            {
+                conn.ConnectionString = strConnString;
+                conn.Open();
+
+                NpgsqlCommand cmd = new NpgsqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = "insert into pembayaran(kodepembayaran, nosiswa, kodekelas, tanggalpembayaran, status, jumlah) values('" + kodePembayaran + "', '" + noSiswa + "', '" + kodeKelas + "', '" + tanggalPembayaran + "', '" + status + "', '" + jumlah + "');";
+                cmd.CommandType = CommandType.Text;
+
+                cmd.ExecuteNonQuery();
+
+                cmd.Dispose();
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Silahkan coba lagi. Error : '" + ex.Message.ToString() + "'", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        public void insertDataJadwalUjian(string kodeUjian, string nama, string kodePelajaran, string tanggal, string jamMulai, string durasi)
+        {
+            NpgsqlConnection conn = new NpgsqlConnection();
+            try
+            {
+                conn.ConnectionString = strConnString;
+                conn.Open();
+
+                NpgsqlCommand cmd = new NpgsqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = "insert into ujian(kodeujian, nama, kodepelajaran, tanggal, jammulai, durasi) values('" + kodeUjian + "', '" + nama + "', '" + kodePelajaran + "', '" + tanggal + "', '" + jamMulai + "', '" + durasi + "');";
+                cmd.CommandType = CommandType.Text;
+
+                cmd.ExecuteNonQuery();
+
+                cmd.Dispose();
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Silahkan coba lagi. Error : '" + ex.Message.ToString() + "'", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
     }
 }
