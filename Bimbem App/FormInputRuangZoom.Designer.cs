@@ -78,9 +78,9 @@ namespace Bimbem_App
             // 
             this.btnBatal.BackColor = System.Drawing.Color.Salmon;
             this.btnBatal.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnBatal.Location = new System.Drawing.Point(673, 237);
+            this.btnBatal.Location = new System.Drawing.Point(673, 242);
             this.btnBatal.Name = "btnBatal";
-            this.btnBatal.Size = new System.Drawing.Size(72, 42);
+            this.btnBatal.Size = new System.Drawing.Size(72, 37);
             this.btnBatal.TabIndex = 8;
             this.btnBatal.Text = "Batal";
             this.btnBatal.UseVisualStyleBackColor = false;
@@ -89,9 +89,9 @@ namespace Bimbem_App
             // 
             this.btnSimpan.BackColor = System.Drawing.Color.Salmon;
             this.btnSimpan.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnSimpan.Location = new System.Drawing.Point(593, 237);
+            this.btnSimpan.Location = new System.Drawing.Point(593, 242);
             this.btnSimpan.Name = "btnSimpan";
-            this.btnSimpan.Size = new System.Drawing.Size(74, 42);
+            this.btnSimpan.Size = new System.Drawing.Size(74, 37);
             this.btnSimpan.TabIndex = 7;
             this.btnSimpan.Text = "Simpan";
             this.btnSimpan.UseVisualStyleBackColor = false;
