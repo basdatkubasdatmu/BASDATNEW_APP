@@ -623,9 +623,303 @@ namespace Bimbem_App
 
         // Getnilai by ID
 
+        // Get pembayaran, dkk by Id
+        public DataTable getPembayaranByID(string kodepembayaran)
+        {
+            NpgsqlConnection conn = new NpgsqlConnection();
+            DataTable dt = new DataTable();
+            try
+            {
+                conn.ConnectionString = strConnString;
+                conn.Open();
+
+                NpgsqlCommand cmd = new NpgsqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = "Select * from pembayaran where kodepembayaran = '" + kodepembayaran + "';";
+                cmd.CommandType = CommandType.Text;
+
+                NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd);
+                DataSet ds = new DataSet();
+
+                ds.Reset();
+                da.Fill(ds);
+                dt = ds.Tables[0];
+
+                cmd.Dispose();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Data gagal dibaca:" + ex.Message.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return dt;
+
+        }
+
+        public DataTable getJadwalPengajarByID(string kodejadwalpengajar)
+        {
+            NpgsqlConnection conn = new NpgsqlConnection();
+            DataTable dt = new DataTable();
+            try
+            {
+                conn.ConnectionString = strConnString;
+                conn.Open();
+
+                NpgsqlCommand cmd = new NpgsqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = "Select * from jadwalpengajar where kodejadwalpengajar = '" + kodejadwalpengajar + "';";
+                cmd.CommandType = CommandType.Text;
+
+                NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd);
+                DataSet ds = new DataSet();
 
 
+                ds.Reset();
+                da.Fill(ds);
+                dt = ds.Tables[0];
 
+                cmd.Dispose();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Data gagal dibaca:" + ex.Message.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return dt;
+
+        }
+
+        public DataTable getJadwalSiswaByID(string kodejadwalsiswa)
+        {
+            NpgsqlConnection conn = new NpgsqlConnection();
+            DataTable dt = new DataTable();
+            try
+            {
+                conn.ConnectionString = strConnString;
+                conn.Open();
+
+                NpgsqlCommand cmd = new NpgsqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = "Select * from jadwalsiswa where kodejadwalsiswa = '" + kodejadwalsiswa + "';";
+                cmd.CommandType = CommandType.Text;
+
+                NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd);
+                DataSet ds = new DataSet();
+
+
+                ds.Reset();
+                da.Fill(ds);
+                dt = ds.Tables[0];
+
+                cmd.Dispose();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Data gagal dibaca:" + ex.Message.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return dt;
+
+        }
+
+        public DataTable getJadwalUjianByID(string kodeujian)
+        {
+            NpgsqlConnection conn = new NpgsqlConnection();
+            DataTable dt = new DataTable();
+            try
+            {
+                conn.ConnectionString = strConnString;
+                conn.Open();
+
+                NpgsqlCommand cmd = new NpgsqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = "Select * from ujian where kodeujian = '" + kodeujian + "';";
+                cmd.CommandType = CommandType.Text;
+
+                NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd);
+                DataSet ds = new DataSet();
+
+
+                ds.Reset();
+                da.Fill(ds);
+                dt = ds.Tables[0];
+
+                cmd.Dispose();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Data gagal dibaca:" + ex.Message.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return dt;
+
+        }
+
+        public DataTable getMatPelByID(string kodepelajaran)
+        {
+            NpgsqlConnection conn = new NpgsqlConnection();
+            DataTable dt = new DataTable();
+            try
+            {
+                conn.ConnectionString = strConnString;
+                conn.Open();
+
+                NpgsqlCommand cmd = new NpgsqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = "Select * from matapelajaran where kodepelajaran = '" + kodepelajaran + "';";
+                cmd.CommandType = CommandType.Text;
+
+                NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd);
+                DataSet ds = new DataSet();
+
+
+                ds.Reset();
+                da.Fill(ds);
+                dt = ds.Tables[0];
+
+                cmd.Dispose();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Data gagal dibaca:" + ex.Message.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return dt;
+
+        }
+
+        public DataTable getRuangZoomByID(string kodezoom)
+        {
+            NpgsqlConnection conn = new NpgsqlConnection();
+            DataTable dt = new DataTable();
+            try
+            {
+                conn.ConnectionString = strConnString;
+                conn.Open();
+
+                NpgsqlCommand cmd = new NpgsqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = "Select * from ruangzoom where kodezoom = '" + kodezoom + "';";
+                cmd.CommandType = CommandType.Text;
+
+                NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd);
+                DataSet ds = new DataSet();
+
+
+                ds.Reset();
+                da.Fill(ds);
+                dt = ds.Tables[0];
+
+                cmd.Dispose();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Data gagal dibaca:" + ex.Message.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return dt;
+
+        }
+
+        public DataTable getPengajarByID(string nopengajar)
+        {
+            NpgsqlConnection conn = new NpgsqlConnection();
+            DataTable dt = new DataTable();
+            try
+            {
+                conn.ConnectionString = strConnString;
+                conn.Open();
+
+                NpgsqlCommand cmd = new NpgsqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = "Select * pengajar where nopengajar = '" + nopengajar + "';";
+                cmd.CommandType = CommandType.Text;
+
+                NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd);
+                DataSet ds = new DataSet();
+
+
+                ds.Reset();
+                da.Fill(ds);
+                dt = ds.Tables[0];
+
+                cmd.Dispose();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Data gagal dibaca:" + ex.Message.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return dt;
+
+        }
+
+        public DataTable getPresensiByID(string kodejadwalsiswa)
+        {
+            NpgsqlConnection conn = new NpgsqlConnection();
+            DataTable dt = new DataTable();
+            try
+            {
+                conn.ConnectionString = strConnString;
+                conn.Open();
+
+                NpgsqlCommand cmd = new NpgsqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = "Select * from presensisiswa where kodejadwalsiswa = '" + kodejadwalsiswa + "';";
+                cmd.CommandType = CommandType.Text;
+
+                NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd);
+                DataSet ds = new DataSet();
+
+
+                ds.Reset();
+                da.Fill(ds);
+                dt = ds.Tables[0];
+
+                cmd.Dispose();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Data gagal dibaca:" + ex.Message.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return dt;
+        }
+      
+        
+        
         // sini bang
 
     }

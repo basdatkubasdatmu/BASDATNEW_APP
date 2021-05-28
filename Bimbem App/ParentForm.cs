@@ -25,7 +25,11 @@ namespace Bimbem_App
         private void ParentForm_Load(object sender, EventArgs e)
         {
             LoginAplikasi();
-            
+            if (isSiswa == "pegawai")
+            {
+                FormMenuPegawai frmMenuPegawai = new FormMenuPegawai();
+                frmMenuPegawai.ShowDialog();
+            }
             
         }
 
@@ -197,6 +201,11 @@ namespace Bimbem_App
         private void btnDataPegawai_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

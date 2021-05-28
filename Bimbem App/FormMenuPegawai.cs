@@ -19,5 +19,11 @@ namespace Bimbem_App
         {
 
         }
+
+        private void btnDataPegawai_Click(object sender, EventArgs e)
+        {
+            FormInputJadwalPengajar frmInputJadwalPengajar = new FormInputJadwalPengajar();
+            frmInputJadwalPengajar.ShowDialog();
+        }
     }
 }
