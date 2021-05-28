@@ -50,11 +50,6 @@ namespace Bimbem_App
             this.lblKodeZoom = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dgvJadwalPengajar = new System.Windows.Forms.DataGridView();
-            this.btnHapus = new System.Windows.Forms.Button();
-            this.btnEdit = new System.Windows.Forms.Button();
-            this.btnTambah = new System.Windows.Forms.Button();
-            this.btnBatal = new System.Windows.Forms.Button();
-            this.btnSimpan = new System.Windows.Forms.Button();
             this.kodejadwalpengajar = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.kodekelas = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nopengajar = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -63,6 +58,13 @@ namespace Bimbem_App
             this.jammulai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.durasi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.kodezoom = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnHapus = new System.Windows.Forms.Button();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.btnTambah = new System.Windows.Forms.Button();
+            this.btnBatal = new System.Windows.Forms.Button();
+            this.btnSimpan = new System.Windows.Forms.Button();
+            this.btnHome = new System.Windows.Forms.Button();
+            this.btnRefresh = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvJadwalPengajar)).BeginInit();
@@ -269,6 +271,7 @@ namespace Bimbem_App
             // 
             this.dgvJadwalPengajar.AllowUserToAddRows = false;
             this.dgvJadwalPengajar.AllowUserToDeleteRows = false;
+            this.dgvJadwalPengajar.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -292,6 +295,54 @@ namespace Bimbem_App
             this.dgvJadwalPengajar.RowTemplate.Height = 25;
             this.dgvJadwalPengajar.Size = new System.Drawing.Size(828, 221);
             this.dgvJadwalPengajar.TabIndex = 0;
+            // 
+            // kodejadwalpengajar
+            // 
+            this.kodejadwalpengajar.DataPropertyName = "kodejadwalpengajar";
+            this.kodejadwalpengajar.HeaderText = "Kode Jadwal";
+            this.kodejadwalpengajar.Name = "kodejadwalpengajar";
+            // 
+            // kodekelas
+            // 
+            this.kodekelas.DataPropertyName = "kodekelas";
+            this.kodekelas.HeaderText = "Kode Kelas";
+            this.kodekelas.Name = "kodekelas";
+            // 
+            // nopengajar
+            // 
+            this.nopengajar.DataPropertyName = "nopengajar";
+            this.nopengajar.HeaderText = "No Pengajar";
+            this.nopengajar.Name = "nopengajar";
+            // 
+            // kodepelajaran
+            // 
+            this.kodepelajaran.DataPropertyName = "kodepelajaran";
+            this.kodepelajaran.HeaderText = "Kode Pelajaran";
+            this.kodepelajaran.Name = "kodepelajaran";
+            // 
+            // tanggal
+            // 
+            this.tanggal.DataPropertyName = "tanggal";
+            this.tanggal.HeaderText = "Tanggal";
+            this.tanggal.Name = "tanggal";
+            // 
+            // jammulai
+            // 
+            this.jammulai.DataPropertyName = "jammulai";
+            this.jammulai.HeaderText = "Jam Mulai";
+            this.jammulai.Name = "jammulai";
+            // 
+            // durasi
+            // 
+            this.durasi.DataPropertyName = "durasi";
+            this.durasi.HeaderText = "Durasi";
+            this.durasi.Name = "durasi";
+            // 
+            // kodezoom
+            // 
+            this.kodezoom.DataPropertyName = "kodezoom";
+            this.kodezoom.HeaderText = "Kode Zoom";
+            this.kodezoom.Name = "kodezoom";
             // 
             // btnHapus
             // 
@@ -348,59 +399,35 @@ namespace Bimbem_App
             this.btnSimpan.Text = "Simpan";
             this.btnSimpan.UseVisualStyleBackColor = false;
             // 
-            // kodejadwalpengajar
+            // btnHome
             // 
-            this.kodejadwalpengajar.DataPropertyName = "kodejadwalpengajar";
-            this.kodejadwalpengajar.HeaderText = "Kode Jadwal";
-            this.kodejadwalpengajar.Name = "kodejadwalpengajar";
+            this.btnHome.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnHome.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnHome.Location = new System.Drawing.Point(889, 12);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(74, 32);
+            this.btnHome.TabIndex = 24;
+            this.btnHome.Text = "HOME";
+            this.btnHome.UseVisualStyleBackColor = false;
             // 
-            // kodekelas
+            // btnRefresh
             // 
-            this.kodekelas.DataPropertyName = "kodekelas";
-            this.kodekelas.HeaderText = "Kode Kelas";
-            this.kodekelas.Name = "kodekelas";
-            // 
-            // nopengajar
-            // 
-            this.nopengajar.DataPropertyName = "nopengajar";
-            this.nopengajar.HeaderText = "No Pengajar";
-            this.nopengajar.Name = "nopengajar";
-            // 
-            // kodepelajaran
-            // 
-            this.kodepelajaran.DataPropertyName = "kodepelajaran";
-            this.kodepelajaran.HeaderText = "Kode Pelajaran";
-            this.kodepelajaran.Name = "kodepelajaran";
-            // 
-            // tanggal
-            // 
-            this.tanggal.DataPropertyName = "tanggal";
-            this.tanggal.HeaderText = "Tanggal";
-            this.tanggal.Name = "tanggal";
-            // 
-            // jammulai
-            // 
-            this.jammulai.DataPropertyName = "jammulai";
-            this.jammulai.HeaderText = "Jam Mulai";
-            this.jammulai.Name = "jammulai";
-            // 
-            // durasi
-            // 
-            this.durasi.DataPropertyName = "durasi";
-            this.durasi.HeaderText = "Durasi";
-            this.durasi.Name = "durasi";
-            // 
-            // kodezoom
-            // 
-            this.kodezoom.DataPropertyName = "kodezoom";
-            this.kodezoom.HeaderText = "Kode Zoom";
-            this.kodezoom.Name = "kodezoom";
+            this.btnRefresh.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnRefresh.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRefresh.Location = new System.Drawing.Point(889, 505);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(74, 32);
+            this.btnRefresh.TabIndex = 25;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.UseVisualStyleBackColor = false;
             // 
             // FormInputJadwalPengajar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(978, 665);
+            this.Controls.Add(this.btnRefresh);
+            this.Controls.Add(this.btnHome);
             this.Controls.Add(this.btnTambah);
             this.Controls.Add(this.btnHapus);
             this.Controls.Add(this.btnEdit);
@@ -473,5 +500,7 @@ namespace Bimbem_App
         private System.Windows.Forms.DataGridViewTextBoxColumn jammulai;
         private System.Windows.Forms.DataGridViewTextBoxColumn durasi;
         private System.Windows.Forms.DataGridViewTextBoxColumn kodezoom;
+        private System.Windows.Forms.Button btnHome;
+        private System.Windows.Forms.Button btnRefresh;
     }
 }

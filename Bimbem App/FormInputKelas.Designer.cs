@@ -29,8 +29,8 @@ namespace Bimbem_App
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.lbFasilitasKelas = new System.Windows.Forms.Label();
             this.tbBiayaKelas = new System.Windows.Forms.TextBox();
@@ -44,17 +44,19 @@ namespace Bimbem_App
             this.lbJudulInputKelas = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dgvKelas = new System.Windows.Forms.DataGridView();
+            this.kodekelas = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.namakelas = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.biaya = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kuota = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fasilitas = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnTambah = new System.Windows.Forms.Button();
             this.btnHapus = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnBatal = new System.Windows.Forms.Button();
             this.btnSimpan = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.kodekelas = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.namakelas = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.biaya = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kuota = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fasilitas = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnRefresh = new System.Windows.Forms.Button();
+            this.btnHome = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKelas)).BeginInit();
             this.panel2.SuspendLayout();
@@ -194,14 +196,15 @@ namespace Bimbem_App
             // 
             this.dgvKelas.AllowUserToAddRows = false;
             this.dgvKelas.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvKelas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvKelas.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvKelas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvKelas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvKelas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.kodekelas,
@@ -211,17 +214,53 @@ namespace Bimbem_App
             this.fasilitas});
             this.dgvKelas.Location = new System.Drawing.Point(23, 21);
             this.dgvKelas.Name = "dgvKelas";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvKelas.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvKelas.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvKelas.RowTemplate.Height = 25;
             this.dgvKelas.Size = new System.Drawing.Size(828, 237);
             this.dgvKelas.TabIndex = 0;
+            // 
+            // kodekelas
+            // 
+            this.kodekelas.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.kodekelas.DataPropertyName = "kodekelas";
+            this.kodekelas.HeaderText = "Kode Kelas";
+            this.kodekelas.Name = "kodekelas";
+            this.kodekelas.Width = 110;
+            // 
+            // namakelas
+            // 
+            this.namakelas.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.namakelas.DataPropertyName = "nama";
+            this.namakelas.HeaderText = "Nama";
+            this.namakelas.Name = "namakelas";
+            this.namakelas.Width = 77;
+            // 
+            // biaya
+            // 
+            this.biaya.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.biaya.DataPropertyName = "biaya";
+            this.biaya.HeaderText = "Biaya";
+            this.biaya.Name = "biaya";
+            this.biaya.Width = 72;
+            // 
+            // kuota
+            // 
+            this.kuota.DataPropertyName = "kuota";
+            this.kuota.HeaderText = "Kuota";
+            this.kuota.Name = "kuota";
+            // 
+            // fasilitas
+            // 
+            this.fasilitas.DataPropertyName = "fasilitas";
+            this.fasilitas.HeaderText = "Fasilitas";
+            this.fasilitas.Name = "fasilitas";
             // 
             // btnTambah
             // 
@@ -286,47 +325,35 @@ namespace Bimbem_App
             this.panel2.Size = new System.Drawing.Size(871, 284);
             this.panel2.TabIndex = 29;
             // 
-            // kodekelas
+            // btnRefresh
             // 
-            this.kodekelas.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.kodekelas.DataPropertyName = "kodekelas";
-            this.kodekelas.HeaderText = "Kode Kelas";
-            this.kodekelas.Name = "kodekelas";
-            this.kodekelas.Width = 110;
+            this.btnRefresh.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnRefresh.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRefresh.Location = new System.Drawing.Point(892, 499);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(74, 32);
+            this.btnRefresh.TabIndex = 36;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.UseVisualStyleBackColor = false;
             // 
-            // namakelas
+            // btnHome
             // 
-            this.namakelas.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.namakelas.DataPropertyName = "nama";
-            this.namakelas.HeaderText = "Nama";
-            this.namakelas.Name = "namakelas";
-            this.namakelas.Width = 77;
-            // 
-            // biaya
-            // 
-            this.biaya.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.biaya.DataPropertyName = "biaya";
-            this.biaya.HeaderText = "Biaya";
-            this.biaya.Name = "biaya";
-            this.biaya.Width = 72;
-            // 
-            // kuota
-            // 
-            this.kuota.DataPropertyName = "kuota";
-            this.kuota.HeaderText = "Kuota";
-            this.kuota.Name = "kuota";
-            // 
-            // fasilitas
-            // 
-            this.fasilitas.DataPropertyName = "fasilitas";
-            this.fasilitas.HeaderText = "Fasilitas";
-            this.fasilitas.Name = "fasilitas";
+            this.btnHome.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnHome.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnHome.Location = new System.Drawing.Point(892, 12);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(74, 32);
+            this.btnHome.TabIndex = 35;
+            this.btnHome.Text = "HOME";
+            this.btnHome.UseVisualStyleBackColor = false;
             // 
             // FormInputKelas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(978, 665);
+            this.Controls.Add(this.btnRefresh);
+            this.Controls.Add(this.btnHome);
             this.Controls.Add(this.btnTambah);
             this.Controls.Add(this.btnHapus);
             this.Controls.Add(this.checkedListBox1);
@@ -384,5 +411,7 @@ namespace Bimbem_App
         private System.Windows.Forms.DataGridViewTextBoxColumn biaya;
         private System.Windows.Forms.DataGridViewTextBoxColumn kuota;
         private System.Windows.Forms.DataGridViewTextBoxColumn fasilitas;
+        private System.Windows.Forms.Button btnRefresh;
+        private System.Windows.Forms.Button btnHome;
     }
 }

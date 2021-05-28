@@ -48,6 +48,8 @@ namespace Bimbem_App
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnBatal = new System.Windows.Forms.Button();
             this.btnSimpan = new System.Windows.Forms.Button();
+            this.btnRefresh = new System.Windows.Forms.Button();
+            this.btnHome = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvJadwalSiswa)).BeginInit();
             this.panel1.SuspendLayout();
@@ -138,6 +140,7 @@ namespace Bimbem_App
             // 
             this.dgvJadwalSiswa.AllowUserToAddRows = false;
             this.dgvJadwalSiswa.AllowUserToDeleteRows = false;
+            this.dgvJadwalSiswa.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -193,7 +196,7 @@ namespace Bimbem_App
             // 
             this.btnTambah.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnTambah.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnTambah.Location = new System.Drawing.Point(892, 461);
+            this.btnTambah.Location = new System.Drawing.Point(892, 452);
             this.btnTambah.Name = "btnTambah";
             this.btnTambah.Size = new System.Drawing.Size(74, 32);
             this.btnTambah.TabIndex = 28;
@@ -204,7 +207,7 @@ namespace Bimbem_App
             // 
             this.btnHapus.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnHapus.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnHapus.Location = new System.Drawing.Point(892, 385);
+            this.btnHapus.Location = new System.Drawing.Point(892, 376);
             this.btnHapus.Name = "btnHapus";
             this.btnHapus.Size = new System.Drawing.Size(74, 32);
             this.btnHapus.TabIndex = 27;
@@ -215,7 +218,7 @@ namespace Bimbem_App
             // 
             this.btnEdit.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnEdit.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnEdit.Location = new System.Drawing.Point(892, 423);
+            this.btnEdit.Location = new System.Drawing.Point(892, 414);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(74, 32);
             this.btnEdit.TabIndex = 26;
@@ -244,11 +247,35 @@ namespace Bimbem_App
             this.btnSimpan.Text = "Simpan";
             this.btnSimpan.UseVisualStyleBackColor = false;
             // 
+            // btnRefresh
+            // 
+            this.btnRefresh.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnRefresh.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRefresh.Location = new System.Drawing.Point(892, 490);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(74, 32);
+            this.btnRefresh.TabIndex = 30;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.UseVisualStyleBackColor = false;
+            // 
+            // btnHome
+            // 
+            this.btnHome.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnHome.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnHome.Location = new System.Drawing.Point(892, 12);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(74, 32);
+            this.btnHome.TabIndex = 29;
+            this.btnHome.Text = "HOME";
+            this.btnHome.UseVisualStyleBackColor = false;
+            // 
             // FormInputJadwalSiswa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(978, 665);
+            this.Controls.Add(this.btnRefresh);
+            this.Controls.Add(this.btnHome);
             this.Controls.Add(this.btnTambah);
             this.Controls.Add(this.btnHapus);
             this.Controls.Add(this.btnEdit);
@@ -293,5 +320,7 @@ namespace Bimbem_App
         private System.Windows.Forms.DataGridViewTextBoxColumn kodejadwalsiswa;
         private System.Windows.Forms.DataGridViewTextBoxColumn nosiswa;
         private System.Windows.Forms.DataGridViewTextBoxColumn kodejadwalpengajar;
+        private System.Windows.Forms.Button btnRefresh;
+        private System.Windows.Forms.Button btnHome;
     }
 }
