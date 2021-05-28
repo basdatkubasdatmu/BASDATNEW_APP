@@ -14,5 +14,10 @@ namespace Bimbem_App
         {
             InitializeComponent();
         }
+
+        private void pctrInputNilai_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
