@@ -19,5 +19,12 @@ namespace Bimbem_App
         {
 
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            DataAccess da = new DataAccess();
+            dgvJadwalPengajar.AutoGenerateColumns = false;
+            dgvJadwalPengajar.DataSource = da.getAllJadwalPengajar();
+        }
     }
 }
