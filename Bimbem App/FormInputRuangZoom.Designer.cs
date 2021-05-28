@@ -45,10 +45,12 @@ namespace Bimbem_App
             this.btnHapus = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnTambah = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvRuangZoom = new System.Windows.Forms.DataGridView();
+            this.btnRefresh = new System.Windows.Forms.Button();
+            this.btnHome = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlRuangZoom.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRuangZoom)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -65,7 +67,7 @@ namespace Bimbem_App
             // pnlRuangZoom
             // 
             this.pnlRuangZoom.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pnlRuangZoom.Controls.Add(this.dataGridView1);
+            this.pnlRuangZoom.Controls.Add(this.dgvRuangZoom);
             this.pnlRuangZoom.Location = new System.Drawing.Point(26, 284);
             this.pnlRuangZoom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlRuangZoom.Name = "pnlRuangZoom";
@@ -78,7 +80,7 @@ namespace Bimbem_App
             this.btnBatal.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnBatal.Location = new System.Drawing.Point(673, 237);
             this.btnBatal.Name = "btnBatal";
-            this.btnBatal.Size = new System.Drawing.Size(82, 42);
+            this.btnBatal.Size = new System.Drawing.Size(72, 42);
             this.btnBatal.TabIndex = 8;
             this.btnBatal.Text = "Batal";
             this.btnBatal.UseVisualStyleBackColor = false;
@@ -217,20 +219,45 @@ namespace Bimbem_App
             this.btnTambah.Text = "Tambah";
             this.btnTambah.UseVisualStyleBackColor = false;
             // 
-            // dataGridView1
+            // dgvRuangZoom
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(15, 15);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(801, 320);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvRuangZoom.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvRuangZoom.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvRuangZoom.Location = new System.Drawing.Point(15, 15);
+            this.dgvRuangZoom.Name = "dgvRuangZoom";
+            this.dgvRuangZoom.RowTemplate.Height = 25;
+            this.dgvRuangZoom.Size = new System.Drawing.Size(801, 320);
+            this.dgvRuangZoom.TabIndex = 0;
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.BackColor = System.Drawing.Color.Salmon;
+            this.btnRefresh.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRefresh.Location = new System.Drawing.Point(862, 428);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(87, 42);
+            this.btnRefresh.TabIndex = 12;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.UseVisualStyleBackColor = false;
+            // 
+            // btnHome
+            // 
+            this.btnHome.BackColor = System.Drawing.Color.Salmon;
+            this.btnHome.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnHome.Location = new System.Drawing.Point(862, 595);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(87, 42);
+            this.btnHome.TabIndex = 13;
+            this.btnHome.Text = "Home";
+            this.btnHome.UseVisualStyleBackColor = false;
             // 
             // FormInputRuangZoom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(978, 665);
+            this.Controls.Add(this.btnHome);
+            this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnTambah);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnHapus);
@@ -255,7 +282,7 @@ namespace Bimbem_App
             this.Text = "FormInputRuangZoom";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlRuangZoom.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRuangZoom)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -276,9 +303,11 @@ namespace Bimbem_App
         private System.Windows.Forms.Label inputRuangZoom;
         private System.Windows.Forms.Button btnBatal;
         private System.Windows.Forms.Button btnSimpan;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvRuangZoom;
         private System.Windows.Forms.Button btnHapus;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnTambah;
+        private System.Windows.Forms.Button btnRefresh;
+        private System.Windows.Forms.Button btnHome;
     }
 }
