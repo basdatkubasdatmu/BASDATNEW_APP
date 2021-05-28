@@ -79,95 +79,103 @@ namespace Bimbem_App
             // 
             // btnBatal
             // 
-            this.btnBatal.Location = new System.Drawing.Point(192, 300);
+            this.btnBatal.BackColor = System.Drawing.Color.Salmon;
+            this.btnBatal.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnBatal.Location = new System.Drawing.Point(185, 310);
             this.btnBatal.Name = "btnBatal";
-            this.btnBatal.Size = new System.Drawing.Size(65, 33);
+            this.btnBatal.Size = new System.Drawing.Size(72, 29);
             this.btnBatal.TabIndex = 8;
             this.btnBatal.Text = "Batal";
-            this.btnBatal.UseVisualStyleBackColor = true;
+            this.btnBatal.UseVisualStyleBackColor = false;
             // 
             // btnSimpan
             // 
-            this.btnSimpan.Location = new System.Drawing.Point(119, 300);
+            this.btnSimpan.BackColor = System.Drawing.Color.Salmon;
+            this.btnSimpan.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSimpan.Location = new System.Drawing.Point(107, 310);
             this.btnSimpan.Name = "btnSimpan";
-            this.btnSimpan.Size = new System.Drawing.Size(67, 33);
+            this.btnSimpan.Size = new System.Drawing.Size(74, 29);
             this.btnSimpan.TabIndex = 7;
             this.btnSimpan.Text = "Simpan";
-            this.btnSimpan.UseVisualStyleBackColor = true;
+            this.btnSimpan.UseVisualStyleBackColor = false;
             // 
             // txtPasscodeRuangZoom
             // 
             this.txtPasscodeRuangZoom.BackColor = System.Drawing.Color.Salmon;
-            this.txtPasscodeRuangZoom.Location = new System.Drawing.Point(45, 260);
+            this.txtPasscodeRuangZoom.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtPasscodeRuangZoom.Location = new System.Drawing.Point(45, 262);
             this.txtPasscodeRuangZoom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPasscodeRuangZoom.Name = "txtPasscodeRuangZoom";
-            this.txtPasscodeRuangZoom.Size = new System.Drawing.Size(212, 23);
+            this.txtPasscodeRuangZoom.Size = new System.Drawing.Size(212, 29);
             this.txtPasscodeRuangZoom.TabIndex = 4;
             // 
             // txtIdMeetingRuangZoom
             // 
             this.txtIdMeetingRuangZoom.BackColor = System.Drawing.Color.Salmon;
+            this.txtIdMeetingRuangZoom.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtIdMeetingRuangZoom.Location = new System.Drawing.Point(45, 207);
             this.txtIdMeetingRuangZoom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtIdMeetingRuangZoom.Name = "txtIdMeetingRuangZoom";
-            this.txtIdMeetingRuangZoom.Size = new System.Drawing.Size(212, 23);
+            this.txtIdMeetingRuangZoom.Size = new System.Drawing.Size(212, 29);
             this.txtIdMeetingRuangZoom.TabIndex = 6;
             // 
             // passcodeRuangZoom
             // 
             this.passcodeRuangZoom.AutoSize = true;
-            this.passcodeRuangZoom.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.passcodeRuangZoom.Location = new System.Drawing.Point(43, 243);
+            this.passcodeRuangZoom.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.passcodeRuangZoom.Location = new System.Drawing.Point(43, 241);
             this.passcodeRuangZoom.Name = "passcodeRuangZoom";
-            this.passcodeRuangZoom.Size = new System.Drawing.Size(56, 15);
+            this.passcodeRuangZoom.Size = new System.Drawing.Size(78, 21);
             this.passcodeRuangZoom.TabIndex = 3;
             this.passcodeRuangZoom.Text = "Passcode";
             // 
             // idMeetingRuangZoom
             // 
             this.idMeetingRuangZoom.AutoSize = true;
-            this.idMeetingRuangZoom.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.idMeetingRuangZoom.Location = new System.Drawing.Point(43, 190);
+            this.idMeetingRuangZoom.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.idMeetingRuangZoom.Location = new System.Drawing.Point(43, 186);
             this.idMeetingRuangZoom.Name = "idMeetingRuangZoom";
-            this.idMeetingRuangZoom.Size = new System.Drawing.Size(67, 15);
+            this.idMeetingRuangZoom.Size = new System.Drawing.Size(92, 21);
             this.idMeetingRuangZoom.TabIndex = 5;
             this.idMeetingRuangZoom.Text = "Meeting ID";
             // 
             // txtLinkRuangZoom
             // 
             this.txtLinkRuangZoom.BackColor = System.Drawing.Color.Salmon;
-            this.txtLinkRuangZoom.Location = new System.Drawing.Point(43, 159);
+            this.txtLinkRuangZoom.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtLinkRuangZoom.Location = new System.Drawing.Point(43, 156);
             this.txtLinkRuangZoom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtLinkRuangZoom.Name = "txtLinkRuangZoom";
-            this.txtLinkRuangZoom.Size = new System.Drawing.Size(212, 23);
+            this.txtLinkRuangZoom.Size = new System.Drawing.Size(212, 29);
             this.txtLinkRuangZoom.TabIndex = 4;
             // 
             // linkRuangZoom
             // 
             this.linkRuangZoom.AutoSize = true;
-            this.linkRuangZoom.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.linkRuangZoom.Location = new System.Drawing.Point(43, 142);
+            this.linkRuangZoom.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.linkRuangZoom.Location = new System.Drawing.Point(43, 135);
             this.linkRuangZoom.Name = "linkRuangZoom";
-            this.linkRuangZoom.Size = new System.Drawing.Size(29, 15);
+            this.linkRuangZoom.Size = new System.Drawing.Size(39, 21);
             this.linkRuangZoom.TabIndex = 3;
             this.linkRuangZoom.Text = "Link";
             // 
             // txtKodeZoom
             // 
             this.txtKodeZoom.BackColor = System.Drawing.Color.Salmon;
-            this.txtKodeZoom.Location = new System.Drawing.Point(43, 111);
+            this.txtKodeZoom.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtKodeZoom.Location = new System.Drawing.Point(43, 105);
             this.txtKodeZoom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtKodeZoom.Name = "txtKodeZoom";
-            this.txtKodeZoom.Size = new System.Drawing.Size(212, 23);
+            this.txtKodeZoom.Size = new System.Drawing.Size(212, 29);
             this.txtKodeZoom.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(43, 94);
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(43, 84);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 15);
+            this.label2.Size = new System.Drawing.Size(96, 21);
             this.label2.TabIndex = 1;
             this.label2.Text = "Kode Zoom";
             // 
@@ -175,11 +183,11 @@ namespace Bimbem_App
             // 
             this.inputRuangZoom.AutoSize = true;
             this.inputRuangZoom.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.inputRuangZoom.Location = new System.Drawing.Point(43, 31);
+            this.inputRuangZoom.Location = new System.Drawing.Point(34, 27);
             this.inputRuangZoom.Name = "inputRuangZoom";
-            this.inputRuangZoom.Size = new System.Drawing.Size(206, 30);
+            this.inputRuangZoom.Size = new System.Drawing.Size(238, 30);
             this.inputRuangZoom.TabIndex = 0;
-            this.inputRuangZoom.Text = "Input Ruang Zoom";
+            this.inputRuangZoom.Text = "INPUT RUANG ZOOM";
             // 
             // FormInputRuangZoom
             // 

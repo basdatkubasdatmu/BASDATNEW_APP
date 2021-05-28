@@ -7,7 +7,16 @@
     <Compile Update="FormInputJadwalSiswa.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FormInputKelas.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FormInputMataPel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormInputNilai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormInputPegawai.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="formInputPengajar.cs">
@@ -16,7 +25,13 @@
     <Compile Update="FormInputPresensi.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FormInputRuangZoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="formInputSiswa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormInputTransaksi.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FormInputUjian.cs">
@@ -29,9 +44,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="formSiswa.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="FormTemplate.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="ParentForm.cs">

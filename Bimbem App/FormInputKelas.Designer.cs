@@ -50,6 +50,7 @@ namespace Bimbem_App
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FloralWhite;
             this.panel1.Controls.Add(this.btBatal);
             this.panel1.Controls.Add(this.btSimpan);
             this.panel1.Controls.Add(this.checkedListBox1);
@@ -63,7 +64,7 @@ namespace Bimbem_App
             this.panel1.Controls.Add(this.lbNamaKelas);
             this.panel1.Controls.Add(this.lbNomorKelas);
             this.panel1.Controls.Add(this.lbJudulInputKelas);
-            this.panel1.Location = new System.Drawing.Point(38, 31);
+            this.panel1.Location = new System.Drawing.Point(44, 39);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(447, 359);
@@ -77,7 +78,7 @@ namespace Bimbem_App
             this.btBatal.Name = "btBatal";
             this.btBatal.Size = new System.Drawing.Size(83, 30);
             this.btBatal.TabIndex = 18;
-            this.btBatal.Text = "BATAL";
+            this.btBatal.Text = "Batal";
             this.btBatal.UseVisualStyleBackColor = false;
             // 
             // btSimpan
@@ -88,7 +89,7 @@ namespace Bimbem_App
             this.btSimpan.Name = "btSimpan";
             this.btSimpan.Size = new System.Drawing.Size(83, 30);
             this.btSimpan.TabIndex = 17;
-            this.btSimpan.Text = "SIMPAN";
+            this.btSimpan.Text = "Simpan";
             this.btSimpan.UseVisualStyleBackColor = false;
             // 
             // checkedListBox1
@@ -199,11 +200,11 @@ namespace Bimbem_App
             // 
             this.lbJudulInputKelas.AutoSize = true;
             this.lbJudulInputKelas.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbJudulInputKelas.Location = new System.Drawing.Point(130, 15);
+            this.lbJudulInputKelas.Location = new System.Drawing.Point(151, 16);
             this.lbJudulInputKelas.Name = "lbJudulInputKelas";
-            this.lbJudulInputKelas.Size = new System.Drawing.Size(184, 30);
+            this.lbJudulInputKelas.Size = new System.Drawing.Size(150, 30);
             this.lbJudulInputKelas.TabIndex = 0;
-            this.lbJudulInputKelas.Text = "Input Data Kelas";
+            this.lbJudulInputKelas.Text = "INPUT KELAS";
             // 
             // pictureBox1
             // 
