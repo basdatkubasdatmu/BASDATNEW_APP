@@ -31,6 +31,8 @@ namespace Bimbem_App
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnDataPegawai = new System.Windows.Forms.Button();
+            this.btnJadwalSiswa = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,11 +56,33 @@ namespace Bimbem_App
             this.btnDataPegawai.UseVisualStyleBackColor = true;
             this.btnDataPegawai.Click += new System.EventHandler(this.btnDataPegawai_Click);
             // 
+            // btnJadwalSiswa
+            // 
+            this.btnJadwalSiswa.Location = new System.Drawing.Point(385, 365);
+            this.btnJadwalSiswa.Name = "btnJadwalSiswa";
+            this.btnJadwalSiswa.Size = new System.Drawing.Size(167, 29);
+            this.btnJadwalSiswa.TabIndex = 2;
+            this.btnJadwalSiswa.Text = "Data Siswa";
+            this.btnJadwalSiswa.UseVisualStyleBackColor = true;
+            this.btnJadwalSiswa.Click += new System.EventHandler(this.btnJadwalSiswa_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(385, 421);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(167, 29);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Log Out";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FormMenuPegawai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(945, 689);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnJadwalSiswa);
             this.Controls.Add(this.btnDataPegawai);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -77,5 +101,7 @@ namespace Bimbem_App
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnDataPegawai;
+        private System.Windows.Forms.Button btnJadwalSiswa;
+        private System.Windows.Forms.Button button1;
     }
 }

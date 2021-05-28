@@ -25,5 +25,17 @@ namespace Bimbem_App
             FormInputJadwalPengajar frmInputJadwalPengajar = new FormInputJadwalPengajar();
             frmInputJadwalPengajar.ShowDialog();
         }
+
+        private void btnJadwalSiswa_Click(object sender, EventArgs e)
+        {
+            FormInputJadwalSiswa frmInputJadwalSiswa = new FormInputJadwalSiswa();
+            frmInputJadwalSiswa.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+            ActiveForm.Close();
+        }
     }
 }

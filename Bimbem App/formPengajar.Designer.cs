@@ -29,135 +29,141 @@ namespace Bimbem_App
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.lblDataSiswa = new System.Windows.Forms.Label();
+            this.dgvPegawaiSiswa = new System.Windows.Forms.DataGridView();
             this.noPengajar = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kodePelajaran = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.noPegawai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lblDataPengajar = new System.Windows.Forms.Label();
-            this.btnRefresh = new System.Windows.Forms.Button();
-            this.btnTambah = new System.Windows.Forms.Button();
-            this.btnEdit = new System.Windows.Forms.Button();
-            this.btnHapus = new System.Windows.Forms.Button();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nohp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnClose = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPegawaiSiswa)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Bimbem_App.Properties.Resources.parent_form;
-            this.pictureBox1.Location = new System.Drawing.Point(0, -1);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(674, 498);
+            this.pictureBox1.Size = new System.Drawing.Size(981, 647);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // dataGridView1
+            // lblDataSiswa
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.lblDataSiswa.AutoSize = true;
+            this.lblDataSiswa.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblDataSiswa.Location = new System.Drawing.Point(429, 127);
+            this.lblDataSiswa.Name = "lblDataSiswa";
+            this.lblDataSiswa.Size = new System.Drawing.Size(130, 37);
+            this.lblDataSiswa.TabIndex = 4;
+            this.lblDataSiswa.Text = "Pengajar";
+            this.lblDataSiswa.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // dgvPegawaiSiswa
+            // 
+            this.dgvPegawaiSiswa.AllowUserToAddRows = false;
+            this.dgvPegawaiSiswa.AllowUserToDeleteRows = false;
+            this.dgvPegawaiSiswa.BackgroundColor = System.Drawing.Color.NavajoWhite;
+            this.dgvPegawaiSiswa.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPegawaiSiswa.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvPegawaiSiswa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPegawaiSiswa.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.noPengajar,
-            this.kodePelajaran,
-            this.noPegawai});
-            this.dataGridView1.Location = new System.Drawing.Point(45, 65);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(543, 341);
-            this.dataGridView1.TabIndex = 2;
+            this.dataGridViewTextBoxColumn4,
+            this.nohp,
+            this.email});
+            this.dgvPegawaiSiswa.GridColor = System.Drawing.Color.Orange;
+            this.dgvPegawaiSiswa.Location = new System.Drawing.Point(219, 227);
+            this.dgvPegawaiSiswa.Name = "dgvPegawaiSiswa";
+            this.dgvPegawaiSiswa.ReadOnly = true;
+            this.dgvPegawaiSiswa.RowHeadersWidth = 51;
+            this.dgvPegawaiSiswa.RowTemplate.Height = 29;
+            this.dgvPegawaiSiswa.Size = new System.Drawing.Size(553, 298);
+            this.dgvPegawaiSiswa.TabIndex = 23;
+            this.dgvPegawaiSiswa.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPegawaiSiswa_CellContentClick);
             // 
             // noPengajar
             // 
             this.noPengajar.DataPropertyName = "nopengajar";
-            this.noPengajar.HeaderText = "No. Pengajar";
-            this.noPengajar.MaxInputLength = 10;
+            this.noPengajar.HeaderText = "Nomor Pengajar";
+            this.noPengajar.MinimumWidth = 6;
             this.noPengajar.Name = "noPengajar";
+            this.noPengajar.ReadOnly = true;
+            this.noPengajar.Width = 125;
             // 
-            // kodePelajaran
+            // dataGridViewTextBoxColumn4
             // 
-            this.kodePelajaran.DataPropertyName = "kodepelajaran";
-            this.kodePelajaran.HeaderText = "Kode Pelajaran";
-            this.kodePelajaran.MaxInputLength = 5;
-            this.kodePelajaran.Name = "kodePelajaran";
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "nama";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Nama Pengajar";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            this.dataGridViewTextBoxColumn4.Width = 125;
             // 
-            // noPegawai
+            // nohp
             // 
-            this.noPegawai.DataPropertyName = "nopegawai";
-            this.noPegawai.HeaderText = "No. Pegawai";
-            this.noPegawai.MaxInputLength = 10;
-            this.noPegawai.Name = "noPegawai";
+            this.nohp.DataPropertyName = "nohp";
+            this.nohp.HeaderText = "No HP";
+            this.nohp.MinimumWidth = 6;
+            this.nohp.Name = "nohp";
+            this.nohp.ReadOnly = true;
+            this.nohp.Width = 125;
             // 
-            // lblDataPengajar
+            // email
             // 
-            this.lblDataPengajar.AutoSize = true;
-            this.lblDataPengajar.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblDataPengajar.Location = new System.Drawing.Point(45, 23);
-            this.lblDataPengajar.Name = "lblDataPengajar";
-            this.lblDataPengajar.Size = new System.Drawing.Size(159, 30);
-            this.lblDataPengajar.TabIndex = 5;
-            this.lblDataPengajar.Text = "Data Pengajar";
+            this.email.DataPropertyName = "email";
+            this.email.HeaderText = "email";
+            this.email.MinimumWidth = 6;
+            this.email.Name = "email";
+            this.email.ReadOnly = true;
+            this.email.Width = 125;
             // 
-            // btnRefresh
+            // btnClose
             // 
-            this.btnRefresh.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnRefresh.Location = new System.Drawing.Point(332, 432);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(75, 35);
-            this.btnRefresh.TabIndex = 20;
-            this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.UseVisualStyleBackColor = true;
-            // 
-            // btnTambah
-            // 
-            this.btnTambah.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnTambah.Location = new System.Drawing.Point(413, 432);
-            this.btnTambah.Name = "btnTambah";
-            this.btnTambah.Size = new System.Drawing.Size(75, 35);
-            this.btnTambah.TabIndex = 22;
-            this.btnTambah.Text = "Tambah";
-            this.btnTambah.UseVisualStyleBackColor = true;
-            // 
-            // btnEdit
-            // 
-            this.btnEdit.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnEdit.Location = new System.Drawing.Point(494, 432);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(75, 35);
-            this.btnEdit.TabIndex = 23;
-            this.btnEdit.Text = "Edit";
-            this.btnEdit.UseVisualStyleBackColor = true;
-            // 
-            // btnHapus
-            // 
-            this.btnHapus.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnHapus.Location = new System.Drawing.Point(575, 432);
-            this.btnHapus.Name = "btnHapus";
-            this.btnHapus.Size = new System.Drawing.Size(75, 35);
-            this.btnHapus.TabIndex = 24;
-            this.btnHapus.Text = "Hapus";
-            this.btnHapus.UseVisualStyleBackColor = true;
+            this.btnClose.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnClose.FlatAppearance.BorderColor = System.Drawing.Color.Moccasin;
+            this.btnClose.FlatAppearance.BorderSize = 2;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnClose.ForeColor = System.Drawing.Color.White;
+            this.btnClose.Location = new System.Drawing.Point(859, 42);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(94, 32);
+            this.btnClose.TabIndex = 0;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // formPengajar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(675, 525);
-            this.Controls.Add(this.btnHapus);
-            this.Controls.Add(this.btnEdit);
-            this.Controls.Add(this.btnTambah);
-            this.Controls.Add(this.btnRefresh);
-            this.Controls.Add(this.lblDataPengajar);
-            this.Controls.Add(this.dataGridView1);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1005, 671);
+            this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.dgvPegawaiSiswa);
+            this.Controls.Add(this.lblDataSiswa);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "formPengajar";
-            this.Text = "Pengajar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Siswa";
+            this.Load += new System.EventHandler(this.formPengajar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPegawaiSiswa)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -166,14 +172,12 @@ namespace Bimbem_App
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label lblDataSiswa;
+        private System.Windows.Forms.DataGridView dgvPegawaiSiswa;
         private System.Windows.Forms.DataGridViewTextBoxColumn noPengajar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn kodePelajaran;
-        private System.Windows.Forms.DataGridViewTextBoxColumn noPegawai;
-        private System.Windows.Forms.Label lblDataPengajar;
-        private System.Windows.Forms.Button btnRefresh;
-        private System.Windows.Forms.Button btnTambah;
-        private System.Windows.Forms.Button btnEdit;
-        private System.Windows.Forms.Button btnHapus;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nohp;
+        private System.Windows.Forms.DataGridViewTextBoxColumn email;
+        private System.Windows.Forms.Button btnClose;
     }
 }

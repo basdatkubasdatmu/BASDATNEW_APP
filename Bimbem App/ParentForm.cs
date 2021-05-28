@@ -10,9 +10,9 @@ namespace Bimbem_App
 {
     public partial class ParentForm : Form
     {
-        public string noPegawaiLogin;
+        public static string noPegawaiLogin;
 
-        public string noSiswaLogin;
+        public static string noSiswaLogin;
 
         public string isSiswa;
 
@@ -22,18 +22,29 @@ namespace Bimbem_App
             
         }
 
-        private void ParentForm_Load(object sender, EventArgs e)
+        public void ParentForm_Load(object sender, EventArgs e)
         {
-            LoginAplikasi();
+            this.LoginAplikasi();
             if (isSiswa == "pegawai")
             {
                 FormMenuPegawai frmMenuPegawai = new FormMenuPegawai();
                 frmMenuPegawai.ShowDialog();
+                this.pnlMenuSiswa.Visible = false;
+                this.label1.Visible = false;
+                this.lblGreetings.Visible = false;
+                
             }
+            else if (isSiswa == "siswa")
+            {
+                this.pnlMenuSiswa.Visible = true;
+                this.label1.Visible = true;
+                this.lblGreetings.Visible = true;
+            }
+
             
         }
 
-        private void LoginAplikasi()
+        public void LoginAplikasi()
         {
             
             FormLogin frmLogin = new FormLogin();
@@ -46,8 +57,10 @@ namespace Bimbem_App
                 {
                     noSiswaLogin = frmLogin.noSiswaLogin;
                     DataTable dt = da.getSiswaByID(noSiswaLogin);
-                    this.lblGreetings.Text = dt.Rows[0]["nama"].ToString() + "!";
+                    this.lblGreetings.Text = "Selamat datang, " + dt.Rows[0]["nama"].ToString() + "!";
                     this.pnlMenuSiswa.Visible = true;
+                    this.label1.Visible = true;
+                    this.lblGreetings.Visible = true;
                 } 
                 else if (isSiswa == "pegawai")
                 {
@@ -55,6 +68,10 @@ namespace Bimbem_App
                     DataTable ds = da.getPegawaiByID(noPegawaiLogin);
                     this.lblGreetings.Text = ds.Rows[0]["nama"].ToString() + "!";
                     this.pnlMenuSiswa.Visible = false;
+                    FormMenuPegawai frmMenuPegawai = new FormMenuPegawai();
+                    frmMenuPegawai.ShowDialog();
+                    this.label1.Visible = false;
+                    this.lblGreetings.Visible = false;
                 }
             } 
         }
@@ -77,11 +94,7 @@ namespace Bimbem_App
 
         private void jadwalSiswa_SelectedIndexChanged(object sender, EventArgs e)
         {
-            DataAccess da = new DataAccess();
-            dgvJadwalKelasSiswa.AutoGenerateColumns = false;
-            dgvJadwalKelasSiswa.DataSource = da.getJadwalKelasByID(noSiswaLogin);
-            dgvJadwalUjian.AutoGenerateColumns = false;
-            dgvJadwalUjian.DataSource = da.getAllUjian();
+            
 
         }
        
@@ -115,9 +128,9 @@ namespace Bimbem_App
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.jadwalSiswa.Visible = true;
-            this.pnlAkademikSiswa.Visible = false;
-            this.pnlPengajar.Visible = false;
+            FormJadwalSiswa frmJadwalSiswa = new FormJadwalSiswa();
+            frmJadwalSiswa.getValue(noSiswaLogin.ToString());
+            frmJadwalSiswa.Show();
         }
 
         private void dgvNilaiSiswa_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -127,26 +140,18 @@ namespace Bimbem_App
 
         private void pnlAkademikSiswa_Paint(object sender, PaintEventArgs e)
         {
-            DataAccess da = new DataAccess();
-            dgvNilaiSiswa.AutoGenerateColumns = false;
-            FormLogin frmLogin = new FormLogin();
-            dgvNilaiSiswa.DataSource = da.getNilaiByID(frmLogin.noSiswaLogin);
-            dgvMataPelajaran.AutoGenerateColumns = false;
-            dgvMataPelajaran.DataSource = da.getAllMatpel();
+            
         }
 
         private void btnAkademik_Click(object sender, EventArgs e)
         {
-            this.pnlAkademikSiswa.Visible = true;
-            this.jadwalSiswa.Visible = false;
-            this.pnlPengajar.Visible = false;
+            formNilaiUjian frmNilaiUjian = new formNilaiUjian();
+            frmNilaiUjian.getValue(noSiswaLogin.ToString());
+            frmNilaiUjian.Show();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            this.pnlAkademikSiswa.Visible = false;
-            this.jadwalSiswa.Visible = false;
-            this.pnlPengajar.Visible = false;
         }
 
         
@@ -154,16 +159,14 @@ namespace Bimbem_App
         private void panel12_Paint(object sender, PaintEventArgs e)
         {
             DataAccess da = new DataAccess();
-            dgvPegawaiSiswa.AutoGenerateColumns = false;
-            dgvPegawaiSiswa.DataSource = da.getPegawaiSiswa();
                 
         }
 
         private void btnPengajar_Click(object sender, EventArgs e)
         {
-            this.pnlAkademikSiswa.Visible = false;
-            this.jadwalSiswa.Visible = false;
-            this.pnlPengajar.Visible = true;
+            formPengajar frmPengajar = new formPengajar();
+            frmPengajar.getValue(noSiswaLogin.ToString());
+            frmPengajar.Show();
         }
 
         private void menuSiswaIn()
@@ -175,17 +178,14 @@ namespace Bimbem_App
 
         private void closeAllMenuSiswa()
         {
-            this.pnlAkademikSiswa.Visible = false;
-            this.jadwalSiswa.Visible = false;
-            this.pnlPengajar.Visible = false;
+            
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            if (isSiswa == "siswa" && this.pnlMenuSiswa.Visible == false)
-            {
-                this.pnlMenuSiswa.Visible = true;
-            }
+            formNilaiUjian frmNilaiUjian = new formNilaiUjian();
+            frmNilaiUjian.getValue(noSiswaLogin.ToString());
+            frmNilaiUjian.Show();
         }
 
         private void btnFasilitasPegawai_Click(object sender, EventArgs e)
@@ -206,6 +206,33 @@ namespace Bimbem_App
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnLogOut2_Click(object sender, EventArgs e)
+        {
+            isSiswa = "";
+            DialogResult dialogResult = MessageBox.Show("Yakin log out?", "Log out", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (dialogResult == DialogResult.Yes)
+            {
+                LoginAplikasi();
+            }
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public void getValue(string a)
+        {
+
+        }
+
+        private void btnJadwalPengajar_Click(object sender, EventArgs e)
+        {
+            FormInputJadwalPengajar frmJadwalPengajar = new FormInputJadwalPengajar();
+            frmJadwalPengajar.MdiParent = this;
+            frmJadwalPengajar.Show();
         }
     }
 }
