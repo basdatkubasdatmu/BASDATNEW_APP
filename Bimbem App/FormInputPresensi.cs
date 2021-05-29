@@ -10,7 +10,7 @@ namespace Bimbem_App
 {
     public partial class FormInputPresensi : Form
     {
-        public bool isEditPresensi = false;
+        public bool isEdit;
 
         public FormInputPresensi()
         {
@@ -83,7 +83,7 @@ namespace Bimbem_App
         {
             DataAccess da = new DataAccess();
 
-            if (isEditPresensi)
+            if (isEdit)
             {
                 // Sesuaiin sama form temen-temen
                 da.updateDataPresensi(txtkodeJadwalSiswa.Text, txtNoSiswa.Text, txtNamaSiswa.Text, dtpPresensi.Text);
@@ -107,13 +107,11 @@ namespace Bimbem_App
        
         // Button Edit
 
-        public bool isEdit;
-
         // boleh diganti
         public string selectedKodeJadwalSiswa;
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            isEditPresensi = true;
+            isEdit = true;
             DataAccess da = new DataAccess();
 
             // Edit ini (dgv, da.get, txtBOX nya, dan yang didalam dt.Rows)

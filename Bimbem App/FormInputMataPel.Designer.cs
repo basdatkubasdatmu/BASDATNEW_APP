@@ -29,10 +29,12 @@ namespace Bimbem_App
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dgvMatpel = new System.Windows.Forms.DataGridView();
+            this.kodePelajaran = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pelajaran = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.textNamaMapel = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -46,8 +48,6 @@ namespace Bimbem_App
             this.btnTambah = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.kodePelajaran = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pelajaran = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMatpel)).BeginInit();
@@ -56,7 +56,7 @@ namespace Bimbem_App
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Bimbem_App.Properties.Resources.parent_form;
-            this.pictureBox1.Location = new System.Drawing.Point(3, -17);
+            this.pictureBox1.Location = new System.Drawing.Point(-118, -43);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1078, 661);
@@ -83,14 +83,14 @@ namespace Bimbem_App
             this.dgvMatpel.AllowUserToDeleteRows = false;
             this.dgvMatpel.BackgroundColor = System.Drawing.Color.Salmon;
             this.dgvMatpel.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvMatpel.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvMatpel.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvMatpel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMatpel.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.kodePelajaran,
@@ -101,6 +101,22 @@ namespace Bimbem_App
             this.dgvMatpel.RowTemplate.Height = 25;
             this.dgvMatpel.Size = new System.Drawing.Size(296, 215);
             this.dgvMatpel.TabIndex = 1;
+            // 
+            // kodePelajaran
+            // 
+            this.kodePelajaran.DataPropertyName = "kodePelajaran";
+            this.kodePelajaran.HeaderText = "Kode Pelajaran";
+            this.kodePelajaran.MinimumWidth = 6;
+            this.kodePelajaran.Name = "kodePelajaran";
+            this.kodePelajaran.Width = 125;
+            // 
+            // pelajaran
+            // 
+            this.pelajaran.DataPropertyName = "pelajaran";
+            this.pelajaran.HeaderText = "Pelajaran";
+            this.pelajaran.MinimumWidth = 6;
+            this.pelajaran.Name = "pelajaran";
+            this.pelajaran.Width = 125;
             // 
             // label1
             // 
@@ -175,6 +191,7 @@ namespace Bimbem_App
             this.btnBatal.TabIndex = 15;
             this.btnBatal.Text = "Batal";
             this.btnBatal.UseVisualStyleBackColor = false;
+            this.btnBatal.Click += new System.EventHandler(this.btnBatal_Click);
             // 
             // btnSimpan
             // 
@@ -210,6 +227,7 @@ namespace Bimbem_App
             this.btnEdit.TabIndex = 22;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = false;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnTambah
             // 
@@ -221,6 +239,7 @@ namespace Bimbem_App
             this.btnTambah.TabIndex = 23;
             this.btnTambah.Text = "Tambah";
             this.btnTambah.UseVisualStyleBackColor = false;
+            this.btnTambah.Click += new System.EventHandler(this.btnTambah_Click);
             // 
             // btnRefresh
             // 
@@ -248,22 +267,6 @@ namespace Bimbem_App
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // kodePelajaran
-            // 
-            this.kodePelajaran.DataPropertyName = "kodePelajaran";
-            this.kodePelajaran.HeaderText = "Kode Pelajaran";
-            this.kodePelajaran.MinimumWidth = 6;
-            this.kodePelajaran.Name = "kodePelajaran";
-            this.kodePelajaran.Width = 125;
-            // 
-            // pelajaran
-            // 
-            this.pelajaran.DataPropertyName = "pelajaran";
-            this.pelajaran.HeaderText = "Pelajaran";
-            this.pelajaran.MinimumWidth = 6;
-            this.pelajaran.Name = "pelajaran";
-            this.pelajaran.Width = 125;
-            // 
             // FormInputMatpel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -289,6 +292,7 @@ namespace Bimbem_App
             this.Name = "FormInputMatpel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mata Pelajaran";
+            this.Load += new System.EventHandler(this.FormInputMatpel_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
