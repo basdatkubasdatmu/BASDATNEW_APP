@@ -850,7 +850,7 @@ namespace Bimbem_App
 
                 NpgsqlCommand cmd = new NpgsqlCommand();
                 cmd.Connection = conn;
-                cmd.CommandText = "Select * from nilai where kodeujian = '" + kodeujian + "';";
+                cmd.CommandText = "SELECT n.kodeujian as kodeujian, s.nosiswa as nosiswa, s.nama as namasiswa, p.nama as namapengajar, mp.pelajaran as namapelajaran, n.nilai as nilai FROM (((nilai n JOIN matapelajaran mp USING(kodepelajaran)) JOIN siswa s USING(nosiswa)) JOIN pengajar USING(nopengajar)) JOIN pegawai p USING(nopegawai) WHERE kodeujian = '" + kodeujian + "';";
                 cmd.CommandType = CommandType.Text;
 
                 NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd);

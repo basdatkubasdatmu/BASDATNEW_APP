@@ -26,7 +26,11 @@ namespace Bimbem_App
             if (dgvNilai.SelectedRows.Count > 0)
             {
                 // Sesuaiin sama yang diatas
-                selected = dgvNilai.SelectedRows[0].Cells[0].Value.ToString();
+                if (dgvNilai.SelectedRows[0].Cells[0].Value.ToString() != null)
+                {
+
+                    selected = dgvNilai.SelectedRows[0].Cells[0].Value.ToString();
+                }
                 da.hapusDataNilai(selected);
 
                 MessageBox.Show("Data telah dihapus!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);

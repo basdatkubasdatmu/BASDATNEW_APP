@@ -77,7 +77,7 @@ namespace Bimbem_App
             {
                 // Sesuaiin sama yang diatas
                 selectedNoPengajar = dgvPengajar.SelectedRows[0].Cells[0].Value.ToString();
-                da.hapusDataJadwalSiswa(selectedNoPengajar);
+                da.hapusDataPengajar(selectedNoPengajar);
 
                 MessageBox.Show("Data telah dihapus!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
