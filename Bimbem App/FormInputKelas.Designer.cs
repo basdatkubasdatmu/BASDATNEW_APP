@@ -29,8 +29,8 @@ namespace Bimbem_App
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.lbFasilitasKelas = new System.Windows.Forms.Label();
             this.tbBiayaKelas = new System.Windows.Forms.TextBox();
@@ -65,26 +65,25 @@ namespace Bimbem_App
             // checkedListBox1
             // 
             this.checkedListBox1.BackColor = System.Drawing.Color.SlateBlue;
-            this.checkedListBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.checkedListBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.checkedListBox1.FormattingEnabled = true;
             this.checkedListBox1.Items.AddRange(new object[] {
             "Gratis Modul",
             "Diskusi PR",
             "3 Pertemuan/Minggu",
             "Try Out Online Setiap Bulan"});
-            this.checkedListBox1.Location = new System.Drawing.Point(606, 275);
-            this.checkedListBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.checkedListBox1.Location = new System.Drawing.Point(40, 339);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(276, 120);
+            this.checkedListBox1.Size = new System.Drawing.Size(242, 88);
             this.checkedListBox1.TabIndex = 16;
             // 
             // lbFasilitasKelas
             // 
             this.lbFasilitasKelas.AutoSize = true;
-            this.lbFasilitasKelas.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbFasilitasKelas.Location = new System.Drawing.Point(606, 244);
+            this.lbFasilitasKelas.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbFasilitasKelas.Location = new System.Drawing.Point(40, 316);
             this.lbFasilitasKelas.Name = "lbFasilitasKelas";
-            this.lbFasilitasKelas.Size = new System.Drawing.Size(81, 28);
+            this.lbFasilitasKelas.Size = new System.Drawing.Size(59, 19);
             this.lbFasilitasKelas.TabIndex = 10;
             this.lbFasilitasKelas.Text = "Fasilitas";
             // 
@@ -92,19 +91,20 @@ namespace Bimbem_App
             // 
             this.tbBiayaKelas.BackColor = System.Drawing.Color.SlateBlue;
             this.tbBiayaKelas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbBiayaKelas.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.tbBiayaKelas.Location = new System.Drawing.Point(606, 184);
+            this.tbBiayaKelas.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.tbBiayaKelas.Location = new System.Drawing.Point(40, 285);
+            this.tbBiayaKelas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbBiayaKelas.Name = "tbBiayaKelas";
-            this.tbBiayaKelas.Size = new System.Drawing.Size(276, 34);
+            this.tbBiayaKelas.Size = new System.Drawing.Size(242, 26);
             this.tbBiayaKelas.TabIndex = 9;
             // 
             // lbBiayaKelas
             // 
             this.lbBiayaKelas.AutoSize = true;
-            this.lbBiayaKelas.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbBiayaKelas.Location = new System.Drawing.Point(606, 153);
+            this.lbBiayaKelas.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbBiayaKelas.Location = new System.Drawing.Point(40, 262);
             this.lbBiayaKelas.Name = "lbBiayaKelas";
-            this.lbBiayaKelas.Size = new System.Drawing.Size(59, 28);
+            this.lbBiayaKelas.Size = new System.Drawing.Size(42, 19);
             this.lbBiayaKelas.TabIndex = 8;
             this.lbBiayaKelas.Text = "Biaya";
             // 
@@ -112,19 +112,20 @@ namespace Bimbem_App
             // 
             this.tbKuotaKelas.BackColor = System.Drawing.Color.SlateBlue;
             this.tbKuotaKelas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbKuotaKelas.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.tbKuotaKelas.Location = new System.Drawing.Point(243, 363);
+            this.tbKuotaKelas.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.tbKuotaKelas.Location = new System.Drawing.Point(40, 231);
+            this.tbKuotaKelas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbKuotaKelas.Name = "tbKuotaKelas";
-            this.tbKuotaKelas.Size = new System.Drawing.Size(273, 34);
+            this.tbKuotaKelas.Size = new System.Drawing.Size(239, 26);
             this.tbKuotaKelas.TabIndex = 7;
             // 
             // lbKuotaKelas
             // 
             this.lbKuotaKelas.AutoSize = true;
-            this.lbKuotaKelas.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbKuotaKelas.Location = new System.Drawing.Point(243, 332);
+            this.lbKuotaKelas.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbKuotaKelas.Location = new System.Drawing.Point(40, 208);
             this.lbKuotaKelas.Name = "lbKuotaKelas";
-            this.lbKuotaKelas.Size = new System.Drawing.Size(65, 28);
+            this.lbKuotaKelas.Size = new System.Drawing.Size(46, 19);
             this.lbKuotaKelas.TabIndex = 6;
             this.lbKuotaKelas.Text = "Kuota";
             // 
@@ -132,58 +133,61 @@ namespace Bimbem_App
             // 
             this.tbNamaKelas.BackColor = System.Drawing.Color.SlateBlue;
             this.tbNamaKelas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbNamaKelas.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.tbNamaKelas.Location = new System.Drawing.Point(243, 275);
+            this.tbNamaKelas.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.tbNamaKelas.Location = new System.Drawing.Point(40, 176);
+            this.tbNamaKelas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbNamaKelas.Name = "tbNamaKelas";
-            this.tbNamaKelas.Size = new System.Drawing.Size(273, 34);
+            this.tbNamaKelas.Size = new System.Drawing.Size(239, 26);
             this.tbNamaKelas.TabIndex = 5;
             // 
             // tbNomorKelas
             // 
             this.tbNomorKelas.BackColor = System.Drawing.Color.SlateBlue;
             this.tbNomorKelas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbNomorKelas.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.tbNomorKelas.Location = new System.Drawing.Point(243, 184);
+            this.tbNomorKelas.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.tbNomorKelas.Location = new System.Drawing.Point(40, 120);
+            this.tbNomorKelas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbNomorKelas.Name = "tbNomorKelas";
-            this.tbNomorKelas.Size = new System.Drawing.Size(273, 34);
+            this.tbNomorKelas.Size = new System.Drawing.Size(239, 26);
             this.tbNomorKelas.TabIndex = 2;
             // 
             // lbNamaKelas
             // 
             this.lbNamaKelas.AutoSize = true;
-            this.lbNamaKelas.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbNamaKelas.Location = new System.Drawing.Point(243, 244);
+            this.lbNamaKelas.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbNamaKelas.Location = new System.Drawing.Point(40, 153);
             this.lbNamaKelas.Name = "lbNamaKelas";
-            this.lbNamaKelas.Size = new System.Drawing.Size(118, 28);
+            this.lbNamaKelas.Size = new System.Drawing.Size(83, 19);
             this.lbNamaKelas.TabIndex = 4;
             this.lbNamaKelas.Text = "Nama Kelas";
             // 
             // lbNomorKelas
             // 
             this.lbNomorKelas.AutoSize = true;
-            this.lbNomorKelas.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbNomorKelas.Location = new System.Drawing.Point(245, 153);
+            this.lbNomorKelas.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbNomorKelas.Location = new System.Drawing.Point(41, 97);
             this.lbNomorKelas.Name = "lbNomorKelas";
-            this.lbNomorKelas.Size = new System.Drawing.Size(129, 28);
+            this.lbNomorKelas.Size = new System.Drawing.Size(90, 19);
             this.lbNomorKelas.TabIndex = 1;
             this.lbNomorKelas.Text = "Nomor Kelas";
             // 
             // lbJudulInputKelas
             // 
             this.lbJudulInputKelas.AutoSize = true;
-            this.lbJudulInputKelas.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbJudulInputKelas.Location = new System.Drawing.Point(504, 49);
+            this.lbJudulInputKelas.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbJudulInputKelas.Location = new System.Drawing.Point(448, 56);
             this.lbJudulInputKelas.Name = "lbJudulInputKelas";
-            this.lbJudulInputKelas.Size = new System.Drawing.Size(107, 41);
+            this.lbJudulInputKelas.Size = new System.Drawing.Size(77, 30);
             this.lbJudulInputKelas.TabIndex = 0;
             this.lbJudulInputKelas.Text = "KELAS";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Bimbem_App.Properties.Resources.parent_form;
-            this.pictureBox1.Location = new System.Drawing.Point(-31, -3);
+            this.pictureBox1.Location = new System.Drawing.Point(-25, -147);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1258, 887);
+            this.pictureBox1.Size = new System.Drawing.Size(1063, 675);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
@@ -193,15 +197,16 @@ namespace Bimbem_App
             // 
             this.dgvKelas.AllowUserToAddRows = false;
             this.dgvKelas.AllowUserToDeleteRows = false;
+            this.dgvKelas.BackgroundColor = System.Drawing.Color.SlateBlue;
             this.dgvKelas.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvKelas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvKelas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvKelas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvKelas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.kodekelas,
@@ -209,20 +214,19 @@ namespace Bimbem_App
             this.biaya,
             this.kuota,
             this.fasilitas});
-            this.dgvKelas.Location = new System.Drawing.Point(26, 21);
-            this.dgvKelas.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dgvKelas.Location = new System.Drawing.Point(14, 14);
             this.dgvKelas.Name = "dgvKelas";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvKelas.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvKelas.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvKelas.RowHeadersWidth = 51;
             this.dgvKelas.RowTemplate.Height = 25;
-            this.dgvKelas.Size = new System.Drawing.Size(625, 316);
+            this.dgvKelas.Size = new System.Drawing.Size(541, 237);
             this.dgvKelas.TabIndex = 0;
             // 
             // kodekelas
@@ -232,7 +236,7 @@ namespace Bimbem_App
             this.kodekelas.HeaderText = "Kode Kelas";
             this.kodekelas.MinimumWidth = 6;
             this.kodekelas.Name = "kodekelas";
-            this.kodekelas.Width = 137;
+            this.kodekelas.Width = 103;
             // 
             // namakelas
             // 
@@ -241,7 +245,7 @@ namespace Bimbem_App
             this.namakelas.HeaderText = "Nama";
             this.namakelas.MinimumWidth = 6;
             this.namakelas.Name = "namakelas";
-            this.namakelas.Width = 93;
+            this.namakelas.Width = 71;
             // 
             // biaya
             // 
@@ -250,7 +254,7 @@ namespace Bimbem_App
             this.biaya.HeaderText = "Biaya";
             this.biaya.MinimumWidth = 6;
             this.biaya.Name = "biaya";
-            this.biaya.Width = 87;
+            this.biaya.Width = 67;
             // 
             // kuota
             // 
@@ -271,11 +275,10 @@ namespace Bimbem_App
             // btnTambah
             // 
             this.btnTambah.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnTambah.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnTambah.Location = new System.Drawing.Point(862, 594);
-            this.btnTambah.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnTambah.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnTambah.Location = new System.Drawing.Point(878, 256);
             this.btnTambah.Name = "btnTambah";
-            this.btnTambah.Size = new System.Drawing.Size(105, 43);
+            this.btnTambah.Size = new System.Drawing.Size(74, 23);
             this.btnTambah.TabIndex = 34;
             this.btnTambah.Text = "Tambah";
             this.btnTambah.UseVisualStyleBackColor = false;
@@ -283,11 +286,10 @@ namespace Bimbem_App
             // btnHapus
             // 
             this.btnHapus.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnHapus.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnHapus.Location = new System.Drawing.Point(862, 492);
-            this.btnHapus.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnHapus.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnHapus.Location = new System.Drawing.Point(878, 179);
             this.btnHapus.Name = "btnHapus";
-            this.btnHapus.Size = new System.Drawing.Size(105, 43);
+            this.btnHapus.Size = new System.Drawing.Size(74, 23);
             this.btnHapus.TabIndex = 33;
             this.btnHapus.Text = "Hapus";
             this.btnHapus.UseVisualStyleBackColor = false;
@@ -296,11 +298,10 @@ namespace Bimbem_App
             // btnEdit
             // 
             this.btnEdit.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnEdit.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnEdit.Location = new System.Drawing.Point(862, 543);
-            this.btnEdit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnEdit.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnEdit.Location = new System.Drawing.Point(878, 217);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(105, 43);
+            this.btnEdit.Size = new System.Drawing.Size(74, 23);
             this.btnEdit.TabIndex = 32;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = false;
@@ -308,11 +309,10 @@ namespace Bimbem_App
             // btnBatal
             // 
             this.btnBatal.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnBatal.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnBatal.Location = new System.Drawing.Point(798, 423);
-            this.btnBatal.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnBatal.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnBatal.Location = new System.Drawing.Point(208, 443);
             this.btnBatal.Name = "btnBatal";
-            this.btnBatal.Size = new System.Drawing.Size(85, 43);
+            this.btnBatal.Size = new System.Drawing.Size(74, 23);
             this.btnBatal.TabIndex = 31;
             this.btnBatal.Text = "Batal";
             this.btnBatal.UseVisualStyleBackColor = false;
@@ -320,11 +320,10 @@ namespace Bimbem_App
             // btnSimpan
             // 
             this.btnSimpan.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnSimpan.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnSimpan.Location = new System.Drawing.Point(690, 423);
-            this.btnSimpan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSimpan.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSimpan.Location = new System.Drawing.Point(114, 443);
             this.btnSimpan.Name = "btnSimpan";
-            this.btnSimpan.Size = new System.Drawing.Size(101, 43);
+            this.btnSimpan.Size = new System.Drawing.Size(74, 23);
             this.btnSimpan.TabIndex = 30;
             this.btnSimpan.Text = "Simpan";
             this.btnSimpan.UseVisualStyleBackColor = false;
@@ -332,20 +331,18 @@ namespace Bimbem_App
             // panel2
             // 
             this.panel2.Controls.Add(this.dgvKelas);
-            this.panel2.Location = new System.Drawing.Point(174, 492);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel2.Location = new System.Drawing.Point(302, 120);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(682, 379);
+            this.panel2.Size = new System.Drawing.Size(570, 265);
             this.panel2.TabIndex = 29;
             // 
             // btnRefresh
             // 
             this.btnRefresh.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnRefresh.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnRefresh.Location = new System.Drawing.Point(862, 644);
-            this.btnRefresh.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnRefresh.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRefresh.Location = new System.Drawing.Point(878, 293);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(105, 43);
+            this.btnRefresh.Size = new System.Drawing.Size(74, 23);
             this.btnRefresh.TabIndex = 36;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = false;
@@ -353,12 +350,12 @@ namespace Bimbem_App
             // 
             // btnHome
             // 
-            this.btnHome.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnHome.BackColor = System.Drawing.Color.SlateBlue;
+            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHome.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnHome.Location = new System.Drawing.Point(1019, 16);
-            this.btnHome.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnHome.Location = new System.Drawing.Point(896, 25);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(85, 43);
+            this.btnHome.Size = new System.Drawing.Size(74, 32);
             this.btnHome.TabIndex = 35;
             this.btnHome.Text = "HOME";
             this.btnHome.UseVisualStyleBackColor = false;
@@ -366,9 +363,9 @@ namespace Bimbem_App
             // 
             // FormInputKelas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1142, 887);
+            this.ClientSize = new System.Drawing.Size(986, 496);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnHome);
             this.Controls.Add(this.btnTambah);
@@ -390,7 +387,6 @@ namespace Bimbem_App
             this.Controls.Add(this.lbNamaKelas);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormInputKelas";

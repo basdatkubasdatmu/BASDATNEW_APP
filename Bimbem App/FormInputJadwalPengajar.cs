@@ -53,5 +53,10 @@ namespace Bimbem_App
         {
             this.Close();
         }
+
+        private void btnHome_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
