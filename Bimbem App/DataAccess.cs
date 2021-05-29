@@ -850,7 +850,10 @@ namespace Bimbem_App
 
                 NpgsqlCommand cmd = new NpgsqlCommand();
                 cmd.Connection = conn;
-                cmd.CommandText = "SELECT n.kodeujian as kodeujian, s.nosiswa as nosiswa, s.nama as namasiswa, p.nama as namapengajar, mp.pelajaran as namapelajaran, n.nilai as nilai FROM (((nilai n JOIN matapelajaran mp USING(kodepelajaran)) JOIN siswa s USING(nosiswa)) JOIN pengajar USING(nopengajar)) JOIN pegawai p USING(nopegawai) WHERE kodeujian = '" + kodeujian + "';";
+                cmd.CommandText = string.Format("SELECT n.kodeujian as kodeujian, s.nosiswa as nosiswa, s.nama as namasiswa, " +
+                    "p.nama as namapengajar, mp.pelajaran as namapelajaran, n.nilai as nilai " +
+                    "FROM (((nilai n JOIN matapelajaran mp USING(kodepelajaran)) JOIN siswa s USING(nosiswa)) " +
+                    "JOIN pengajar USING(nopengajar)) JOIN pegawai p USING(nopegawai) WHERE kodeujian = '{0}';", kodeujian);
                 cmd.CommandType = CommandType.Text;
 
                 NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd);
@@ -1031,7 +1034,7 @@ namespace Bimbem_App
 
                 NpgsqlCommand cmd = new NpgsqlCommand();
                 cmd.Connection = conn;
-                cmd.CommandText = "Select * from presensisiswa where kodejadwalsiswa = '" + kodejadwalsiswa + "';";
+                cmd.CommandText = "SELECT p.kodejadwalsiswa as kodejadwalsiswa, s.nosiswa as nosiswa, s.nama as namasiswa, p.waktupresensi as waktupresensi FROM presensisiswa p JOIN siswa s USING(nosiswa) WHERE kodejadwalsiswa = '" + kodejadwalsiswa + "';";
                 cmd.CommandType = CommandType.Text;
 
                 NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd);

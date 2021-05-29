@@ -28,7 +28,6 @@ namespace Bimbem_App
                 // Sesuaiin sama yang diatas
                 if (dgvNilai.SelectedRows[0].Cells[0].Value.ToString() != null)
                 {
-
                     selected = dgvNilai.SelectedRows[0].Cells[0].Value.ToString();
                 }
                 da.hapusDataNilai(selected);
