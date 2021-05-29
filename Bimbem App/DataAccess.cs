@@ -1413,7 +1413,7 @@ namespace Bimbem_App
 
         //UPDATE DATA
         //update data presensi
-        public void updateDataPresensi(string kodejadwalsiswa, string nosiswa, string waktupresensi)
+        public void updateDataPresensi(string kodejadwalsiswa, string nosiswa, string namasiswa, string waktupresensi)
         {
             NpgsqlConnection conn = new NpgsqlConnection(strConnString);
             try
@@ -1423,8 +1423,8 @@ namespace Bimbem_App
                 NpgsqlCommand cmd = new NpgsqlCommand();
                 cmd.Connection = conn;
                 cmd.CommandText = string.Format(@"update presensisiswa set
-                                nosiswa = '{0}', waktupresensi = '{1}' 
-                                where kodejadwalsiswa = '{2}';", nosiswa, waktupresensi, kodejadwalsiswa);
+                                nosiswa = '{0}', waktupresensi = '{1}' , namasiswa = '{2}'
+                                where kodejadwalsiswa = '{3}';", nosiswa, waktupresensi, namasiswa, kodejadwalsiswa);
                 cmd.CommandType = CommandType.Text;
 
                 cmd.ExecuteNonQuery();
@@ -1941,7 +1941,7 @@ namespace Bimbem_App
             }
         }
 
-        public void insertDataPresensi(string kodeJadwalSiswa, string noSiswa, string waktuPresensi)
+        public void insertDataPresensi(string kodeJadwalSiswa, string noSiswa, string namasiswa, string waktuPresensi)
         {
             NpgsqlConnection conn = new NpgsqlConnection();
             try
@@ -1951,7 +1951,7 @@ namespace Bimbem_App
 
                 NpgsqlCommand cmd = new NpgsqlCommand();
                 cmd.Connection = conn;
-                cmd.CommandText = "insert into presensi(kodejadwalsiswa, nosiswa, waktupresensi) values('" + kodeJadwalSiswa + "', '" + noSiswa + "', '" + waktuPresensi + "');";
+                cmd.CommandText = "insert into presensi(kodejadwalsiswa, nosiswa, namasiswa, waktupresensi) values('" + kodeJadwalSiswa + "', '" + noSiswa + "', '" + namasiswa + "', '" + waktuPresensi + "');";
                 cmd.CommandType = CommandType.Text;
 
                 cmd.ExecuteNonQuery();
