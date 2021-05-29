@@ -1070,7 +1070,7 @@ namespace Bimbem_App
                 NpgsqlCommand cmd = new NpgsqlCommand();
                 cmd.Connection = conn;
                 cmd.CommandText = string.Format(@"delete from jadwalpengajar 
-                                where kodejadwalpengajar = '{0}'" + kodejadwalpengajar + "';", kodejadwalpengajar);
+                                where kodejadwalpengajar = '{0}'", kodejadwalpengajar);
                 cmd.CommandType = CommandType.Text;
 
                 cmd.ExecuteNonQuery();
@@ -1099,7 +1099,7 @@ namespace Bimbem_App
                 NpgsqlCommand cmd = new NpgsqlCommand();
                 cmd.Connection = conn;
                 cmd.CommandText = string.Format(@"delete from jadwalsiswa 
-                                where kodejadwalsiswa = '{0}'" + kodejadwalsiswa + "';", kodejadwalsiswa);
+                                where kodejadwalsiswa = '{0}'", kodejadwalsiswa);
                 cmd.CommandType = CommandType.Text;
 
                 cmd.ExecuteNonQuery();
@@ -1128,7 +1128,7 @@ namespace Bimbem_App
                 NpgsqlCommand cmd = new NpgsqlCommand();
                 cmd.Connection = conn;
                 cmd.CommandText = string.Format(@"delete from siswa 
-                                where nosiswa = '{0}'" + nosiswa + "';", nosiswa);
+                                where nosiswa = '{0}'", nosiswa);
                 cmd.CommandType = CommandType.Text;
 
                 cmd.ExecuteNonQuery();
@@ -1157,7 +1157,7 @@ namespace Bimbem_App
                 NpgsqlCommand cmd = new NpgsqlCommand();
                 cmd.Connection = conn;
                 cmd.CommandText = string.Format(@"delete from pengajar 
-                                where nopengajar = '{0}'" + nopengajar + "';", nopengajar);
+                                where nopengajar = '{0}';", nopengajar);
                 cmd.CommandType = CommandType.Text;
 
                 cmd.ExecuteNonQuery();
@@ -1186,7 +1186,7 @@ namespace Bimbem_App
                 NpgsqlCommand cmd = new NpgsqlCommand();
                 cmd.Connection = conn;
                 cmd.CommandText = string.Format(@"delete from pegawai 
-                                where nopegawai = '{0}'" + nopegawai + "';", nopegawai);
+                                where nopegawai = '{0}';", nopegawai);
                 cmd.CommandType = CommandType.Text;
 
                 cmd.ExecuteNonQuery();
@@ -1216,7 +1216,7 @@ namespace Bimbem_App
                 NpgsqlCommand cmd = new NpgsqlCommand();
                 cmd.Connection = conn;
                 cmd.CommandText = string.Format(@"delete from kelas 
-                                where kodekelas = '{0}'" + kodekelas + "';", kodekelas);
+                                where kodekelas = '{0}';", kodekelas);
                 cmd.CommandType = CommandType.Text;
 
                 cmd.ExecuteNonQuery();
@@ -1246,7 +1246,7 @@ namespace Bimbem_App
                 NpgsqlCommand cmd = new NpgsqlCommand();
                 cmd.Connection = conn;
                 cmd.CommandText = string.Format(@"delete from presensisiswa 
-                                where kodejadwalsiswa = '{0}'" + kodejadwalsiswa + "';", kodejadwalsiswa);
+                                where kodejadwalsiswa = '{0}';", kodejadwalsiswa);
                 cmd.CommandType = CommandType.Text;
 
                 cmd.ExecuteNonQuery();
@@ -1275,7 +1275,7 @@ namespace Bimbem_App
                 NpgsqlCommand cmd = new NpgsqlCommand();
                 cmd.Connection = conn;
                 cmd.CommandText = string.Format(@"delete from ujian 
-                                where kodeujian = '{0}'" + kodeujian + "';", kodeujian);
+                                where kodeujian = '{0}';", kodeujian);
                 cmd.CommandType = CommandType.Text;
 
                 cmd.ExecuteNonQuery();
@@ -1305,7 +1305,7 @@ namespace Bimbem_App
                 NpgsqlCommand cmd = new NpgsqlCommand();
                 cmd.Connection = conn;
                 cmd.CommandText = string.Format(@"delete from nilai 
-                                where kodeujian = '{0}'" + kodeujian + "';", kodeujian);
+                                where kodeujian = '{0}';", kodeujian);
                 cmd.CommandType = CommandType.Text;
 
                 cmd.ExecuteNonQuery();
@@ -1334,7 +1334,7 @@ namespace Bimbem_App
                 NpgsqlCommand cmd = new NpgsqlCommand();
                 cmd.Connection = conn;
                 cmd.CommandText = string.Format(@"delete from ruangzoom 
-                                where kodezoom = '{0}'" + kodezoom + "';", kodezoom);
+                                where kodezoom = '{0}';", kodezoom);
                 cmd.CommandType = CommandType.Text;
 
                 cmd.ExecuteNonQuery();
@@ -1364,7 +1364,7 @@ namespace Bimbem_App
                 NpgsqlCommand cmd = new NpgsqlCommand();
                 cmd.Connection = conn;
                 cmd.CommandText = string.Format(@"delete from matapelajaran 
-                                where kodepelajaran = '{0}'" + kodepelajaran + "';", kodepelajaran);
+                                where kodepelajaran = '{0}';", kodepelajaran);
                 cmd.CommandType = CommandType.Text;
 
                 cmd.ExecuteNonQuery();
@@ -1393,7 +1393,7 @@ namespace Bimbem_App
                 NpgsqlCommand cmd = new NpgsqlCommand();
                 cmd.Connection = conn;
                 cmd.CommandText = string.Format(@"delete from pembayaran 
-                                where kodepembayaran = '{0}'" + kodepembayaran + "';", kodepembayaran);
+                                where kodepembayaran = '{0}';", kodepembayaran);
                 cmd.CommandType = CommandType.Text;
 
                 cmd.ExecuteNonQuery();
@@ -1424,7 +1424,7 @@ namespace Bimbem_App
                 cmd.Connection = conn;
                 cmd.CommandText = string.Format(@"update presensisiswa set
                                 nosiswa = '{0}', waktupresensi = '{1}' 
-                                where kodejadwalsiswa = '" + kodejadwalsiswa + "';", nosiswa, waktupresensi);
+                                where kodejadwalsiswa = '{2}';", nosiswa, waktupresensi, kodejadwalsiswa);
                 cmd.CommandType = CommandType.Text;
 
                 cmd.ExecuteNonQuery();
@@ -1451,7 +1451,7 @@ namespace Bimbem_App
                 cmd.Connection = conn;
                 cmd.CommandText = string.Format(@"update pengajar set
                             nopegawai = '{0}', kodepelajaran  = '{1}' 
-                            where nopengajar = '" + nopengajar + "';", nopegawai, kodepelajaran);
+                            where nopengajar = '{2}';", nopegawai, kodepelajaran, nopengajar);
                 cmd.CommandType = CommandType.Text;
 
                 cmd.ExecuteNonQuery();
@@ -1478,7 +1478,7 @@ namespace Bimbem_App
                 cmd.Connection = conn;
                 cmd.CommandText = string.Format(@"update siswa set
                             nama = '{0}', jeniskelamin = '{1}', kodekelas = '{2}', nohp = '{3}', email = '{4}', asaldaerah = '{5}' 
-                            where nosiswa = '" + nosiswa + "';", nama, jeniskelamin, kodekelas, nohp, email, asaldaerah);
+                            where nosiswa = '{6}';", nama, jeniskelamin, kodekelas, nohp, email, asaldaerah, nosiswa);
                 cmd.CommandType = CommandType.Text;
 
                 cmd.ExecuteNonQuery();
@@ -1505,7 +1505,7 @@ namespace Bimbem_App
                 cmd.Connection = conn;
                 cmd.CommandText = string.Format(@"update jadwalpengajar set
                            kodekelas = '{0}', nopengajar = '{1}', kodepelajaran = '{2}', tanggal = '{3}', jammulai = '{4}', durasi = '{5}', kodezoom = '{6}' 
-                           where kodejadwalpengajar = '" + kodejadwalpengajar + "';", kodekelas, nopengajar, kodepelajaran, tanggal, jammulai, durasi, kodezoom);
+                           where kodejadwalpengajar = '{7}';", kodekelas, nopengajar, kodepelajaran, tanggal, jammulai, durasi, kodezoom, kodejadwalpengajar);
                 cmd.CommandType = CommandType.Text;
 
                 cmd.ExecuteNonQuery();

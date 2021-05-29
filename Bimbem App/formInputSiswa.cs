@@ -62,5 +62,10 @@ namespace Bimbem_App
         {
             this.Close();
         }
+
+        private void formInputSiswa_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

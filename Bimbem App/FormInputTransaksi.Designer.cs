@@ -29,7 +29,7 @@ namespace Bimbem_App
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlRuangZoom = new System.Windows.Forms.Panel();
             this.dgvTransaksi = new System.Windows.Forms.DataGridView();
@@ -64,10 +64,10 @@ namespace Bimbem_App
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Bimbem_App.Properties.Resources.parent_form;
-            this.pictureBox1.Location = new System.Drawing.Point(-1, -3);
+            this.pictureBox1.Location = new System.Drawing.Point(-5, -2);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1121, 933);
+            this.pictureBox1.Size = new System.Drawing.Size(1126, 795);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -77,7 +77,7 @@ namespace Bimbem_App
             this.pnlRuangZoom.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pnlRuangZoom.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pnlRuangZoom.Controls.Add(this.dgvTransaksi);
-            this.pnlRuangZoom.Location = new System.Drawing.Point(115, 447);
+            this.pnlRuangZoom.Location = new System.Drawing.Point(106, 319);
             this.pnlRuangZoom.Name = "pnlRuangZoom";
             this.pnlRuangZoom.Size = new System.Drawing.Size(805, 401);
             this.pnlRuangZoom.TabIndex = 3;
@@ -86,14 +86,16 @@ namespace Bimbem_App
             // 
             this.dgvTransaksi.AllowUserToAddRows = false;
             this.dgvTransaksi.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvTransaksi.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvTransaksi.BackgroundColor = System.Drawing.Color.SandyBrown;
+            this.dgvTransaksi.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvTransaksi.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvTransaksi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTransaksi.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -159,34 +161,34 @@ namespace Bimbem_App
             // txtKeteranganBayar
             // 
             this.txtKeteranganBayar.BackColor = System.Drawing.Color.DarkOrange;
-            this.txtKeteranganBayar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtKeteranganBayar.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtKeteranganBayar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtKeteranganBayar.Location = new System.Drawing.Point(595, 243);
+            this.txtKeteranganBayar.Location = new System.Drawing.Point(453, 246);
             this.txtKeteranganBayar.Name = "txtKeteranganBayar";
-            this.txtKeteranganBayar.Size = new System.Drawing.Size(242, 34);
+            this.txtKeteranganBayar.Size = new System.Drawing.Size(242, 30);
             this.txtKeteranganBayar.TabIndex = 10;
             this.txtKeteranganBayar.TextChanged += new System.EventHandler(this.txtKeteranganBayar_TextChanged);
             // 
             // ktrPembayaran
             // 
             this.ktrPembayaran.AutoSize = true;
-            this.ktrPembayaran.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ktrPembayaran.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ktrPembayaran.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ktrPembayaran.Location = new System.Drawing.Point(595, 212);
+            this.ktrPembayaran.Location = new System.Drawing.Point(453, 215);
             this.ktrPembayaran.Name = "ktrPembayaran";
-            this.ktrPembayaran.Size = new System.Drawing.Size(116, 28);
+            this.ktrPembayaran.Size = new System.Drawing.Size(102, 23);
             this.ktrPembayaran.TabIndex = 9;
             this.ktrPembayaran.Text = "Keterangan";
             // 
             // btnBatal
             // 
             this.btnBatal.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnBatal.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnBatal.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnBatal.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnBatal.Location = new System.Drawing.Point(755, 387);
+            this.btnBatal.Location = new System.Drawing.Point(907, 246);
             this.btnBatal.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnBatal.Name = "btnBatal";
-            this.btnBatal.Size = new System.Drawing.Size(85, 44);
+            this.btnBatal.Size = new System.Drawing.Size(85, 38);
             this.btnBatal.TabIndex = 8;
             this.btnBatal.Text = "Batal";
             this.btnBatal.UseVisualStyleBackColor = false;
@@ -194,12 +196,12 @@ namespace Bimbem_App
             // btnSimpan
             // 
             this.btnSimpan.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnSimpan.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSimpan.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnSimpan.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnSimpan.Location = new System.Drawing.Point(649, 387);
+            this.btnSimpan.Location = new System.Drawing.Point(801, 246);
             this.btnSimpan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSimpan.Name = "btnSimpan";
-            this.btnSimpan.Size = new System.Drawing.Size(100, 44);
+            this.btnSimpan.Size = new System.Drawing.Size(100, 38);
             this.btnSimpan.TabIndex = 7;
             this.btnSimpan.Text = "Simpan";
             this.btnSimpan.UseVisualStyleBackColor = false;
@@ -208,84 +210,84 @@ namespace Bimbem_App
             // txtTglPembayaran
             // 
             this.txtTglPembayaran.BackColor = System.Drawing.Color.DarkOrange;
-            this.txtTglPembayaran.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtTglPembayaran.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtTglPembayaran.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtTglPembayaran.Location = new System.Drawing.Point(595, 155);
+            this.txtTglPembayaran.Location = new System.Drawing.Point(453, 158);
             this.txtTglPembayaran.Name = "txtTglPembayaran";
-            this.txtTglPembayaran.Size = new System.Drawing.Size(242, 34);
+            this.txtTglPembayaran.Size = new System.Drawing.Size(242, 30);
             this.txtTglPembayaran.TabIndex = 4;
             // 
             // txtKodeKelas
             // 
             this.txtKodeKelas.BackColor = System.Drawing.Color.DarkOrange;
-            this.txtKodeKelas.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtKodeKelas.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtKodeKelas.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtKodeKelas.Location = new System.Drawing.Point(323, 328);
+            this.txtKodeKelas.Location = new System.Drawing.Point(750, 158);
             this.txtKodeKelas.Name = "txtKodeKelas";
-            this.txtKodeKelas.Size = new System.Drawing.Size(242, 34);
+            this.txtKodeKelas.Size = new System.Drawing.Size(242, 30);
             this.txtKodeKelas.TabIndex = 6;
             // 
             // tanggalPembayaran
             // 
             this.tanggalPembayaran.AutoSize = true;
-            this.tanggalPembayaran.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.tanggalPembayaran.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.tanggalPembayaran.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tanggalPembayaran.Location = new System.Drawing.Point(595, 125);
+            this.tanggalPembayaran.Location = new System.Drawing.Point(453, 128);
             this.tanggalPembayaran.Name = "tanggalPembayaran";
-            this.tanggalPembayaran.Size = new System.Drawing.Size(199, 28);
+            this.tanggalPembayaran.Size = new System.Drawing.Size(177, 23);
             this.tanggalPembayaran.TabIndex = 3;
             this.tanggalPembayaran.Text = "Tanggal Pembayaran";
             // 
             // kodeKelas
             // 
             this.kodeKelas.AutoSize = true;
-            this.kodeKelas.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.kodeKelas.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.kodeKelas.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.kodeKelas.Location = new System.Drawing.Point(323, 297);
+            this.kodeKelas.Location = new System.Drawing.Point(750, 127);
             this.kodeKelas.Name = "kodeKelas";
-            this.kodeKelas.Size = new System.Drawing.Size(112, 28);
+            this.kodeKelas.Size = new System.Drawing.Size(97, 23);
             this.kodeKelas.TabIndex = 5;
             this.kodeKelas.Text = "Kode Kelas";
             // 
             // txtNoSiswa
             // 
             this.txtNoSiswa.BackColor = System.Drawing.Color.DarkOrange;
-            this.txtNoSiswa.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtNoSiswa.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtNoSiswa.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtNoSiswa.Location = new System.Drawing.Point(323, 243);
+            this.txtNoSiswa.Location = new System.Drawing.Point(155, 246);
             this.txtNoSiswa.Name = "txtNoSiswa";
-            this.txtNoSiswa.Size = new System.Drawing.Size(242, 34);
+            this.txtNoSiswa.Size = new System.Drawing.Size(242, 30);
             this.txtNoSiswa.TabIndex = 4;
             // 
             // noSiswa
             // 
             this.noSiswa.AutoSize = true;
-            this.noSiswa.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.noSiswa.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.noSiswa.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.noSiswa.Location = new System.Drawing.Point(323, 212);
+            this.noSiswa.Location = new System.Drawing.Point(155, 215);
             this.noSiswa.Name = "noSiswa";
-            this.noSiswa.Size = new System.Drawing.Size(95, 28);
+            this.noSiswa.Size = new System.Drawing.Size(83, 23);
             this.noSiswa.TabIndex = 3;
             this.noSiswa.Text = "No Siswa";
             // 
             // txtPembayaran
             // 
             this.txtPembayaran.BackColor = System.Drawing.Color.DarkOrange;
-            this.txtPembayaran.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtPembayaran.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtPembayaran.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtPembayaran.Location = new System.Drawing.Point(323, 155);
+            this.txtPembayaran.Location = new System.Drawing.Point(155, 158);
             this.txtPembayaran.Name = "txtPembayaran";
-            this.txtPembayaran.Size = new System.Drawing.Size(242, 34);
+            this.txtPembayaran.Size = new System.Drawing.Size(242, 30);
             this.txtPembayaran.TabIndex = 2;
             // 
             // kodePembayaran
             // 
             this.kodePembayaran.AutoSize = true;
-            this.kodePembayaran.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.kodePembayaran.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.kodePembayaran.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.kodePembayaran.Location = new System.Drawing.Point(323, 125);
+            this.kodePembayaran.Location = new System.Drawing.Point(155, 128);
             this.kodePembayaran.Name = "kodePembayaran";
-            this.kodePembayaran.Size = new System.Drawing.Size(176, 28);
+            this.kodePembayaran.Size = new System.Drawing.Size(154, 23);
             this.kodePembayaran.TabIndex = 1;
             this.kodePembayaran.Text = "Kode Pembayaran";
             // 
@@ -302,8 +304,8 @@ namespace Bimbem_App
             // btnTambah
             // 
             this.btnTambah.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnTambah.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnTambah.Location = new System.Drawing.Point(927, 447);
+            this.btnTambah.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnTambah.Location = new System.Drawing.Point(918, 319);
             this.btnTambah.Name = "btnTambah";
             this.btnTambah.Size = new System.Drawing.Size(106, 44);
             this.btnTambah.TabIndex = 20;
@@ -313,8 +315,8 @@ namespace Bimbem_App
             // btnEdit
             // 
             this.btnEdit.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnEdit.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnEdit.Location = new System.Drawing.Point(927, 497);
+            this.btnEdit.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnEdit.Location = new System.Drawing.Point(918, 369);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(106, 44);
             this.btnEdit.TabIndex = 21;
@@ -324,8 +326,8 @@ namespace Bimbem_App
             // btnHapus
             // 
             this.btnHapus.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnHapus.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnHapus.Location = new System.Drawing.Point(927, 546);
+            this.btnHapus.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnHapus.Location = new System.Drawing.Point(918, 418);
             this.btnHapus.Name = "btnHapus";
             this.btnHapus.Size = new System.Drawing.Size(106, 44);
             this.btnHapus.TabIndex = 22;
@@ -349,8 +351,8 @@ namespace Bimbem_App
             // btnRefresh
             // 
             this.btnRefresh.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnRefresh.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnRefresh.Location = new System.Drawing.Point(927, 595);
+            this.btnRefresh.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRefresh.Location = new System.Drawing.Point(918, 467);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(106, 44);
             this.btnRefresh.TabIndex = 74;
@@ -362,7 +364,7 @@ namespace Bimbem_App
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1118, 887);
+            this.ClientSize = new System.Drawing.Size(1118, 776);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnMenuUtama);
             this.Controls.Add(this.btnHapus);
