@@ -10,7 +10,7 @@ namespace Bimbem_App
 {
     public partial class FormInputRuangZoom : Form
     {
-        public bool isEditRuangZoom = false;
+        public bool isEdit;
         public FormInputRuangZoom()
         {
             InitializeComponent();
@@ -86,7 +86,7 @@ namespace Bimbem_App
         {
             DataAccess da = new DataAccess();
 
-            if (isEditRuangZoom)
+            if (isEdit)
             {
                 // Sesuaiin sama form temen-temen
                 da.updateDataRuangZoom(txtKodeZoom.Text, txtLinkRuangZoom.Text, txtIdMeetingRuangZoom.Text, txtPasscodeRuangZoom.Text);
@@ -109,8 +109,6 @@ namespace Bimbem_App
         }
 
         // Button Edit
-
-        public bool isEdit;
 
         // boleh diganti
         public string selectedKodeZoom;
