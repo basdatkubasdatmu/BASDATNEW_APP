@@ -16,13 +16,13 @@ namespace Bimbem_App
         }
 
         // General syntax
-        public string selectedKodeJadwalSiswa;
         
         // Load data, ganti dgv sama getnya!
 
         private void LoadData()
         {
             DataAccess da = new DataAccess();
+            // Ganti yg ini (dgv sama da.get)
             dgvJadwalSiswa.AutoGenerateColumns = false;
             dgvJadwalSiswa.DataSource = da.getAllJadwalSiswa();
         }
@@ -31,6 +31,7 @@ namespace Bimbem_App
         // Kosongin textbox
         public void txtKosong()
         {
+            // Ganti atau tambah yg ini
             txtKodeJadwalSiswa.Text = "";
             txtNoSiswa.Text = "";
             txtKodeJadwalPengajar.Text = "";
@@ -39,9 +40,12 @@ namespace Bimbem_App
         // Enable Button simpan, batal, dan textbox
         private void btnEnable()
         {
+            // Ganti atau tambah yg ini
             txtKodeJadwalPengajar.Enabled = true;
             txtKodeJadwalSiswa.Enabled = true;
             txtNoSiswa.Enabled = true;
+
+            // Ini jangan diganti
             btnSimpan.Enabled = true;
             btnBatal.Enabled = true;
         }
@@ -50,9 +54,12 @@ namespace Bimbem_App
 
         private void btnDisable()
         {
+            // Ganti atau tambah yg ini
             txtKodeJadwalPengajar.Enabled = false;
             txtKodeJadwalSiswa.Enabled = false;
             txtNoSiswa.Enabled = false;
+
+            // Ini jangan diganti
             btnSimpan.Enabled = false;
             btnBatal.Enabled = false;
         }
@@ -66,6 +73,7 @@ namespace Bimbem_App
         
         private void FormInputJadwalSiswa_Load(object sender, EventArgs e)
         {
+            // Copy
             LoadData();
             btnDisable();
         }
@@ -86,13 +94,19 @@ namespace Bimbem_App
 
             if (isEdit)
             {
+                // Sesuaiin sama form temen-temen
                 da.updateDataJadwalSiswa(txtKodeJadwalSiswa.Text, txtNoSiswa.Text, txtKodeJadwalPengajar.Text);
+
+                // Ini jangan diganti
                 this.txtKosong();
                 MessageBox.Show("Data telah diupdate!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
+                // Sesuaiin sama form temen-temen
                 da.insertDataJadwalSiswa(txtKodeJadwalSiswa.Text, txtNoSiswa.Text, txtKodeJadwalPengajar.Text);
+
+                // Ini jangan diganti
                 this.txtKosong();
                 MessageBox.Show("Data telah ditambahkan", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -104,10 +118,15 @@ namespace Bimbem_App
 
         public bool isEdit;
 
+        // boleh diganti
+        public string selectedKodeJadwalSiswa;
+
         private void btnEdit_Click(object sender, EventArgs e)
         {
             isEdit = true;
             DataAccess da = new DataAccess();
+
+            // Edit ini (dgv, da.get, txtBOX nya, dan yang didalam dt.Rows)
             if (dgvJadwalSiswa.SelectedRows.Count > 0)
             {
                 selectedKodeJadwalSiswa = dgvJadwalSiswa.SelectedRows[0].Cells[0].Value.ToString();
@@ -121,6 +140,23 @@ namespace Bimbem_App
             txtKodeJadwalSiswa.ReadOnly = true;            
             this.btnEnable();
         }
+
+        // Button Hapus
+
+        private void btnHapus_Click(object sender, EventArgs e)
+        {
+            DataAccess da = new DataAccess();
+            if (dgvJadwalSiswa.SelectedRows.Count > 0)
+            {
+                // Sesuaiin sama yang diatas
+                selectedKodeJadwalSiswa = dgvJadwalSiswa.SelectedRows[0].Cells[0].Value.ToString();
+                da.hapusDataJadwalSiswa(selectedKodeJadwalSiswa);
+
+                MessageBox.Show("Data telah dihapus!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            LoadData();
+        }
+
 
         // Button tambah
 
@@ -151,19 +187,6 @@ namespace Bimbem_App
             this.LoadData();
         }
 
-        // Button Hapus
-
-        private void btnHapus_Click(object sender, EventArgs e)
-        {
-            DataAccess da = new DataAccess();
-            if (dgvJadwalSiswa.SelectedRows.Count > 0)
-            {
-                selectedKodeJadwalSiswa = dgvJadwalSiswa.SelectedRows[0].Cells[0].Value.ToString();
-                da.hapusDataJadwalSiswa(selectedKodeJadwalSiswa);
-
-                MessageBox.Show("Data telah dihapus!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            LoadData();
-        }
+        
     }
 }
