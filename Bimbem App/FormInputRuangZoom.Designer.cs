@@ -29,7 +29,7 @@ namespace Bimbem_App
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlRuangZoom = new System.Windows.Forms.Panel();
             this.dgvRuangZoom = new System.Windows.Forms.DataGridView();
@@ -61,7 +61,7 @@ namespace Bimbem_App
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Bimbem_App.Properties.Resources.parent_form;
-            this.pictureBox1.Location = new System.Drawing.Point(-127, -130);
+            this.pictureBox1.Location = new System.Drawing.Point(-71, -1);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1114, 672);
@@ -85,14 +85,14 @@ namespace Bimbem_App
             this.dgvRuangZoom.AllowUserToDeleteRows = false;
             this.dgvRuangZoom.BackgroundColor = System.Drawing.Color.Salmon;
             this.dgvRuangZoom.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvRuangZoom.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvRuangZoom.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvRuangZoom.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvRuangZoom.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.kodezoom,
@@ -150,10 +150,11 @@ namespace Bimbem_App
             this.btnBatal.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnBatal.Location = new System.Drawing.Point(192, 370);
             this.btnBatal.Name = "btnBatal";
-            this.btnBatal.Size = new System.Drawing.Size(73, 24);
+            this.btnBatal.Size = new System.Drawing.Size(73, 31);
             this.btnBatal.TabIndex = 8;
             this.btnBatal.Text = "Batal";
             this.btnBatal.UseVisualStyleBackColor = false;
+            this.btnBatal.Click += new System.EventHandler(this.btnBatal_Click);
             // 
             // btnSimpan
             // 
@@ -161,7 +162,7 @@ namespace Bimbem_App
             this.btnSimpan.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnSimpan.Location = new System.Drawing.Point(113, 370);
             this.btnSimpan.Name = "btnSimpan";
-            this.btnSimpan.Size = new System.Drawing.Size(73, 24);
+            this.btnSimpan.Size = new System.Drawing.Size(73, 31);
             this.btnSimpan.TabIndex = 7;
             this.btnSimpan.Text = "Simpan";
             this.btnSimpan.UseVisualStyleBackColor = false;
@@ -211,7 +212,7 @@ namespace Bimbem_App
             // 
             this.txtLinkRuangZoom.BackColor = System.Drawing.Color.Salmon;
             this.txtLinkRuangZoom.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtLinkRuangZoom.Location = new System.Drawing.Point(53, 192);
+            this.txtLinkRuangZoom.Location = new System.Drawing.Point(54, 190);
             this.txtLinkRuangZoom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtLinkRuangZoom.Name = "txtLinkRuangZoom";
             this.txtLinkRuangZoom.Size = new System.Drawing.Size(212, 25);
@@ -279,6 +280,7 @@ namespace Bimbem_App
             this.btnEdit.TabIndex = 10;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = false;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnTambah
             // 
@@ -290,6 +292,7 @@ namespace Bimbem_App
             this.btnTambah.TabIndex = 11;
             this.btnTambah.Text = "Tambah";
             this.btnTambah.UseVisualStyleBackColor = false;
+            this.btnTambah.Click += new System.EventHandler(this.btnTambah_Click);
             // 
             // btnRefresh
             // 
@@ -345,6 +348,7 @@ namespace Bimbem_App
             this.Name = "FormInputRuangZoom";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormInputRuangZoom";
+            this.Load += new System.EventHandler(this.FormInputRuangZoom_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlRuangZoom.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvRuangZoom)).EndInit();
