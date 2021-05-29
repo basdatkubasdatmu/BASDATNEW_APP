@@ -28,7 +28,6 @@ C:\Users\Asus\Documents\GitHub\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\
 C:\Users\Asus\Documents\GitHub\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem_App.FormInputKelas.resources
 C:\Users\Asus\Documents\GitHub\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem_App.FormInputPegawai.resources
 C:\Users\Asus\Documents\GitHub\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem_App.FormLogin.resources
-C:\Users\Asus\Documents\GitHub\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem_App.FormTemplate.resources
 C:\Users\Asus\Documents\GitHub\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem_App.ParentForm.resources
 C:\Users\Asus\Documents\GitHub\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem_App.Properties.Resources.resources
 C:\Users\Asus\Documents\GitHub\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem App.csproj.GenerateResource.cache
@@ -39,3 +38,16 @@ C:\Users\Asus\Documents\GitHub\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\
 C:\Users\Asus\Documents\GitHub\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem App.dll
 C:\Users\Asus\Documents\GitHub\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem App.pdb
 C:\Users\Asus\Documents\GitHub\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem App.genruntimeconfig.cache
+C:\Users\Asus\Documents\GitHub\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem_App.FormInputJadwalPengajar.resources
+C:\Users\Asus\Documents\GitHub\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem_App.FormInputJadwalSiswa.resources
+C:\Users\Asus\Documents\GitHub\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem_App.FormInputMatpel.resources
+C:\Users\Asus\Documents\GitHub\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem_App.FormInputNilai.resources
+C:\Users\Asus\Documents\GitHub\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem_App.formInputPengajar.resources
+C:\Users\Asus\Documents\GitHub\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem_App.FormInputPresensi.resources
+C:\Users\Asus\Documents\GitHub\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem_App.FormInputRuangZoom.resources
+C:\Users\Asus\Documents\GitHub\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem_App.formInputSiswa.resources
+C:\Users\Asus\Documents\GitHub\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem_App.FormInputTransaksi.resources
+C:\Users\Asus\Documents\GitHub\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem_App.FormInputUjian.resources
+C:\Users\Asus\Documents\GitHub\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem_App.FormJadwalSiswa.resources
+C:\Users\Asus\Documents\GitHub\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem_App.formNilaiUjian.resources
+C:\Users\Asus\Documents\GitHub\BASDATNEW_APP\Bimbem App\obj\Debug\netcoreapp3.1\Bimbem_App.formPengajar.resources

@@ -29,7 +29,7 @@ namespace Bimbem_App
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pctrInputNilai = new System.Windows.Forms.PictureBox();
             this.pnlRuangZoom = new System.Windows.Forms.Panel();
             this.dgvNilai = new System.Windows.Forms.DataGridView();
@@ -68,14 +68,13 @@ namespace Bimbem_App
             // 
             this.pctrInputNilai.Image = global::Bimbem_App.Properties.Resources.parent_form;
             this.pctrInputNilai.InitialImage = null;
-            this.pctrInputNilai.Location = new System.Drawing.Point(-21, -46);
+            this.pctrInputNilai.Location = new System.Drawing.Point(-1, -22);
             this.pctrInputNilai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pctrInputNilai.Name = "pctrInputNilai";
             this.pctrInputNilai.Size = new System.Drawing.Size(1013, 570);
             this.pctrInputNilai.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctrInputNilai.TabIndex = 0;
             this.pctrInputNilai.TabStop = false;
-            this.pctrInputNilai.Click += new System.EventHandler(this.pctrInputNilai_Click);
             // 
             // pnlRuangZoom
             // 
@@ -91,9 +90,9 @@ namespace Bimbem_App
             // 
             this.dgvNilai.AllowUserToAddRows = false;
             this.dgvNilai.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.dgvNilai.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.dgvNilai.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvNilai.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvNilai.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvNilai.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -176,6 +175,7 @@ namespace Bimbem_App
             this.btnBatal.TabIndex = 10;
             this.btnBatal.Text = "Batal";
             this.btnBatal.UseVisualStyleBackColor = false;
+            this.btnBatal.Click += new System.EventHandler(this.btnBatal_Click);
             // 
             // btnSimpan
             // 
@@ -188,6 +188,7 @@ namespace Bimbem_App
             this.btnSimpan.TabIndex = 9;
             this.btnSimpan.Text = "Simpan";
             this.btnSimpan.UseVisualStyleBackColor = false;
+            this.btnSimpan.Click += new System.EventHandler(this.btnSimpan_Click);
             // 
             // txtNilai
             // 
@@ -358,6 +359,7 @@ namespace Bimbem_App
             this.btnTambah.TabIndex = 26;
             this.btnTambah.Text = "Tambah";
             this.btnTambah.UseVisualStyleBackColor = false;
+            this.btnTambah.Click += new System.EventHandler(this.btnTambah_Click);
             // 
             // btnEdit
             // 
@@ -369,6 +371,7 @@ namespace Bimbem_App
             this.btnEdit.TabIndex = 25;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = false;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnHapus
             // 
@@ -428,6 +431,7 @@ namespace Bimbem_App
             this.Name = "FormInputNilai";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormInputNilai";
+            this.Load += new System.EventHandler(this.FormInputNilai_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pctrInputNilai)).EndInit();
             this.pnlRuangZoom.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvNilai)).EndInit();
