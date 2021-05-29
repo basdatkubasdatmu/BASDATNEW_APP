@@ -29,7 +29,7 @@ namespace Bimbem_App
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelInputPengajar = new System.Windows.Forms.Panel();
             this.dgvPengajar = new System.Windows.Forms.DataGridView();
@@ -58,10 +58,9 @@ namespace Bimbem_App
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Bimbem_App.Properties.Resources.parent_form;
-            this.pictureBox1.Location = new System.Drawing.Point(-51, -51);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(-58, -68);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1077, 660);
+            this.pictureBox1.Size = new System.Drawing.Size(1231, 880);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -71,9 +70,10 @@ namespace Bimbem_App
             this.panelInputPengajar.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panelInputPengajar.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panelInputPengajar.Controls.Add(this.dgvPengajar);
-            this.panelInputPengajar.Location = new System.Drawing.Point(399, 139);
+            this.panelInputPengajar.Location = new System.Drawing.Point(401, 185);
+            this.panelInputPengajar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelInputPengajar.Name = "panelInputPengajar";
-            this.panelInputPengajar.Size = new System.Drawing.Size(432, 294);
+            this.panelInputPengajar.Size = new System.Drawing.Size(548, 391);
             this.panelInputPengajar.TabIndex = 2;
             // 
             // dgvPengajar
@@ -82,25 +82,26 @@ namespace Bimbem_App
             this.dgvPengajar.AllowUserToDeleteRows = false;
             this.dgvPengajar.BackgroundColor = System.Drawing.Color.SlateBlue;
             this.dgvPengajar.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPengajar.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPengajar.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvPengajar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPengajar.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.nopengajar,
             this.nopegawai,
             this.kodepelajaran});
-            this.dgvPengajar.Location = new System.Drawing.Point(21, 21);
+            this.dgvPengajar.Location = new System.Drawing.Point(39, 29);
+            this.dgvPengajar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvPengajar.Name = "dgvPengajar";
             this.dgvPengajar.ReadOnly = true;
             this.dgvPengajar.RowHeadersWidth = 51;
             this.dgvPengajar.RowTemplate.Height = 25;
-            this.dgvPengajar.Size = new System.Drawing.Size(382, 251);
+            this.dgvPengajar.Size = new System.Drawing.Size(468, 335);
             this.dgvPengajar.TabIndex = 0;
             // 
             // nopengajar
@@ -110,7 +111,7 @@ namespace Bimbem_App
             this.nopengajar.MinimumWidth = 6;
             this.nopengajar.Name = "nopengajar";
             this.nopengajar.ReadOnly = true;
-            this.nopengajar.Width = 108;
+            this.nopengajar.Width = 133;
             // 
             // nopegawai
             // 
@@ -119,7 +120,7 @@ namespace Bimbem_App
             this.nopegawai.MinimumWidth = 6;
             this.nopegawai.Name = "nopegawai";
             this.nopegawai.ReadOnly = true;
-            this.nopegawai.Width = 105;
+            this.nopegawai.Width = 130;
             // 
             // kodepelajaran
             // 
@@ -128,15 +129,16 @@ namespace Bimbem_App
             this.kodepelajaran.MinimumWidth = 6;
             this.kodepelajaran.Name = "kodepelajaran";
             this.kodepelajaran.ReadOnly = true;
-            this.kodepelajaran.Width = 123;
+            this.kodepelajaran.Width = 152;
             // 
             // btnBatal
             // 
             this.btnBatal.BackColor = System.Drawing.Color.SeaShell;
             this.btnBatal.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnBatal.Location = new System.Drawing.Point(252, 344);
+            this.btnBatal.Location = new System.Drawing.Point(288, 459);
+            this.btnBatal.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnBatal.Name = "btnBatal";
-            this.btnBatal.Size = new System.Drawing.Size(74, 23);
+            this.btnBatal.Size = new System.Drawing.Size(85, 31);
             this.btnBatal.TabIndex = 19;
             this.btnBatal.Text = "Batal";
             this.btnBatal.UseVisualStyleBackColor = false;
@@ -146,9 +148,10 @@ namespace Bimbem_App
             // 
             this.btnSimpan.BackColor = System.Drawing.Color.SeaShell;
             this.btnSimpan.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnSimpan.Location = new System.Drawing.Point(159, 344);
+            this.btnSimpan.Location = new System.Drawing.Point(182, 459);
+            this.btnSimpan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSimpan.Name = "btnSimpan";
-            this.btnSimpan.Size = new System.Drawing.Size(74, 23);
+            this.btnSimpan.Size = new System.Drawing.Size(85, 31);
             this.btnSimpan.TabIndex = 18;
             this.btnSimpan.Text = "Simpan";
             this.btnSimpan.UseVisualStyleBackColor = false;
@@ -158,36 +161,39 @@ namespace Bimbem_App
             // 
             this.txtKodePelajaran.BackColor = System.Drawing.Color.SlateBlue;
             this.txtKodePelajaran.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtKodePelajaran.Location = new System.Drawing.Point(61, 301);
+            this.txtKodePelajaran.Location = new System.Drawing.Point(70, 401);
+            this.txtKodePelajaran.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtKodePelajaran.Name = "txtKodePelajaran";
-            this.txtKodePelajaran.Size = new System.Drawing.Size(265, 25);
+            this.txtKodePelajaran.Size = new System.Drawing.Size(302, 30);
             this.txtKodePelajaran.TabIndex = 12;
             // 
             // txtNoPegawai
             // 
             this.txtNoPegawai.BackColor = System.Drawing.Color.SlateBlue;
             this.txtNoPegawai.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtNoPegawai.Location = new System.Drawing.Point(61, 231);
+            this.txtNoPegawai.Location = new System.Drawing.Point(70, 308);
+            this.txtNoPegawai.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNoPegawai.Name = "txtNoPegawai";
-            this.txtNoPegawai.Size = new System.Drawing.Size(265, 25);
+            this.txtNoPegawai.Size = new System.Drawing.Size(302, 30);
             this.txtNoPegawai.TabIndex = 11;
             // 
             // txtNoPengajar
             // 
             this.txtNoPengajar.BackColor = System.Drawing.Color.SlateBlue;
             this.txtNoPengajar.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtNoPengajar.Location = new System.Drawing.Point(61, 162);
+            this.txtNoPengajar.Location = new System.Drawing.Point(70, 216);
+            this.txtNoPengajar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNoPengajar.Name = "txtNoPengajar";
-            this.txtNoPengajar.Size = new System.Drawing.Size(265, 25);
+            this.txtNoPengajar.Size = new System.Drawing.Size(302, 30);
             this.txtNoPengajar.TabIndex = 10;
             // 
             // lblKodePelajaran
             // 
             this.lblKodePelajaran.AutoSize = true;
             this.lblKodePelajaran.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblKodePelajaran.Location = new System.Drawing.Point(63, 278);
+            this.lblKodePelajaran.Location = new System.Drawing.Point(72, 371);
             this.lblKodePelajaran.Name = "lblKodePelajaran";
-            this.lblKodePelajaran.Size = new System.Drawing.Size(102, 19);
+            this.lblKodePelajaran.Size = new System.Drawing.Size(123, 23);
             this.lblKodePelajaran.TabIndex = 5;
             this.lblKodePelajaran.Text = "Kode Pelajaran";
             // 
@@ -195,9 +201,9 @@ namespace Bimbem_App
             // 
             this.lblNoPegawai.AutoSize = true;
             this.lblNoPegawai.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblNoPegawai.Location = new System.Drawing.Point(63, 208);
+            this.lblNoPegawai.Location = new System.Drawing.Point(72, 277);
             this.lblNoPegawai.Name = "lblNoPegawai";
-            this.lblNoPegawai.Size = new System.Drawing.Size(109, 19);
+            this.lblNoPegawai.Size = new System.Drawing.Size(132, 23);
             this.lblNoPegawai.TabIndex = 4;
             this.lblNoPegawai.Text = "Nomor Pegawai";
             // 
@@ -205,9 +211,9 @@ namespace Bimbem_App
             // 
             this.lblNoPengajar.AutoSize = true;
             this.lblNoPengajar.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblNoPengajar.Location = new System.Drawing.Point(63, 139);
+            this.lblNoPengajar.Location = new System.Drawing.Point(72, 185);
             this.lblNoPengajar.Name = "lblNoPengajar";
-            this.lblNoPengajar.Size = new System.Drawing.Size(111, 19);
+            this.lblNoPengajar.Size = new System.Drawing.Size(135, 23);
             this.lblNoPengajar.TabIndex = 3;
             this.lblNoPengajar.Text = "Nomor Pengajar";
             // 
@@ -215,9 +221,9 @@ namespace Bimbem_App
             // 
             this.lblInputPengajar.AutoSize = true;
             this.lblInputPengajar.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblInputPengajar.Location = new System.Drawing.Point(430, 79);
+            this.lblInputPengajar.Location = new System.Drawing.Point(491, 105);
             this.lblInputPengajar.Name = "lblInputPengajar";
-            this.lblInputPengajar.Size = new System.Drawing.Size(126, 30);
+            this.lblInputPengajar.Size = new System.Drawing.Size(156, 37);
             this.lblInputPengajar.TabIndex = 2;
             this.lblInputPengajar.Text = "PENGAJAR";
             // 
@@ -226,9 +232,10 @@ namespace Bimbem_App
             this.btnHome.BackColor = System.Drawing.Color.SlateBlue;
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHome.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnHome.Location = new System.Drawing.Point(878, 28);
+            this.btnHome.Location = new System.Drawing.Point(1003, 37);
+            this.btnHome.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(79, 38);
+            this.btnHome.Size = new System.Drawing.Size(90, 51);
             this.btnHome.TabIndex = 24;
             this.btnHome.Text = "HOME";
             this.btnHome.UseVisualStyleBackColor = false;
@@ -238,9 +245,10 @@ namespace Bimbem_App
             // 
             this.btnRefresh.BackColor = System.Drawing.Color.SeaShell;
             this.btnRefresh.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnRefresh.Location = new System.Drawing.Point(837, 264);
+            this.btnRefresh.Location = new System.Drawing.Point(957, 352);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(74, 23);
+            this.btnRefresh.Size = new System.Drawing.Size(85, 31);
             this.btnRefresh.TabIndex = 23;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = false;
@@ -250,9 +258,10 @@ namespace Bimbem_App
             // 
             this.btnTambah.BackColor = System.Drawing.Color.SeaShell;
             this.btnTambah.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnTambah.Location = new System.Drawing.Point(837, 224);
+            this.btnTambah.Location = new System.Drawing.Point(957, 299);
+            this.btnTambah.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnTambah.Name = "btnTambah";
-            this.btnTambah.Size = new System.Drawing.Size(74, 23);
+            this.btnTambah.Size = new System.Drawing.Size(85, 31);
             this.btnTambah.TabIndex = 22;
             this.btnTambah.Text = "Tambah";
             this.btnTambah.UseVisualStyleBackColor = false;
@@ -262,9 +271,10 @@ namespace Bimbem_App
             // 
             this.btnEdit.BackColor = System.Drawing.Color.SeaShell;
             this.btnEdit.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnEdit.Location = new System.Drawing.Point(837, 180);
+            this.btnEdit.Location = new System.Drawing.Point(957, 240);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(74, 23);
+            this.btnEdit.Size = new System.Drawing.Size(85, 31);
             this.btnEdit.TabIndex = 21;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = false;
@@ -274,9 +284,10 @@ namespace Bimbem_App
             // 
             this.btnHapus.BackColor = System.Drawing.Color.SeaShell;
             this.btnHapus.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnHapus.Location = new System.Drawing.Point(837, 139);
+            this.btnHapus.Location = new System.Drawing.Point(957, 185);
+            this.btnHapus.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnHapus.Name = "btnHapus";
-            this.btnHapus.Size = new System.Drawing.Size(74, 23);
+            this.btnHapus.Size = new System.Drawing.Size(85, 31);
             this.btnHapus.TabIndex = 20;
             this.btnHapus.Text = "Hapus";
             this.btnHapus.UseVisualStyleBackColor = false;
@@ -284,9 +295,9 @@ namespace Bimbem_App
             // 
             // formInputPengajar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(986, 496);
+            this.ClientSize = new System.Drawing.Size(1127, 661);
             this.Controls.Add(this.btnHome);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnTambah);
@@ -304,6 +315,7 @@ namespace Bimbem_App
             this.Controls.Add(this.panelInputPengajar);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "formInputPengajar";
