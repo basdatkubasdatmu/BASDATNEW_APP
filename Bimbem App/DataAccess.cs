@@ -1442,7 +1442,6 @@ namespace Bimbem_App
                 conn.Close();
             }
         }
-
         public void updateDataPengajar(string nopengajar, string kodepelajaran, string nopegawai)
         {
             NpgsqlConnection conn = new NpgsqlConnection(strConnString);

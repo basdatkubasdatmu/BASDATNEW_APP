@@ -49,6 +49,9 @@
     <Compile Update="formPengajar.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="MenuUtama.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="ParentForm.cs">
       <SubType>Form</SubType>
     </Compile>
